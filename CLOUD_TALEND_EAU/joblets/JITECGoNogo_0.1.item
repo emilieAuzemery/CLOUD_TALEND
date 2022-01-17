@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" name="Default">
+      <contextParameter comment="" name="RSR_bdd_suivi_Database" prompt="RSR_bdd_suivi_Database?" promptNeeded="false" repositoryContextId="_IEyegIo5Eea8Ut5bsIN75A" type="id_String" value="RSR_SUIVI"/>
+      <contextParameter comment="" name="RSR_bdd_suivi_Login" prompt="RSR_bdd_suivi_Login?" promptNeeded="false" repositoryContextId="_IEyegIo5Eea8Ut5bsIN75A" type="id_String" value="talend"/>
+      <contextParameter comment="" name="RSR_bdd_suivi_Server" prompt="RSR_bdd_suivi_Server?" promptNeeded="false" repositoryContextId="_IEyegIo5Eea8Ut5bsIN75A" type="id_String" value="10.0.171.212"/>
+      <contextParameter comment="" name="RSR_bdd_suivi_Password" prompt="RSR_bdd_suivi_Password?" promptNeeded="false" repositoryContextId="_IEyegIo5Eea8Ut5bsIN75A" type="id_Password" value="enc:system.encryption.key.v1:l0LVza6L3UMktwPNuHixsWInM5yG+yMCiExCFXJCBiyTU6Rcnnw="/>
+      <contextParameter comment="" name="RSR_bdd_suivi_AdditionalParams" prompt="RSR_bdd_suivi_AdditionalParams?" promptNeeded="false" repositoryContextId="_IEyegIo5Eea8Ut5bsIN75A" type="id_String" value="noDatetimeStringSync=true"/>
+      <contextParameter comment="" name="RSR_bdd_suivi_Port" prompt="RSR_bdd_suivi_Port?" promptNeeded="false" repositoryContextId="_IEyegIo5Eea8Ut5bsIN75A" type="id_String" value="3306"/>
+      <contextParameter comment="Identifiant du flux traité" name="FLE_ID" prompt="FLE_ID?" promptNeeded="false" repositoryContextId="_ERfsoAAlEeej2Ne8dHUHdw" type="id_String" value=""/>
+    </context>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="96"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" show="false" value="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" show="false" value="25000"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/Users/fdreano/workspace/in.csv&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:heMEdeyaOjOaRf5QB0BMaVjDFszpd3OywrjkviJf"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+      <routinesParameter id="_nGJhgI-OEeads5l-Um9p1w" name="DataOperation"/>
+      <routinesParameter id="_nIPzQI-OEeads5l-Um9p1w" name="Mathematical"/>
+      <routinesParameter id="_nKRzkI-OEeads5l-Um9p1w" name="Numeric"/>
+      <routinesParameter id="_nMTz4I-OEeads5l-Um9p1w" name="Relational"/>
+      <routinesParameter id="_nCtzAo-OEeads5l-Um9p1w" name="SQLike"/>
+      <routinesParameter id="_nN_18I-OEeads5l-Um9p1w" name="StringHandling"/>
+      <routinesParameter id="_nQUKII-OEeads5l-Um9p1w" name="TalendDataGenerator"/>
+      <routinesParameter id="_nR8h0I-OEeads5l-Um9p1w" name="TalendDate"/>
+      <routinesParameter id="_nTn80I-OEeads5l-Um9p1w" name="TalendString"/>
+      <routinesParameter id="_4I-3MIo6Eea8Ut5bsIN75A" name="Commun"/>
+      <routinesParameter id="_Q5FvAOobEea2HvCMfz9Zrw" name="DateJPlus1"/>
+      <routinesParameter id="_peVlAKsmEeaFWdq13Wi6ng" name="DateJ_1"/>
+      <routinesParameter id="_6lYoMIo6Eea8Ut5bsIN75A" name="RSR"/>
+    </parameters>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="288">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_ERfsoAAlEeej2Ne8dHUHdw-tMap_3-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tMap_3"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="jex">
+        <column comment="Identifiant technique" key="true" length="-1" name="JEX_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="Identifiant du flux de traitement" key="false" length="-1" name="FLE_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="200" name="JEX_NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+        <outputTables name="jex" sizeState="INTERMEDIATE">
+          <mapperTableEntries expression="job_exec.JEX_ID " name="JEX_ID" type="id_Integer"/>
+          <mapperTableEntries expression="job_exec.FLE_ID " name="FLE_ID" type="id_Integer"/>
+          <mapperTableEntries expression="" name="JEX_NOM_JOB" nullable="true" type="id_String"/>
+        </outputTables>
+        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="fle_id" sizeState="INTERMEDIATE">
+          <mapperTableEntries name="FLE_ID" nullable="true" type="id_Integer"/>
+        </inputTables>
+        <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="job_exec" sizeState="INTERMEDIATE">
+          <mapperTableEntries expression="" name="JEX_ID" type="id_Integer"/>
+          <mapperTableEntries expression="fle_id.FLE_ID " name="FLE_ID" operator="=" type="id_Integer"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="288">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_ERfsoAAlEeej2Ne8dHUHdw-tMap_2-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tMap_2"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="fle_id" name="ral_code">
+        <column comment="Identifiant technique" key="true" length="-1" name="JEX_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value="Identifiant technique"/>
+        </column>
+        <column comment="Identifiant du flux de traitement" key="false" length="-1" name="FLE_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value="Identifiant du flux de traitement"/>
+        </column>
+        <column comment="" key="false" length="200" name="JEX_NOM_JOB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="Code de l'alerte" key="false" length="8" name="RAL_CODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+        <outputTables name="ral_code" sizeState="INTERMEDIATE">
+          <mapperTableEntries expression="jex.JEX_ID" name="JEX_ID" type="id_Integer"/>
+          <mapperTableEntries expression="jex.FLE_ID" name="FLE_ID" type="id_Integer"/>
+          <mapperTableEntries expression="jex.JEX_NOM_JOB" name="JEX_NOM_JOB" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="file_alert.RAL_CODE " name="RAL_CODE" type="id_String"/>
+        </outputTables>
+        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="jex" sizeState="INTERMEDIATE">
+          <mapperTableEntries name="JEX_ID" type="id_Integer"/>
+          <mapperTableEntries name="FLE_ID" type="id_Integer"/>
+          <mapperTableEntries name="JEX_NOM_JOB" nullable="true" type="id_String"/>
+        </inputTables>
+        <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="file_alert" sizeState="INTERMEDIATE">
+          <mapperTableEntries expression="jex.JEX_ID " name="JEX_ID" operator="=" type="id_Integer"/>
+          <mapperTableEntries name="RAL_CODE" type="id_String"/>
+          <mapperTableEntries name="ALE_IDENT_LIGNE" nullable="true" type="id_String"/>
+          <mapperTableEntries name="ALE_VALEUR" nullable="true" type="id_String"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="288">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_ERfsoAAlEeej2Ne8dHUHdw-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tMap_1"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="ral_type">
+        <column comment="Identifiant de l'instance du job qui a généré l'alerte" key="true" length="10" name="JEX_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="Type de l'alerte ( 1:Warning / 2:Bloquant ligne / 3:Bloquant fichier / 4:Bloquant traitement)" key="false" length="-1" name="RAL_TYPE" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+        <outputTables name="ral_type" sizeState="INTERMEDIATE">
+          <mapperTableEntries expression="ral_code.JEX_ID " name="JEX_ID" type="id_Integer"/>
+          <mapperTableEntries expression="ref_alertes_ral.RAL_TYPE " name="RAL_TYPE" type="id_Integer"/>
+        </outputTables>
+        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="ral_code" sizeState="INTERMEDIATE">
+          <mapperTableEntries name="JEX_ID" type="id_Integer"/>
+          <mapperTableEntries name="FLE_ID" type="id_Integer"/>
+          <mapperTableEntries name="JEX_NOM_JOB" nullable="true" type="id_String"/>
+          <mapperTableEntries name="RAL_CODE" type="id_String"/>
+        </inputTables>
+        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="ref_alertes_ral" sizeState="INTERMEDIATE">
+          <mapperTableEntries expression="ral_code.RAL_CODE " name="RAL_CODE" operator="=" type="id_String"/>
+          <mapperTableEntries name="RAL_LIBELLE" type="id_String"/>
+          <mapperTableEntries name="RAL_DESCRIPTION" nullable="true" type="id_String"/>
+          <mapperTableEntries name="RAL_TYPE" type="id_Integer"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlInput_2"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_xKaNcIo4Eea8Ut5bsIN75A"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="HOST" value="context.RSR_bdd_suivi_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.RSR_bdd_suivi_Port"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.RSR_bdd_suivi_Database"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+      <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_suivi_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uOPi6iv75pHPy2BtIimvTVglkf7nGcWUltPkiwVXYqs+QlUPRNMKgGiYJazbLut1ZWiY1lXV0FtHfg=="/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_xKaNcIo4Eea8Ut5bsIN75A - SUI_TS_REF_ALERTES_RAL"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;SUI_TS_REF_ALERTES_RAL&quot;"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `SUI_TS_REF_ALERTES_RAL`.`RAL_CODE`, &#10;  `SUI_TS_REF_ALERTES_RAL`.`RAL_LIBELLE`, &#10;  `SUI_TS_REF_ALERTES_RAL`.`RAL_DESCRIPTION`, &#10;  `SUI_TS_REF_ALERTES_RAL`.`RAL_TYPE`&#10;FROM `SUI_TS_REF_ALERTES_RAL`&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.RSR_bdd_suivi_AdditionalParams"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+      <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+      <elementParameter field="TABLE" name="TRIM_COLUMN">
+        <elementValue elementRef="SCHEMA_COLUMN" value="RAL_CODE"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="RAL_LIBELLE"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="RAL_DESCRIPTION"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="RAL_TYPE"/>
+        <elementValue elementRef="TRIM" value="false"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="LABEL" value="&quot;SUI_TS_REF_ALERTES_RAL&quot;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="SUI_TS_REF_ALERTES_RAL" name="tMysqlInput_2">
+        <column comment="Code de l'alerte" key="true" length="8" name="RAL_CODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Code de l'alerte"/>
+        </column>
+        <column comment="Libellé de l'alerte" key="false" length="250" name="RAL_LIBELLE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Libellé de l'alerte"/>
+        </column>
+        <column comment="Description de l'alerte" key="false" length="2000" name="RAL_DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Description de l'alerte"/>
+        </column>
+        <column comment="Type de l'alerte ( 1:Warning / 2:Bloquant ligne / 3:Bloquant fichier / 4:Bloquant traitement)" key="false" length="-1" name="RAL_TYPE" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value="Type de l'alerte ( 1:Warning / 2:Bloquant ligne / 3:Bloquant fichier / 4:Bloquant traitement)"/>
+        </column>
+        <additionalProperties key="Comment" value="Table de référence des codes alertes"/>
+      </metadata>
+    </node>
+    <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="288">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tAggregateRow_1"/>
+      <elementParameter field="TABLE" name="GROUPBYS">
+        <elementValue elementRef="OUTPUT_COLUMN" value="JEX_ID"/>
+        <elementValue elementRef="INPUT_COLUMN" value="JEX_ID"/>
+      </elementParameter>
+      <elementParameter field="TABLE" name="OPERATIONS">
+        <elementValue elementRef="OUTPUT_COLUMN" value="MAX_RAL_TYPE"/>
+        <elementValue elementRef="FUNCTION" value="max"/>
+        <elementValue elementRef="INPUT_COLUMN" value="RAL_TYPE"/>
+        <elementValue elementRef="IGNORE_NULL" value="false"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+      <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+      <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+      <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="calcul du max"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tAggregateRow_1">
+        <column comment="Identifiant de l'instance du job qui a généré l'alerte" key="true" length="10" name="JEX_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="Type de l'alerte ( 1:Warning / 2:Bloquant ligne / 3:Bloquant fichier / 4:Bloquant traitement)" key="false" length="-1" name="MAX_RAL_TYPE" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlInput_1"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_xKaNcIo4Eea8Ut5bsIN75A"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="HOST" value="context.RSR_bdd_suivi_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.RSR_bdd_suivi_Port"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.RSR_bdd_suivi_Database"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+      <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_suivi_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wEmOoO2+S9IhOhc6cKNsdUpqHymQRGL2rQpzSc9DZBSRKy5RsQ7IhLFEZixGr4t4zUS0PzvPy10asg=="/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_xKaNcIo4Eea8Ut5bsIN75A - SUI_TS_ALERTE_ALE"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;SUI_TS_ALERTE_ALE&quot;"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `SUI_TS_ALERTE_ALE`.`JEX_ID`, &#10;  `SUI_TS_ALERTE_ALE`.`RAL_CODE`, &#10;  `SUI_TS_ALERTE_ALE`.`ALE_IDENT_LIGNE`, &#10;  `SUI_TS_ALERTE_ALE`.`ALE_VALEUR`&#10;FROM `SUI_TS_ALERTE_ALE`&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.RSR_bdd_suivi_AdditionalParams"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+      <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+      <elementParameter field="TABLE" name="TRIM_COLUMN">
+        <elementValue elementRef="SCHEMA_COLUMN" value="JEX_ID"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="RAL_CODE"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="ALE_IDENT_LIGNE"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="ALE_VALEUR"/>
+        <elementValue elementRef="TRIM" value="false"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="LABEL" value="&quot;SUI_TS_ALERTE_ALE&quot;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="SUI_TS_ALERTE_ALE" name="tMysqlInput_1">
+        <column comment="Identifiant de l'instance du job qui a généré l'alerte" key="true" length="10" name="JEX_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value="Identifiant de l'instance du job qui a généré l'alerte"/>
+        </column>
+        <column comment="Code de l'alerte" key="false" length="8" name="RAL_CODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Code de l'alerte"/>
+        </column>
+        <column comment="Champs composant la clé de la ligne ayant généré l'alerte, au format json" key="false" length="500" name="ALE_IDENT_LIGNE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Champs composant la clé de la ligne ayant généré l'alerte, au format json"/>
+        </column>
+        <column comment="Données à l'origine de l'alerte, format json" key="false" length="500" name="ALE_VALEUR" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Données à l'origine de l'alerte, format json"/>
+        </column>
+        <additionalProperties key="Comment" value="Table des alertes détectées"/>
+      </metadata>
+    </node>
+    <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlInput_3"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_xKaNcIo4Eea8Ut5bsIN75A"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="HOST" value="context.RSR_bdd_suivi_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.RSR_bdd_suivi_Port"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.RSR_bdd_suivi_Database"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+      <elementParameter field="TEXT" name="USER" value="context.RSR_bdd_suivi_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0bKEZbB0NWj3eFOcQtcTaL0426Si90jTM5P3JorB+ysv0rjzYoSMl5W1uZS/FwPQk4uqHJedEMB0uw=="/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;SUI_TS_JOB_EXEC_JEX&quot;"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `SUI_TS_JOB_EXEC_JEX`.`JEX_ID`, &#10;  `SUI_TS_JOB_EXEC_JEX`.`FLE_ID`&#10;FROM `SUI_TS_JOB_EXEC_JEX`&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.RSR_bdd_suivi_AdditionalParams"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+      <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+      <elementParameter field="TABLE" name="TRIM_COLUMN">
+        <elementValue elementRef="SCHEMA_COLUMN" value="JEX_ID"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="FLE_ID"/>
+        <elementValue elementRef="TRIM" value="false"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="LABEL" value="&quot;SUI_TS_JOB_EXEC_JEX&quot;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="SUI_TS_JOB_EXEC_JEX" name="tMysqlInput_3">
+        <column comment="Identifiant technique" key="true" length="-1" name="JEX_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value="Identifiant technique"/>
+        </column>
+        <column comment="Identifiant du flux de traitement" key="false" length="-1" name="FLE_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value="Identifiant du flux de traitement"/>
+        </column>
+        <additionalProperties key="Comment" value=""/>
+      </metadata>
+    </node>
+    <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="288">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaFlex_1"/>
+      <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+      <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#10;int nb_line=0;&#10;int ral_type=0;"/>
+      <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="// here is the main part of the component,&#10;// a piece of code executed in the row&#10;// loop&#10;nb_line++;&#10;ral_type=max_ral_type.MAX_RAL_TYPE;"/>
+      <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#10;if (nb_line==0){&#10;ral_type_value.MAX_RAL_TYPE=0;&#10;}&#10;else { &#10;ral_type_value.MAX_RAL_TYPE=ral_type;&#10;}&#10;ral_type_value.JEX_ID=max_ral_type.JEX_ID;&#10;"/>
+      <elementParameter field="CHECK" name="Version_V2_0" show="false" value="false"/>
+      <elementParameter field="CHECK" name="Version_V3_2" show="false" value="false"/>
+      <elementParameter field="CHECK" name="Version_V4.0" show="false" value="true"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="LABEL" value="tJavaFlex_1"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJavaFlex_1">
+        <column comment="Identifiant de l'instance du job qui a généré l'alerte" key="true" length="10" name="JEX_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="Type de l'alerte ( 1:Warning / 2:Bloquant ligne / 3:Bloquant fichier / 4:Bloquant traitement)" key="false" length="-1" name="MAX_RAL_TYPE" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <connection connectorName="FLOW" label="fle_id" lineStyle="0" metaname="INPUT_1" offsetLabelX="0" offsetLabelY="0" source="INPUT_1" target="tMap_3">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="fle_id"/>
+    </connection>
+    <connection connectorName="FLOW" label="jex" lineStyle="0" metaname="jex" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tMap_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="jex"/>
+    </connection>
+    <connection connectorName="FLOW" label="ral_code" lineStyle="0" metaname="ral_code" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="RAL_CODE"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ral_code"/>
+    </connection>
+    <connection connectorName="FLOW" label="ral_type" lineStyle="0" metaname="ral_type" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tAggregateRow_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ral_type"/>
+    </connection>
+    <connection connectorName="FLOW" label="ref_alertes_ral" lineStyle="8" metaname="tMysqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_2" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ref_alertes_ral"/>
+    </connection>
+    <connection connectorName="FLOW" label="max_ral_type" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tJavaFlex_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="max_ral_type"/>
+    </connection>
+    <connection connectorName="FLOW" label="file_alert" lineStyle="8" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tMap_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="file_alert"/>
+    </connection>
+    <connection connectorName="FLOW" label="job_exec" lineStyle="8" metaname="tMysqlInput_3" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_3" target="tMap_3">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="job_exec"/>
+    </connection>
+    <connection connectorName="FLOW" label="ral_type_value" lineStyle="0" metaname="tJavaFlex_1" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_1" target="OUTPUT_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ral_type_value"/>
+    </connection>
+    <note opaque="true" posX="416" posY="-96" sizeHeight="193" sizeWidth="609" text="Paramètre entrant :&#13;&#10;- IFle_id : id du flux en cours&#13;&#10;&#13;&#10;Paramètre sortant:&#13;&#10;- Jex_id&#13;&#10;- MAX_RAL_TYPE&#13;&#10;&#13;&#10;Récupération des alertes levées pour le flux en cours.&#13;&#10;Calcul de la valeur maximale du niveau d'alerte.&#13;&#10;">
+      <elementParameter field="COLOR" name="NOTE_COLOR" value="88;187;227"/>
+      <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+      <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+      <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+      <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+      <elementParameter field="TEXT" name="NOTE_FONT" value="Courier New"/>
+    </note>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="INPUT_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" input="true" offsetLabelX="0" offsetLabelY="0" posX="64" posY="288">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="INPUT_1"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="INPUT_1">
+        <column comment="" key="false" length="-1" name="FLE_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="288">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="false"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="OUTPUT_1"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="OUTPUT_1">
+        <column comment="Identifiant de l'instance du job qui a généré l'alerte" key="true" length="10" name="JEX_ID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="Type de l'alerte ( 1:Warning / 2:Bloquant ligne / 3:Bloquant fichier / 4:Bloquant traitement)" key="false" length="-1" name="MAX_RAL_TYPE" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ad6ca422-be3f-4ae6-8a90-bf989438ed8d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DUzC4nOBJrrEoe5E4WopKpmq65pGUuCGSpDNLJarndlHhgW8kqi14rTsSUl9Gks22rnNTM1j1rE8&#13;
+1Q2I62pN0w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b86660f7-19c1-44e1-ba57-e9929858d541"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Gk/F8woV7rNzMqs285lP5mp6RBPoJ1r+chvVSAcvkzSdsj5a5zAeNJqHjQZW098ojuRGXoH+rEeY&#13;
+5Ik8rAsgvg==</DigestValue></Reference></SignedInfo><SignatureValue>JsuU47rCpBw3/vuxh9/bdNIlWj3uefdTrfWxBVixgMhRTogBeJqvuaJkvxbc5cHS1yT0z2ilHo0o&#13;
+2X5D/VBsnhC0YQ7N857jxcG+Vgnp/5Q2Kthxt5VvG/BdGweG9+lDzsqUd/3y2aTCoDlHRfOpFzlJ&#13;
+tXKzqLG8oEUhFe0ouuU4QnPQtqvPON8+8hCiIZYx7pe0YmEsVklOndzP9zKdzJiYxcYoFCCxKZL+&#13;
+SLNDh0SLBlTaqSKRwliKZE8X1Lhd/adpGZDbE+CAHtpT8cCS7sopQCILwXHMvfKMaSOQKL6xx9X7&#13;
+FN/5dsrtAigKNRfDD2mpf6CwxNNE8zEfkHh/Og==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b86660f7-19c1-44e1-ba57-e9929858d541" Target="#_ad6ca422-be3f-4ae6-8a90-bf989438ed8d"><Timestamp>2022-01-17 14:24:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

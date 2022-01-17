@@ -1,0 +1,150 @@
+package routines;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.poi.*;
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.poifs.filesystem.POIFSFileSystem;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+
+ 
+public class MyRoutine {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+	
+
+	  public static void main() {
+		  
+		 try{
+		  FileInputStream  fs = new FileInputStream("C:/Users/eauzemery/Desktop/1817_pdp_RF_TO_EAU.xls");
+	      HSSFWorkbook wb = new HSSFWorkbook(fs);
+	      List<Integer> listColumn = new ArrayList<Integer>() ;
+	      HSSFSheet sheet = wb.getSheet("BASE DE DONNEES");
+	      //String sheetName = wb.getSheetName(3);
+	      
+	      
+	      
+	      HSSFRow row = sheet.getRow(0); //Get first row
+	      
+		  Map<String,Integer> map = new HashMap<String,Integer>(); //Create map
+		 
+		  //following is boilerplate from the java doc
+		  short minColIx = row.getFirstCellNum(); //get the first column index for a row
+		  short maxColIx = row.getLastCellNum(); //get the last column index for a row
+		  for(short colIx=minColIx; colIx<maxColIx; colIx++) { //loop from first to last index
+		  HSSFCell cell = row.getCell(colIx); //get the cell
+		  //System.out.println("cell :" + cell);
+		  map.put(cell.getStringCellValue(),cell.getColumnIndex()) ;//add the cell contents (name of column) and cell index to the map
+		  //map1.put(cell.getColumnIndex(),cell.getStringCellValue()) ;
+		  }
+		 
+		  
+		  
+		  Integer idxForColumn1 = map.get("G"); //get the column index for the column with header name = "Column1"
+		  Integer idxForColumn2 = map.get("FAM."); //get the column index for the column with header name = "Column2"
+		  Integer idxForColumn3 = map.get("AFFAIRE");
+		  int index = 0;
+		  
+		  
+		  //System.out.println("header :" + map1.get(idxForColumn1));
+		  listColumn.add(idxForColumn1);
+		  listColumn.add(idxForColumn2);
+		  listColumn.add(idxForColumn3);
+		  
+		  System.out.println("listcolumn :" +listColumn);
+		  
+		  System.out.println("nbSheets :" +wb.getNumberOfSheets());
+		  
+		  //System.out.println("cell :" + sheet.getRow(1).toString());
+		  
+		  HSSFSheet sheetBD = wb.getSheet("BASE DE DONNEES"); // sheet to keep
+		  if(sheetBD != null)   {
+			  index = wb.getSheetIndex(sheetBD);
+		      //wb.removeSheetAt(index);
+		  }
+		  
+		  for (int i=0; i<wb.getNumberOfSheets(); i++) {
+			  if (i != index) {
+			  System.out.println("sheetName à supprimer:" +wb.getSheetName(i)+" index " +i);
+			  wb.removeSheetAt(i); //Just remove the sheets that don't match your criteria in the if statement above  
+			  }
+		  }
+		  
+
+		  /*
+		  for (int i = wb.getNumberOfSheets() - 1; i > 0; i--) {
+			  System.out.println("sheetName en cours:" +wb.getSheetName(i));
+		        if (wb.getSheetName(i).contentEquals("BASE DE DONNEES")) //This is a place holder. You will insert your logic here to get the sheets that you want.  
+		        	System.out.println("sheetName :" +wb.getSheetName(i));
+		        	wb.removeSheetAt(i); //Just remove the sheets that don't match your criteria in the if statement above               
+		  }
+		  
+		  
+			  for(int i=0; i<listColumn.size(); i++){
+				 
+					  deleteColumn(wb.getSheetAt(0), listColumn.get(i));  
+			  
+			  }
+		 
+		  	
+		*/
+		  fs.close();
+		// save changes
+		  FileOutputStream fileOut = new FileOutputStream("C:/Users/eauzemery/Desktop/Test_EAU.xls");
+		  wb.write(fileOut);
+		  fileOut.close();
+		   
+		    } catch (FileNotFoundException e) {
+		      e.printStackTrace();
+		    } catch (IOException e) {
+		      e.printStackTrace();
+		    }
+
+		 
+
+		
+	  }
+	  public static  void deleteColumn( HSSFSheet sheet, int columnToDelete ){
+		  for (int rId = 0; rId <= sheet.getLastRowNum(); rId++) {
+			    Row row = sheet.getRow(rId);
+			    System.out.println("row " +row);
+			    System.out.println("columnToDelete " +columnToDelete);
+			    if(row != null){
+			    //for (int cID = columnToDelete; cID < row.getLastCellNum(); cID++) {
+			    	
+			        Cell cOld = row.getCell(columnToDelete);
+			        if (cOld != null) {
+			        	row.removeCell(cOld);
+			        	//sheet.setColumnHidden(columnToDelete,true);			        	
+
+			        }
+			       
+			    }
+			  
+		  }
+	    }
+
+	}

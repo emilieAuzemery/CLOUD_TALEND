@@ -1,0 +1,102 @@
+package routines;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class FormatHTMLMessage {
+
+    /**
+    /**
+     * formatTableLine: retourne une ligne de table HTML, formattée selon le statut d'exécution
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("BTI_ROOT_PROCESS_TALEND") input: nom du job
+     * {param} date("BTI_TIMESTAMP_DEBUT") input: date d'exécution
+     * {param} string("BTI_STATUT_TRAITEMENT") input: statut d'exécution
+     * 
+     * {example} formatTableLine("ODS_job1", "01/01/1970", "OK") # <tr><td>ODS_job_1<td><td>01/01/1970</td><td style= 'color : green'>OK</td></tr>.
+     */
+    public static String formatTableLine(String str_jobName, Date dt_jobDate, String str_jobStatus) {
+    	
+    	String str_line = ""; //La ligne à retourner
+    	
+    	//Formattage de la date
+    	DateFormat df_dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+    	String str_jobDate = df_dateFormat.format(dt_jobDate);
+    	
+    	//L'affichage varie en fonction du statut d'exécution
+    	switch(str_jobStatus){
+    		case "OK" :
+    			str_line = "\n <tr><td>"+str_jobName+"<td><td>"+str_jobDate+"</td><td style='color: green'>"+str_jobStatus+"</td></tr>";
+    		break;
+    		default :
+    			str_line = "\n <tr><td>"+str_jobName+"<td><td>"+str_jobDate+"</td><td style='color: red'>"+str_jobStatus+"</td></tr>";
+    	}
+    	
+    	//On retourne la ligne formatée 
+    	return str_line;
+    }
+    
+    
+    
+    
+    
+    /**
+    /**
+     * formatTableHeader: retourne une ligne de table HTML qui sert de header à nos groupes de jobs (ODS, DWH ou SOCLE)
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("ODS/DWH/SOCLE") input: groupe du job
+     * {param} string("Ok/KO") input: statut d'exécution
+     * 
+     * {example} formatTableHeader("ODS_job1", "OK") # <tr><td>ODS<td><td style= 'color : green'>OK</td></tr>.
+     */
+    public static String formatTableHeader(String str_jobName, String str_jobStatus) {
+    	
+    	String str_line = ""; //La ligne à retourner
+    	String str_blankLine = "\n <tr><td><br/></td></tr>";
+    	
+    	//L'affichage varie en fonction du statut d'exécution (précédé d'une ligne blanche pour la lisibilité)
+    	switch(str_jobStatus){
+    		case "OK" :
+    			str_line = str_blankLine + "<tr><td>"+str_jobName+"<td><td style= 'color : green'>"+str_jobStatus+"</td></tr>";
+    		break;
+    		default :
+    			str_line = str_blankLine + "<tr><td>"+str_jobName+"<td><td style= 'color : red'>"+str_jobStatus+"</td></tr>";
+    	}
+    	
+    	//On retourne la ligne formatée 
+    	return str_line;
+    }
+    
+    
+    
+//Fin de la classe    
+}

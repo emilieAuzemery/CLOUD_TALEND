@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <model:JobletProcess defaultContext="DEV">
+    <context confirmationNeeded="false" name="PROD_EU">
+      <contextParameter comment="" name="DB_IPC_AdditionalParams" prompt="DB_IPC_AdditionalParams?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value=""/>
+      <contextParameter comment="" name="DB_IPC_LANDSAT8_CODE" prompt="DB_IPC_LANDSAT8_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="LANDSAT_8"/>
+      <contextParameter comment="" name="DB_IPC_Login" prompt="DB_IPC_Login?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="useripc"/>
+      <contextParameter comment="" name="DB_IPC_Password" prompt="DB_IPC_Password?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_Password" value="enc:system.encryption.key.v1:ltn5ekqf60q505CHQpSjf6nHsRGMAiE3vMDhrxeS5V1cFRQfqBY="/>
+      <contextParameter comment="" name="DB_IPC_Port" prompt="DB_IPC_Port?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="5432"/>
+      <contextParameter comment="" name="DB_IPC_RAPIDEYE_CODE" prompt="DB_IPC_RAPIDEYE_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="RAPIDEYE_3A"/>
+      <contextParameter comment="" name="DB_IPC_Schema" prompt="DB_IPC_Schema?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ipc"/>
+      <contextParameter comment="" name="DB_IPC_SENTINEL2_CODE" prompt="DB_IPC_SENTINEL2_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SENTINEL_2"/>
+      <contextParameter comment="" name="DB_IPC_Server" prompt="DB_IPC_Server?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="pgs-01-eu"/>
+      <contextParameter comment="" name="DB_IPC_ServiceName" prompt="DB_IPC_ServiceName?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="agricore_peu"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_ARCHIVE" prompt="DB_IPC_TASKCODE_ARCHIVE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ARCHIVE"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_CLEAN" prompt="DB_IPC_TASKCODE_CLEAN?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="CLEAN"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_DELETE" prompt="DB_IPC_TASKCODE_DELETE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="CANCEL"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_DOWNLOAD" prompt="DB_IPC_TASKCODE_DOWNLOAD?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="DOWNLOAD"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_EXTRACT" prompt="DB_IPC_TASKCODE_EXTRACT?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="EXTRACT"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_INTEGRATE" prompt="DB_IPC_TASKCODE_INTEGRATE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="INTEGRATE"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_MOSAIC" prompt="DB_IPC_TASKCODE_MOSAIC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="MOSAIC"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_RESTACK" prompt="DB_IPC_TASKCODE_RESTACK?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="RESTACK"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_SHP_AND_DIM" prompt="DB_IPC_TASKCODE_SHP_AND_DIM?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SHP_AND_DIM"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_SMAC" prompt="DB_IPC_TASKCODE_SMAC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SMAC"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_TRANSFER_OPS" prompt="DB_IPC_TASKCODE_TRANSFER_OPS?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="TRANSFER_OPS"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_TRANSFER_QC" prompt="DB_IPC_TASKCODE_TRANSFER_QC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="TRANSFER_QC"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_COMPLETED" prompt="DB_IPC_TASKSTATUS_COMPLETED?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="COMPLETED"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_IN_ERROR" prompt="DB_IPC_TASKSTATUS_IN_ERROR?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="IN_ERROR"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_IN_PROGRESS" prompt="DB_IPC_TASKSTATUS_IN_PROGRESS?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="IN_PROGRESS"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_ON_HOLD" prompt="DB_IPC_TASKSTATUS_ON_HOLD?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ON_HOLD"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_SCHEDULED" prompt="DB_IPC_TASKSTATUS_SCHEDULED?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SCHEDULED"/>
+    </context>
+    <context confirmationNeeded="false" name="DEV">
+      <contextParameter comment="" name="DB_IPC_AdditionalParams" prompt="DB_IPC_AdditionalParams?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value=""/>
+      <contextParameter comment="" name="DB_IPC_LANDSAT8_CODE" prompt="DB_IPC_LANDSAT8_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="LANDSAT_8"/>
+      <contextParameter comment="" name="DB_IPC_Login" prompt="DB_IPC_Login?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="useripc"/>
+      <contextParameter comment="" name="DB_IPC_Password" prompt="DB_IPC_Password?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_Password" value="enc:system.encryption.key.v1:lrx51fZrpYJ3mOkNNm2nr3RxUEwkISYp70c9ngHbqE3gEVUe7RQ="/>
+      <contextParameter comment="" name="DB_IPC_Port" prompt="DB_IPC_Port?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="5432"/>
+      <contextParameter comment="" name="DB_IPC_RAPIDEYE_CODE" prompt="DB_IPC_RAPIDEYE_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="RAPIDEYE_3A"/>
+      <contextParameter comment="" name="DB_IPC_Schema" prompt="DB_IPC_Schema?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ipc"/>
+      <contextParameter comment="" name="DB_IPC_SENTINEL2_CODE" prompt="DB_IPC_SENTINEL2_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SENTINEL_2"/>
+      <contextParameter comment="" name="DB_IPC_Server" prompt="DB_IPC_Server?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ineu-pgs-01"/>
+      <contextParameter comment="" name="DB_IPC_ServiceName" prompt="DB_IPC_ServiceName?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="agricore_int"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_ARCHIVE" prompt="DB_IPC_TASKCODE_ARCHIVE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ARCHIVE"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_CLEAN" prompt="DB_IPC_TASKCODE_CLEAN?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="CLEAN"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_DELETE" prompt="DB_IPC_TASKCODE_DELETE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="CANCEL"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_DOWNLOAD" prompt="DB_IPC_TASKCODE_DOWNLOAD?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="DOWNLOAD"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_EXTRACT" prompt="DB_IPC_TASKCODE_EXTRACT?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="EXTRACT"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_INTEGRATE" prompt="DB_IPC_TASKCODE_INTEGRATE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="INTEGRATE"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_MOSAIC" prompt="DB_IPC_TASKCODE_MOSAIC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="MOSAIC"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_RESTACK" prompt="DB_IPC_TASKCODE_RESTACK?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="RESTACK"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_SHP_AND_DIM" prompt="DB_IPC_TASKCODE_SHP_AND_DIM?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SHP_AND_DIM"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_SMAC" prompt="DB_IPC_TASKCODE_SMAC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SMAC"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_TRANSFER_OPS" prompt="DB_IPC_TASKCODE_TRANSFER_OPS?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="TRANSFER_OPS"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_TRANSFER_QC" prompt="DB_IPC_TASKCODE_TRANSFER_QC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="TRANSFER_QC"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_COMPLETED" prompt="DB_IPC_TASKSTATUS_COMPLETED?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="COMPLETED"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_IN_ERROR" prompt="DB_IPC_TASKSTATUS_IN_ERROR?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="IN_ERROR"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_IN_PROGRESS" prompt="DB_IPC_TASKSTATUS_IN_PROGRESS?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="IN_PROGRESS"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_ON_HOLD" prompt="DB_IPC_TASKSTATUS_ON_HOLD?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ON_HOLD"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_SCHEDULED" prompt="DB_IPC_TASKSTATUS_SCHEDULED?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SCHEDULED"/>
+    </context>
+    <context confirmationNeeded="false" name="VALID">
+      <contextParameter comment="" name="DB_IPC_AdditionalParams" prompt="DB_IPC_AdditionalParams?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value=""/>
+      <contextParameter comment="" name="DB_IPC_LANDSAT8_CODE" prompt="DB_IPC_LANDSAT8_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="LANDSAT_8"/>
+      <contextParameter comment="" name="DB_IPC_Login" prompt="DB_IPC_Login?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="useripc"/>
+      <contextParameter comment="" name="DB_IPC_Password" prompt="DB_IPC_Password?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_Password" value="enc:system.encryption.key.v1:YQOqLo7VxUlbWkd7Cb65qq6l26IaK7YMqLjaSevdxeO0QmPcdHY="/>
+      <contextParameter comment="" name="DB_IPC_Port" prompt="DB_IPC_Port?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="5432"/>
+      <contextParameter comment="" name="DB_IPC_RAPIDEYE_CODE" prompt="DB_IPC_RAPIDEYE_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="RAPIDEYE_3A"/>
+      <contextParameter comment="" name="DB_IPC_Schema" prompt="DB_IPC_Schema?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ipc"/>
+      <contextParameter comment="" name="DB_IPC_SENTINEL2_CODE" prompt="DB_IPC_SENTINEL2_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SENTINEL_2"/>
+      <contextParameter comment="" name="DB_IPC_Server" prompt="DB_IPC_Server?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="vaeu-pgs-01"/>
+      <contextParameter comment="" name="DB_IPC_ServiceName" prompt="DB_IPC_ServiceName?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="agricore_val"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_ARCHIVE" prompt="DB_IPC_TASKCODE_ARCHIVE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ARCHIVE"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_CLEAN" prompt="DB_IPC_TASKCODE_CLEAN?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="CLEAN"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_DELETE" prompt="DB_IPC_TASKCODE_DELETE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="CANCEL"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_DOWNLOAD" prompt="DB_IPC_TASKCODE_DOWNLOAD?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="DOWNLOAD"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_EXTRACT" prompt="DB_IPC_TASKCODE_EXTRACT?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="EXTRACT"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_INTEGRATE" prompt="DB_IPC_TASKCODE_INTEGRATE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="INTEGRATE"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_MOSAIC" prompt="DB_IPC_TASKCODE_MOSAIC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="MOSAIC"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_RESTACK" prompt="DB_IPC_TASKCODE_RESTACK?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="RESTACK"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_SHP_AND_DIM" prompt="DB_IPC_TASKCODE_SHP_AND_DIM?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SHP_AND_DIM"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_SMAC" prompt="DB_IPC_TASKCODE_SMAC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SMAC"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_TRANSFER_OPS" prompt="DB_IPC_TASKCODE_TRANSFER_OPS?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="TRANSFER_OPS"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_TRANSFER_QC" prompt="DB_IPC_TASKCODE_TRANSFER_QC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="TRANSFER_QC"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_COMPLETED" prompt="DB_IPC_TASKSTATUS_COMPLETED?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="COMPLETED"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_IN_ERROR" prompt="DB_IPC_TASKSTATUS_IN_ERROR?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="IN_ERROR"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_IN_PROGRESS" prompt="DB_IPC_TASKSTATUS_IN_PROGRESS?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="IN_PROGRESS"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_ON_HOLD" prompt="DB_IPC_TASKSTATUS_ON_HOLD?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ON_HOLD"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_SCHEDULED" prompt="DB_IPC_TASKSTATUS_SCHEDULED?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SCHEDULED"/>
+    </context>
+    <context confirmationNeeded="false" name="INT">
+      <contextParameter comment="" name="DB_IPC_AdditionalParams" prompt="DB_IPC_AdditionalParams?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value=""/>
+      <contextParameter comment="" name="DB_IPC_LANDSAT8_CODE" prompt="DB_IPC_LANDSAT8_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="LANDSAT_8"/>
+      <contextParameter comment="" name="DB_IPC_Login" prompt="DB_IPC_Login?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="useripc"/>
+      <contextParameter comment="" name="DB_IPC_Password" prompt="DB_IPC_Password?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_Password" value="enc:system.encryption.key.v1:Siqj7AQWGZ/tx6o2Ex5SjJisaSKQ/i4IA//0QJdHrG6xRjKOCP0="/>
+      <contextParameter comment="" name="DB_IPC_Port" prompt="DB_IPC_Port?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="5432"/>
+      <contextParameter comment="" name="DB_IPC_RAPIDEYE_CODE" prompt="DB_IPC_RAPIDEYE_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="RAPIDEYE_3A"/>
+      <contextParameter comment="" name="DB_IPC_Schema" prompt="DB_IPC_Schema?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ipc"/>
+      <contextParameter comment="" name="DB_IPC_SENTINEL2_CODE" prompt="DB_IPC_SENTINEL2_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SENTINEL_2"/>
+      <contextParameter comment="" name="DB_IPC_Server" prompt="DB_IPC_Server?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ineu-pgs-01"/>
+      <contextParameter comment="" name="DB_IPC_ServiceName" prompt="DB_IPC_ServiceName?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="agricore_int"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_ARCHIVE" prompt="DB_IPC_TASKCODE_ARCHIVE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ARCHIVE"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_CLEAN" prompt="DB_IPC_TASKCODE_CLEAN?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="CLEAN"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_DELETE" prompt="DB_IPC_TASKCODE_DELETE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="CANCEL"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_DOWNLOAD" prompt="DB_IPC_TASKCODE_DOWNLOAD?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="DOWNLOAD"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_EXTRACT" prompt="DB_IPC_TASKCODE_EXTRACT?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="EXTRACT"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_INTEGRATE" prompt="DB_IPC_TASKCODE_INTEGRATE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="INTEGRATE"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_MOSAIC" prompt="DB_IPC_TASKCODE_MOSAIC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="MOSAIC"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_RESTACK" prompt="DB_IPC_TASKCODE_RESTACK?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="RESTACK"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_SHP_AND_DIM" prompt="DB_IPC_TASKCODE_SHP_AND_DIM?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SHP_AND_DIM"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_SMAC" prompt="DB_IPC_TASKCODE_SMAC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SMAC"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_TRANSFER_OPS" prompt="DB_IPC_TASKCODE_TRANSFER_OPS?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="TRANSFER_OPS"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_TRANSFER_QC" prompt="DB_IPC_TASKCODE_TRANSFER_QC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="TRANSFER_QC"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_COMPLETED" prompt="DB_IPC_TASKSTATUS_COMPLETED?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="COMPLETED"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_IN_ERROR" prompt="DB_IPC_TASKSTATUS_IN_ERROR?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="IN_ERROR"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_IN_PROGRESS" prompt="DB_IPC_TASKSTATUS_IN_PROGRESS?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="IN_PROGRESS"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_ON_HOLD" prompt="DB_IPC_TASKSTATUS_ON_HOLD?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ON_HOLD"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_SCHEDULED" prompt="DB_IPC_TASKSTATUS_SCHEDULED?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SCHEDULED"/>
+    </context>
+    <context confirmationNeeded="false" name="PROD_US">
+      <contextParameter comment="" name="DB_IPC_AdditionalParams" prompt="DB_IPC_AdditionalParams?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value=""/>
+      <contextParameter comment="" name="DB_IPC_LANDSAT8_CODE" prompt="DB_IPC_LANDSAT8_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="LANDSAT_8"/>
+      <contextParameter comment="" name="DB_IPC_Login" prompt="DB_IPC_Login?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="useripc"/>
+      <contextParameter comment="" name="DB_IPC_Password" prompt="DB_IPC_Password?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_Password" value="enc:system.encryption.key.v1:sCkPWZa1b+0YRagxP5NqJzDRCGBmu8Bw0/DVnJZdsVxHZCKa4Qo="/>
+      <contextParameter comment="" name="DB_IPC_Port" prompt="DB_IPC_Port?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="5432"/>
+      <contextParameter comment="" name="DB_IPC_RAPIDEYE_CODE" prompt="DB_IPC_RAPIDEYE_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="RAPIDEYE_3A"/>
+      <contextParameter comment="" name="DB_IPC_Schema" prompt="DB_IPC_Schema?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ipc"/>
+      <contextParameter comment="" name="DB_IPC_SENTINEL2_CODE" prompt="DB_IPC_SENTINEL2_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SENTINEL_2"/>
+      <contextParameter comment="" name="DB_IPC_Server" prompt="DB_IPC_Server?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="pgs-01-us"/>
+      <contextParameter comment="" name="DB_IPC_ServiceName" prompt="DB_IPC_ServiceName?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="agricore_pus"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_ARCHIVE" prompt="DB_IPC_TASKCODE_ARCHIVE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ARCHIVE"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_CLEAN" prompt="DB_IPC_TASKCODE_CLEAN?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="CLEAN"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_DELETE" prompt="DB_IPC_TASKCODE_DELETE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="CANCEL"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_DOWNLOAD" prompt="DB_IPC_TASKCODE_DOWNLOAD?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="DOWNLOAD"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_EXTRACT" prompt="DB_IPC_TASKCODE_EXTRACT?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="EXTRACT"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_INTEGRATE" prompt="DB_IPC_TASKCODE_INTEGRATE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="INTEGRATE"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_MOSAIC" prompt="DB_IPC_TASKCODE_MOSAIC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="MOSAIC"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_RESTACK" prompt="DB_IPC_TASKCODE_RESTACK?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="RESTACK"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_SHP_AND_DIM" prompt="DB_IPC_TASKCODE_SHP_AND_DIM?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SHP_AND_DIM"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_SMAC" prompt="DB_IPC_TASKCODE_SMAC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SMAC"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_TRANSFER_OPS" prompt="DB_IPC_TASKCODE_TRANSFER_OPS?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="TRANSFER_OPS"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_TRANSFER_QC" prompt="DB_IPC_TASKCODE_TRANSFER_QC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="TRANSFER_QC"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_COMPLETED" prompt="DB_IPC_TASKSTATUS_COMPLETED?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="COMPLETED"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_IN_ERROR" prompt="DB_IPC_TASKSTATUS_IN_ERROR?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="IN_ERROR"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_IN_PROGRESS" prompt="DB_IPC_TASKSTATUS_IN_PROGRESS?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="IN_PROGRESS"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_ON_HOLD" prompt="DB_IPC_TASKSTATUS_ON_HOLD?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ON_HOLD"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_SCHEDULED" prompt="DB_IPC_TASKSTATUS_SCHEDULED?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SCHEDULED"/>
+    </context>
+    <context confirmationNeeded="false" name="PROD_SCUS">
+      <contextParameter comment="" name="DB_IPC_AdditionalParams" prompt="DB_IPC_AdditionalParams?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value=""/>
+      <contextParameter comment="" name="DB_IPC_LANDSAT8_CODE" prompt="DB_IPC_LANDSAT8_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="LANDSAT_8"/>
+      <contextParameter comment="" name="DB_IPC_Login" prompt="DB_IPC_Login?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="useripc"/>
+      <contextParameter comment="" name="DB_IPC_Password" prompt="DB_IPC_Password?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_Password" value="enc:system.encryption.key.v1:eUWZug1qV2faNeLDlwdPRVYM8ydQ213dISS69TwLJmJS04db9PI9"/>
+      <contextParameter comment="" name="DB_IPC_Port" prompt="DB_IPC_Port?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="5432"/>
+      <contextParameter comment="" name="DB_IPC_RAPIDEYE_CODE" prompt="DB_IPC_RAPIDEYE_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="RAPIDEYE_3A"/>
+      <contextParameter comment="" name="DB_IPC_Schema" prompt="DB_IPC_Schema?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ipc"/>
+      <contextParameter comment="" name="DB_IPC_SENTINEL2_CODE" prompt="DB_IPC_SENTINEL2_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SENTINEL_2"/>
+      <contextParameter comment="" name="DB_IPC_Server" prompt="DB_IPC_Server?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ORA-01-SCUS"/>
+      <contextParameter comment="" name="DB_IPC_ServiceName" prompt="DB_IPC_ServiceName?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="PusAgriCore"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_ARCHIVE" prompt="DB_IPC_TASKCODE_ARCHIVE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ARCHIVE"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_CLEAN" prompt="DB_IPC_TASKCODE_CLEAN?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="CLEAN"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_DELETE" prompt="DB_IPC_TASKCODE_DELETE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="CANCEL"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_DOWNLOAD" prompt="DB_IPC_TASKCODE_DOWNLOAD?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="DOWNLOAD"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_EXTRACT" prompt="DB_IPC_TASKCODE_EXTRACT?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="EXTRACT"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_INTEGRATE" prompt="DB_IPC_TASKCODE_INTEGRATE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="INTEGRATE"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_MOSAIC" prompt="DB_IPC_TASKCODE_MOSAIC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="MOSAIC"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_RESTACK" prompt="DB_IPC_TASKCODE_RESTACK?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="RESTACK"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_SHP_AND_DIM" prompt="DB_IPC_TASKCODE_SHP_AND_DIM?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SHP_AND_DIM"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_SMAC" prompt="DB_IPC_TASKCODE_SMAC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SMAC"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_TRANSFER_OPS" prompt="DB_IPC_TASKCODE_TRANSFER_OPS?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="TRANSFER_OPS"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_TRANSFER_QC" prompt="DB_IPC_TASKCODE_TRANSFER_QC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="TRANSFER_QC"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_COMPLETED" prompt="DB_IPC_TASKSTATUS_COMPLETED?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="COMPLETED"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_IN_ERROR" prompt="DB_IPC_TASKSTATUS_IN_ERROR?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="IN_ERROR"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_IN_PROGRESS" prompt="DB_IPC_TASKSTATUS_IN_PROGRESS?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="IN_PROGRESS"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_ON_HOLD" prompt="DB_IPC_TASKSTATUS_ON_HOLD?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ON_HOLD"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_SCHEDULED" prompt="DB_IPC_TASKSTATUS_SCHEDULED?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SCHEDULED"/>
+    </context>
+    <context confirmationNeeded="false" name="VAL_WEU">
+      <contextParameter comment="" name="DB_IPC_AdditionalParams" prompt="DB_IPC_AdditionalParams?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value=""/>
+      <contextParameter comment="" name="DB_IPC_LANDSAT8_CODE" prompt="DB_IPC_LANDSAT8_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="LANDSAT_8"/>
+      <contextParameter comment="" name="DB_IPC_Login" prompt="DB_IPC_Login?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="useripc"/>
+      <contextParameter comment="" name="DB_IPC_Password" prompt="DB_IPC_Password?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_Password" value="enc:system.encryption.key.v1:FYgcEUE5Iv3a+dXX97QXIE/CJrJaZ07u62FP+pDP8IE948jO8du3Ywc="/>
+      <contextParameter comment="" name="DB_IPC_Port" prompt="DB_IPC_Port?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="5432"/>
+      <contextParameter comment="" name="DB_IPC_RAPIDEYE_CODE" prompt="DB_IPC_RAPIDEYE_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="RAPIDEYE_3A"/>
+      <contextParameter comment="" name="DB_IPC_Schema" prompt="DB_IPC_Schema?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ipc"/>
+      <contextParameter comment="" name="DB_IPC_SENTINEL2_CODE" prompt="DB_IPC_SENTINEL2_CODE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SENTINEL_2"/>
+      <contextParameter comment="" name="DB_IPC_Server" prompt="DB_IPC_Server?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="va-pgs-01-weu"/>
+      <contextParameter comment="" name="DB_IPC_ServiceName" prompt="DB_IPC_ServiceName?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="agricore_valweu"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_ARCHIVE" prompt="DB_IPC_TASKCODE_ARCHIVE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ARCHIVE"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_CLEAN" prompt="DB_IPC_TASKCODE_CLEAN?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="CLEAN"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_DELETE" prompt="DB_IPC_TASKCODE_DELETE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="CANCEL"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_DOWNLOAD" prompt="DB_IPC_TASKCODE_DOWNLOAD?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="DOWNLOAD"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_EXTRACT" prompt="DB_IPC_TASKCODE_EXTRACT?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="EXTRACT"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_INTEGRATE" prompt="DB_IPC_TASKCODE_INTEGRATE?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="INTEGRATE"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_MOSAIC" prompt="DB_IPC_TASKCODE_MOSAIC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="MOSAIC"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_RESTACK" prompt="DB_IPC_TASKCODE_RESTACK?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="RESTACK"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_SHP_AND_DIM" prompt="DB_IPC_TASKCODE_SHP_AND_DIM?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SHP_AND_DIM"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_SMAC" prompt="DB_IPC_TASKCODE_SMAC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SMAC"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_TRANSFER_OPS" prompt="DB_IPC_TASKCODE_TRANSFER_OPS?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="TRANSFER_OPS"/>
+      <contextParameter comment="" name="DB_IPC_TASKCODE_TRANSFER_QC" prompt="DB_IPC_TASKCODE_TRANSFER_QC?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="TRANSFER_QC"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_COMPLETED" prompt="DB_IPC_TASKSTATUS_COMPLETED?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="COMPLETED"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_IN_ERROR" prompt="DB_IPC_TASKSTATUS_IN_ERROR?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="IN_ERROR"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_IN_PROGRESS" prompt="DB_IPC_TASKSTATUS_IN_PROGRESS?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="IN_PROGRESS"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_ON_HOLD" prompt="DB_IPC_TASKSTATUS_ON_HOLD?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="ON_HOLD"/>
+      <contextParameter comment="" name="DB_IPC_TASKSTATUS_SCHEDULED" prompt="DB_IPC_TASKSTATUS_SCHEDULED?" promptNeeded="false" repositoryContextId="_z_NRANc_EeaLX4VjVizKIA" type="id_String" value="SCHEDULED"/>
+    </context>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" show="false" value="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" show="false" value="25000"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/TALEND_PLATFORM_STUDIO/studio/workspace2/in.csv&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:SuDN0vOgQhJWHTGbLHv/DDBge28t7q9GeooLCs3u"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+      <routinesParameter id="_imIMQNAKEeWK7tYTuJulPg" name="DQTechnical"/>
+      <routinesParameter id="_iUtsINAKEeWK7tYTuJulPg" name="DataOperation"/>
+      <routinesParameter id="_ijJwwNAKEeWK7tYTuJulPg" name="DataQualityDependencies"/>
+      <routinesParameter id="_ih07ENAKEeWK7tYTuJulPg" name="DataQuality"/>
+      <routinesParameter id="_ikje8NAKEeWK7tYTuJulPg" name="DqStringHandling"/>
+      <routinesParameter id="_iWcxgNAKEeWK7tYTuJulPg" name="Mathematical"/>
+      <routinesParameter id="_iYEiINAKEeWK7tYTuJulPg" name="Numeric"/>
+      <routinesParameter id="_iZrrsNAKEeWK7tYTuJulPg" name="Relational"/>
+      <routinesParameter id="_iSoogtAKEeWK7tYTuJulPg" name="SQLike"/>
+      <routinesParameter id="_ibQZANAKEeWK7tYTuJulPg" name="StringHandling"/>
+      <routinesParameter id="_ic4wsNAKEeWK7tYTuJulPg" name="TalendDataGenerator"/>
+      <routinesParameter id="_iexAANAKEeWK7tYTuJulPg" name="TalendDate"/>
+      <routinesParameter id="_igSqANAKEeWK7tYTuJulPg" name="TalendString"/>
+      <routinesParameter id="_haUiwCZ1EeamrpGwIi232g" name="MDM"/>
+    </parameters>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_uharENmOEeaajueHxTwl-Q-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tMap_1"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="DATASETTASK_IP" name="dtk">
+        <column comment="PK - Sequence." key="true" length="9" name="dtk_id" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="PK - Sequence."/>
+        </column>
+        <column comment="FK to Ipc.Dataset_IP." key="false" length="9" name="dtk_iddatasetip" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="FK to Ipc.Dataset_IP."/>
+        </column>
+        <column comment="Code of the task to be applied to the dataset." key="false" length="50" name="dtk_taskcode" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Code of the task to be applied to the dataset."/>
+        </column>
+        <column comment="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD." key="false" length="50" name="dtk_status" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD."/>
+        </column>
+        <column comment="Task creation date." key="false" length="7" name="dtk_creationdate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Task creation date."/>
+        </column>
+        <column comment="Start of processing date. Nullable." key="false" length="7" name="dtk_startdate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Start of processing date. Nullable."/>
+        </column>
+        <column comment="End of processing date. Nullable." key="false" length="7" name="dtk_enddate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="End of processing date. Nullable."/>
+        </column>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+        <outputTables name="dtk" sizeState="INTERMEDIATE">
+          <mapperTableEntries expression="dtk_seq.dtk_id" name="dtk_id" type="id_BigDecimal"/>
+          <mapperTableEntries expression="task.IDDATASET " name="dtk_iddatasetip" type="id_BigDecimal"/>
+          <mapperTableEntries expression="task.TASKCODE " name="dtk_taskcode" type="id_String"/>
+          <mapperTableEntries expression="context.DB_IPC_TASKSTATUS_SCHEDULED" name="dtk_status" type="id_String"/>
+          <mapperTableEntries expression="TalendDate.getCurrentDate()" name="dtk_creationdate" type="id_Date"/>
+          <mapperTableEntries expression="null" name="dtk_startdate" nullable="true" type="id_Date"/>
+          <mapperTableEntries expression="null" name="dtk_enddate" nullable="true" type="id_Date"/>
+        </outputTables>
+        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="task" sizeState="INTERMEDIATE">
+          <mapperTableEntries name="TASKCODE" nullable="true" type="id_String"/>
+          <mapperTableEntries name="IDDATASET" nullable="true" type="id_BigDecimal"/>
+        </inputTables>
+        <inputTables activateCondensedTool="true" lookupMode="RELOAD" matchingMode="ALL_ROWS" name="dtk_seq" sizeState="INTERMEDIATE">
+          <mapperTableEntries name="dtk_id" type="id_BigDecimal"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="224">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlInput_1"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ibo_sNvgEeWwBvPBSoy_Ow"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value="tPostgresqlConnection_2"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+      <elementParameter field="TEXT" name="HOST" value="context.DB_IPC_Server"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+      <elementParameter field="TEXT" name="PORT" value="context.DB_IPC_Port"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.DB_IPC_ServiceName"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DB_IPC_Schema"/>
+      <elementParameter field="TEXT" name="USER" value="context.DB_IPC_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qwL698uAgiSmvI0heX3V+iX12aEYuOuobK1En10VNkkzZfdfWSbmK+Lr0AHV/U/OyFAw"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;imagetask_ip&quot;"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT nextval('&quot;+context.DB_IPC_ServiceName+&quot;.&quot;+context.DB_IPC_Schema+&quot;.seq_datasettask_ip')  AS dtk_id&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+      <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+      <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+      <elementParameter field="TABLE" name="TRIM_COLUMN">
+        <elementValue elementRef="SCHEMA_COLUMN" value="dtk_id"/>
+        <elementValue elementRef="TRIM" value="false"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="LABEL" value="seq_datasettask_ip"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="imagetask_ip" name="tPostgresqlInput_1">
+        <column comment="PK - Sequence." key="true" length="10" name="dtk_id" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="PK - Sequence."/>
+        </column>
+      </metadata>
+    </node>
+    <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostgresqlOutput_1"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ibo_sNvgEeWwBvPBSoy_Ow"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+      <elementParameter field="TEXT" name="HOST" value="context.DB_IPC_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.DB_IPC_Port"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.DB_IPC_ServiceName"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DB_IPC_Schema"/>
+      <elementParameter field="TEXT" name="USER" value="context.DB_IPC_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sTbQRI2O61Az5jMZ0JsgeMMyxt1eM2n46m3/77cZBTaTrV8xmd3V2mCG3RZ3q0R2oIz2"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;datasettask_ip&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+      <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="SPATIAL_INDEX" show="false" value="false"/>
+      <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" show="false" value="false"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+      <elementParameter field="CHECK" name="SAVE_POINT" show="false" value="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+      <elementParameter field="TABLE" name="ADD_COLS"/>
+      <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+      <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="dtk_id"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="dtk_iddatasetip"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="dtk_taskcode"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="dtk_status"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="dtk_creationdate"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="dtk_startdate"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="dtk_enddate"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+      <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+      <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+      <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="DATASETTASK_IP" name="tPostgresqlOutput_1">
+        <column comment="PK - Sequence." key="true" length="9" name="dtk_id" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="PK - Sequence."/>
+        </column>
+        <column comment="FK to Ipc.Dataset_IP." key="false" length="9" name="dtk_iddatasetip" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="FK to Ipc.Dataset_IP."/>
+        </column>
+        <column comment="Code of the task to be applied to the dataset." key="false" length="50" name="dtk_taskcode" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Code of the task to be applied to the dataset."/>
+        </column>
+        <column comment="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD." key="false" length="50" name="dtk_status" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD."/>
+        </column>
+        <column comment="Task creation date." key="false" length="7" name="dtk_creationdate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Task creation date."/>
+        </column>
+        <column comment="Start of processing date. Nullable." key="false" length="7" name="dtk_startdate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Start of processing date. Nullable."/>
+        </column>
+        <column comment="End of processing date. Nullable." key="false" length="7" name="dtk_enddate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="End of processing date. Nullable."/>
+        </column>
+      </metadata>
+      <metadata connector="REJECT" label="DATASETTASK_IP" name="REJECT">
+        <column comment="PK - Sequence." key="true" length="9" name="dtk_id" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="PK - Sequence."/>
+        </column>
+        <column comment="FK to Ipc.Dataset_IP." key="false" length="9" name="dtk_iddatasetip" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="FK to Ipc.Dataset_IP."/>
+        </column>
+        <column comment="Code of the task to be applied to the dataset." key="false" length="50" name="dtk_taskcode" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Code of the task to be applied to the dataset."/>
+        </column>
+        <column comment="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD." key="false" length="50" name="dtk_status" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD."/>
+        </column>
+        <column comment="Task creation date." key="false" length="7" name="dtk_creationdate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Task creation date."/>
+        </column>
+        <column comment="Start of processing date. Nullable." key="false" length="7" name="dtk_startdate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Start of processing date. Nullable."/>
+        </column>
+        <column comment="End of processing date. Nullable." key="false" length="7" name="dtk_enddate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="End of processing date. Nullable."/>
+        </column>
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <connection connectorName="FLOW" label="task" lineStyle="0" metaname="INPUT_1" offsetLabelX="0" offsetLabelY="0" source="INPUT_1" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="task"/>
+    </connection>
+    <connection connectorName="FLOW" label="dtk" lineStyle="0" metaname="dtk" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tPostgresqlOutput_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="dtk_id"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="dtk_taskcode"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="dtk_status"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="dtk_creationdate"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="dtk_iddatasetip"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="dtk_startdate"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="dtk"/>
+    </connection>
+    <connection connectorName="FLOW" label="dtk_seq" lineStyle="8" metaname="tPostgresqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlInput_1" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="dtk_seq"/>
+    </connection>
+    <connection connectorName="FLOW" label="inserted_dtk" lineStyle="0" metaname="tPostgresqlOutput_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlOutput_1" target="OUTPUT_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="inserted_dtk"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="INPUT_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" input="true" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="INPUT_1"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="INPUT_1">
+        <column comment="" key="false" length="-1" name="TASKCODE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="PK - Sequence." key="false" length="9" name="IDDATASET" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="64">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="false"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="OUTPUT_1"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" label="DATASETTASK_IP" name="OUTPUT_1">
+        <column comment="PK - Sequence." key="true" length="9" name="dtk_id" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="PK - Sequence."/>
+        </column>
+        <column comment="FK to Ipc.Dataset_IP." key="false" length="9" name="dtk_iddatasetip" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="FK to Ipc.Dataset_IP."/>
+        </column>
+        <column comment="Code of the task to be applied to the dataset." key="false" length="50" name="dtk_taskcode" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Code of the task to be applied to the dataset."/>
+        </column>
+        <column comment="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD." key="false" length="50" name="dtk_status" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD."/>
+        </column>
+        <column comment="Task creation date." key="false" length="7" name="dtk_creationdate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Task creation date."/>
+        </column>
+        <column comment="Start of processing date. Nullable." key="false" length="7" name="dtk_startdate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Start of processing date. Nullable."/>
+        </column>
+        <column comment="End of processing date. Nullable." key="false" length="7" name="dtk_enddate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="End of processing date. Nullable."/>
+        </column>
+      </metadata>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6faf55cc-41e1-4134-8155-b7e77605a045"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>f27cVk8LWV0pqBhNnmJfWazJydyAGuV44WK1fXsJHzOZhnDsrRKjkC31IgOxF7hNGTD+fiZ4RGZ7&#13;
+HNHAWO7B0A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e708ef25-46d7-4817-8c38-66e244a2da22"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iJ2KryCUqZ/qg1R+whMzrk4g3ffrTHkUqwr5Wu3F1WHMg3oqteUbAqB7GFQGzKRcIyb0dkyuALHN&#13;
+9M4XQsxYiQ==</DigestValue></Reference></SignedInfo><SignatureValue>hbtySMMWRLT8pOkDymh0lEWI7Wy5xMYCoHIHqwV8IeFYrQCz3WKGea3eDF/4/UVAsnbhgN7Hw465&#13;
+mTcT1YqX0iNQN3UnRtb/rPSnobyivW3CwAMfsq7uMDZsReRW4UaId8WZHW7mBn22tYaUJle7XatX&#13;
+NOdAGidpP0Mud5bWr3Kpa+ZiuUI4XnfIQyqSh6L5wV/ZuuUV08Kb/z3ZJDGM68pQX55BHQDDil+O&#13;
+bC5jOxvh9XVREOfkjRnQK+T2k39vzmYtGN5k5gz/DV5wllSSKTJYljMdftqrRAH2qDTyc1kUvPUF&#13;
+gk8hOIfEg23aRPPCNYdJSQZ5yyviV2WNHsO+/g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e708ef25-46d7-4817-8c38-66e244a2da22" Target="#_6faf55cc-41e1-4134-8155-b7e77605a045"><Timestamp>2022-01-17 14:24:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

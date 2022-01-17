@@ -1,0 +1,199 @@
+{
+  "itemId" : "_e5ei8PH7EeeV3N4o1gU1-g",
+  "contextList" : [ {
+    "contextName" : "Dev",
+    "repoId" : "_0OSM4CmTEeecDJL797YE_g",
+    "parameterList" : [ {
+      "id" : "_bl5PxSOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_AdditionalParams"
+    }, {
+      "id" : "_bl5PwyOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Database"
+    }, {
+      "id" : "_bl5PxCOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Login"
+    }, {
+      "id" : "_bl5PxyOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Password"
+    }, {
+      "id" : "_bl5PwSOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Port"
+    }, {
+      "id" : "_bl5PxiOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Schema"
+    }, {
+      "id" : "_bl5PwiOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Server"
+    } ]
+  }, {
+    "contextName" : "Dev",
+    "repoId" : "_mUI8kIo6Eea8Ut5bsIN75A",
+    "parameterList" : [ {
+      "id" : "_beF-qSOBEeueDqA07KoUbA",
+      "name" : "ICondDiff"
+    }, {
+      "id" : "_beF-qiOBEeueDqA07KoUbA",
+      "name" : "ICondEgal"
+    }, {
+      "id" : "_beF-qyOBEeueDqA07KoUbA",
+      "name" : "ICondition"
+    }, {
+      "id" : "_beF-pCOBEeueDqA07KoUbA",
+      "name" : "IFic_properties"
+    }, {
+      "id" : "_beF-pyOBEeueDqA07KoUbA",
+      "name" : "IFic_status"
+    }, {
+      "id" : "_beF-qCOBEeueDqA07KoUbA",
+      "name" : "IFir_EJ"
+    }, {
+      "id" : "_beF-oiOBEeueDqA07KoUbA",
+      "name" : "IFir_id"
+    }, {
+      "id" : "_beF-pSOBEeueDqA07KoUbA",
+      "name" : "IFir_name"
+    }, {
+      "id" : "_beF-oSOBEeueDqA07KoUbA",
+      "name" : "IFle_id"
+    }, {
+      "id" : "_beF-oyOBEeueDqA07KoUbA",
+      "name" : "IJex_id"
+    }, {
+      "id" : "_beF-rCOBEeueDqA07KoUbA",
+      "name" : "ILigneFictives"
+    }, {
+      "id" : "_beF-piOBEeueDqA07KoUbA",
+      "name" : "IRep_depot"
+    } ]
+  }, {
+    "contextName" : "Int",
+    "repoId" : "_0OSM4CmTEeecDJL797YE_g",
+    "parameterList" : [ {
+      "id" : "_bl5PzSOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_AdditionalParams"
+    }, {
+      "id" : "_bl5PyyOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Database"
+    }, {
+      "id" : "_bl5PzCOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Login"
+    }, {
+      "id" : "_bl5PzyOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Password"
+    }, {
+      "id" : "_bl5PySOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Port"
+    }, {
+      "id" : "_bl5PziOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Schema"
+    }, {
+      "id" : "_bl5PyiOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Server"
+    } ]
+  }, {
+    "contextName" : "Int",
+    "repoId" : "_mUI8kIo6Eea8Ut5bsIN75A",
+    "parameterList" : [ {
+      "id" : "_beF-viOBEeueDqA07KoUbA",
+      "name" : "ICondDiff"
+    }, {
+      "id" : "_beF-vyOBEeueDqA07KoUbA",
+      "name" : "ICondEgal"
+    }, {
+      "id" : "_beF-wCOBEeueDqA07KoUbA",
+      "name" : "ICondition"
+    }, {
+      "id" : "_beF-uSOBEeueDqA07KoUbA",
+      "name" : "IFic_properties"
+    }, {
+      "id" : "_beF-vCOBEeueDqA07KoUbA",
+      "name" : "IFic_status"
+    }, {
+      "id" : "_beF-vSOBEeueDqA07KoUbA",
+      "name" : "IFir_EJ"
+    }, {
+      "id" : "_beF-tyOBEeueDqA07KoUbA",
+      "name" : "IFir_id"
+    }, {
+      "id" : "_beF-uiOBEeueDqA07KoUbA",
+      "name" : "IFir_name"
+    }, {
+      "id" : "_beF-tiOBEeueDqA07KoUbA",
+      "name" : "IFle_id"
+    }, {
+      "id" : "_beF-uCOBEeueDqA07KoUbA",
+      "name" : "IJex_id"
+    }, {
+      "id" : "_beF-wSOBEeueDqA07KoUbA",
+      "name" : "ILigneFictives"
+    }, {
+      "id" : "_beF-uyOBEeueDqA07KoUbA",
+      "name" : "IRep_depot"
+    } ]
+  }, {
+    "contextName" : "Qualif",
+    "repoId" : "_0OSM4CmTEeecDJL797YE_g",
+    "parameterList" : [ {
+      "id" : "_bl5P1SOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_AdditionalParams"
+    }, {
+      "id" : "_bl5P0yOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Database"
+    }, {
+      "id" : "_bl5P1COBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Login"
+    }, {
+      "id" : "_bl5P1yOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Password"
+    }, {
+      "id" : "_bl5P0SOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Port"
+    }, {
+      "id" : "_bl5P1iOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Schema"
+    }, {
+      "id" : "_bl5P0iOBEeueDqA07KoUbA",
+      "name" : "RSR_suivi_mssql_Server"
+    } ]
+  }, {
+    "contextName" : "Qualif",
+    "repoId" : "_mUI8kIo6Eea8Ut5bsIN75A",
+    "parameterList" : [ {
+      "id" : "_beF-0yOBEeueDqA07KoUbA",
+      "name" : "ICondDiff"
+    }, {
+      "id" : "_beF-1COBEeueDqA07KoUbA",
+      "name" : "ICondEgal"
+    }, {
+      "id" : "_beF-1SOBEeueDqA07KoUbA",
+      "name" : "ICondition"
+    }, {
+      "id" : "_beF-ziOBEeueDqA07KoUbA",
+      "name" : "IFic_properties"
+    }, {
+      "id" : "_beF-0SOBEeueDqA07KoUbA",
+      "name" : "IFic_status"
+    }, {
+      "id" : "_beF-0iOBEeueDqA07KoUbA",
+      "name" : "IFir_EJ"
+    }, {
+      "id" : "_beF-zCOBEeueDqA07KoUbA",
+      "name" : "IFir_id"
+    }, {
+      "id" : "_beF-zyOBEeueDqA07KoUbA",
+      "name" : "IFir_name"
+    }, {
+      "id" : "_beF-yyOBEeueDqA07KoUbA",
+      "name" : "IFle_id"
+    }, {
+      "id" : "_beF-zSOBEeueDqA07KoUbA",
+      "name" : "IJex_id"
+    }, {
+      "id" : "_beF-1iOBEeueDqA07KoUbA",
+      "name" : "ILigneFictives"
+    }, {
+      "id" : "_beF-0COBEeueDqA07KoUbA",
+      "name" : "IRep_depot"
+    } ]
+  } ]
+}

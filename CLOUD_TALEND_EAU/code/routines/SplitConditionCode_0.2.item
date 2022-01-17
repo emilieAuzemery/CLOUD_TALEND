@@ -1,0 +1,50 @@
+package routines;
+public class SplitConditionCode {
+
+	/**Récuperer un flag permettant de savoir si le champs condition contient <> = 0 ou pas = 1
+     * {talendTypes} Integer
+     * {param} string("code à retourner") input: Champ condition comprennant dans les deux premiers caractères la condition <> ou pas. 
+     */
+    public static Integer GestionCondition(String CodeTD) {
+    	Integer ReturnFlag ;
+         if     	(CodeTD.length() >=2
+ 				&&
+ 				StringHandling.LEFT(CodeTD ,2).equals("<>"))
+ 				{ReturnFlag = 0;}
+ 		    	else {ReturnFlag = 1;}
+            
+         return  ReturnFlag;	}
+}
+	
+	/**Récuperer un flag permettant de savoir si le code etait précedé de la condition <> = 0 ou pas = 1
+     * {talendTypes} Integer
+     * {param} string("code à retourner") input: Code comprennant dans les deux premiers caractères la condition <> ou pas+Code. 
+    
+    public static Integer GestionCondition(String CodeTD) {
+    	Integer ReturnFlag ;
+         if(!Relational.ISNULL(CodeTD)
+         	&& 
+         	(CodeTD.length()) >=2
+ 				&&
+ 				StringHandling.LEFT(CodeTD ,2).equals("<>"))
+ 				{ReturnFlag = 0;}
+ 		    	else {ReturnFlag = 1;}
+            
+         return  ReturnFlag;	}
+     		
+    
+    /**Récuperer le code sans les deux premiers caractères si cela son égal <>
+     * {talendTypes} String
+     * {param} string("code à retourner") input: Code comprennant dans les deux premiers caractères la condition <> ou pas+Code. 
+     
+    public  static String GestionConditionCode(String CodeTD) {
+    	String ReturnCode;
+    		
+    	if(!Relational.ISNULL(CodeTD)
+    		&& 
+    			(CodeTD.length()) >=2 
+    				&&
+    					StringHandling.LEFT(CodeTD,2).equals("<>"))
+    					{ReturnCode = CodeTD.substring(2);}
+    	else {ReturnCode = CodeTD;}
+    	return ReturnCode; } */

@@ -1,0 +1,226 @@
+#this is context properties
+#Thu Dec 05 16:06:42 CET 2019
+
+###################################################
+##################   General     ##################
+###################################################
+ImplicitContext_Root_Folder=C:\Talend\data\TAS\
+
+ImplicitContext_Projet_Folder=\PROJET\com.tas.digitalpdp
+ImplicitContext_TMP_Folder=\tmp
+ImplicitContext_Mapping_Folder=\mapping
+ImplicitContext_INPUT_Folder=\INPUT
+ImplicitContext_ARCHIVE_Folder=\ARCHIVE
+ImplicitContext_REJECTS_Folder=\REJECTS
+ImplicitContext_OUTPUT_Folder=\OUTPUT
+ImplicitContext_EVENTS_Folder=\EVENTS
+ImplicitContext_LOGS_Folder=\logs
+ImplicitContext_CHANGE_Folder=\change
+ImplicitContext_HistoInteg_File=histoFichierIntegration.csv
+test=testcloud
+#################################################
+##################     TASI    ##################
+#################################################
+TASI_Folder=\tasi
+TASI_Sheet=Foglio1
+TASI_Header=1
+TASI_FirstColumn=1
+TASI_ThousandSeparator=,
+TASI_DecimalSeparator=.
+TASI_Encoding=UTF-8
+
+##################################################
+################    TASE_TASUK    ################
+##################################################
+TASE_TASUK_Folder=\tase_tasuk
+TASE_TASUK_Sheet=Data Base
+TASE_TASUK_Header=5
+TASE_TASUK_FirstColumn=1
+TASE_TASUK_ThousandSeparator=,
+TASE_TASUK_DecimalSeparator=.
+TASE_TASUK_Encoding=UTF-8
+
+
+##################################################
+################    TASF_EKIDS    ################
+##################################################
+TASF_EKIDS_Folder=\tasf_ekids
+TASF_EKIDS_Sheet=BASE DE DONNEES
+TASF_EKIDS_Header=1
+TASF_EKIDS_FirstColumn=1
+TASF_EKIDS_ThousandSeparator=,
+TASF_EKIDS_DecimalSeparator=.
+TASF_EKIDS_Encoding=ISO-8859-15
+
+
+##################################################
+################    TASF_CETRA    ################
+##################################################
+TASF_CETRA_Folder=\tasf_cetra
+TASF_CETRA_Sheet=Sheet 1
+TASF_CETRA_Header=1
+TASF_CETRA_FirstColumn=1
+TASF_CETRA_ThousandSeparator=,
+TASF_CETRA_DecimalSeparator=.
+TASF_CETRA_Encoding=UTF-8
+
+
+#################################################
+##################     TASB    ##################
+#################################################
+TASB_Folder=\tasb
+TASB_Sheet1=Satellite
+TASB_Sheet2=Lanceurs
+TASB_Header=2
+TASB_FirstColumn=1
+TASB_ThousandSeparator=,
+TASB_DecimalSeparator=.
+TASB_Encoding=UTF-8
+
+
+###################################################
+################    TASF_AUTRES    ################
+###################################################
+TASF_AUTRES_Folder=\tasf_autres
+TASF_AUTRES_Sheet=Data Base
+TASF_AUTRES_Header=1
+TASF_AUTRES_FirstColumn=1
+TASF_AUTRES_ThousandSeparator=,
+TASF_AUTRES_DecimalSeparator=.
+TASF_AUTRES_Encoding=UTF-8
+
+
+###################################################
+################    TASF_CCELF    #################
+###################################################
+TASF_CCELF_Folder=\tasf_ccelf
+TASF_CCELF_Sheet=BASE DE DONNEES
+TASF_CCELF_Header=1
+TASF_CCELF_FirstColumn=1
+TASF_CCELF_ThousandSeparator=,
+TASF_CCELF_DecimalSeparator=.
+TASF_CCELF_Encoding=UTF-8
+
+
+#################################################
+##################   Sites     ##################
+#################################################
+Sites_File=\Sites.xlsx
+Sites_LastColumn=2
+Sites_FirstColumn=1
+Sites_ThousandSeparator=,
+Sites_Encoding=UTF-8
+Sites_DecimalSeparator=.
+Sites_Header=1
+
+
+#################################################
+##################   Events     #################
+#################################################
+Events_Header=1
+Events_FirstColumn=1
+Events_LastColumn=
+Events_File=\Events.xlsx
+
+
+#################################################
+##################   Products   #################
+#################################################
+Products_File=\Products.xlsx
+Products_FirstColumn=1
+Products_ThousandSeparator=,
+Products_DecimalSeparator=.
+Products_Header=1
+Products_Encoding=UTF-8
+
+
+#################################################
+##################    Rejects   #################
+#################################################
+Rejects_TMP_File_ProgMap=Rejects_TMP_ProgMap.xlsx
+Rejects_TMP_File_Sites=Rejects_TMP_Sites.xlsx
+Rejects_TMP_File_SocietyOrg=Rejects_TMP_SocietyOrg.xlsx
+Rejects_TMP_File_Products=Rejects_TMP_Products.xlsx
+Rejects_TMP_File_RCFamilies=Rejects_TMP_RCFamilies.xlsx
+Rejects_TMP_File_OGMP_Date=Rejects_TMP_OGMP_Date.xlsx
+Rejects_TMP_File_Previous_Message=Rejects_TMP_Previous_Message.xlsx
+Rejects_TMP_File_Checks_Rejects=Rejects_TMP_Checks_Rejects.xlsx
+Rejects_TMP_File_Event_Code=Rejects_TMP_Event_Code.xlsx
+Rejects_TMP_Existing_File_Code=Rejects_TMP_Existing_File.xlsx
+Change_TMP_File_Previous_Message=\Change_Events.xlsx
+
+
+#################################################
+#############    Consolidated File   ############
+#################################################
+Consolidated_File_File=consolidated_file.xlsx
+Consolidated_File_FirstColumn=1
+Consolidated_File_Header=1
+
+
+#################################################
+################    SocietyOrg    ###############
+#################################################
+SocietyOrg_File=\SocietyOrg.xlsx
+
+
+#################################################
+#################    ProgMap    #################
+#################################################
+ProgMap_File=\ProgMap.xlsx
+
+
+#################################################
+################    RCFamilies   ################
+#################################################
+RCFamilies_File=\RCFamilies.xlsx
+
+
+
+
+Rejects_DecimalSeparator=.
+Rejects_Encoding=UTF-8
+Rejects_FirstColumn=1
+Rejects_Header=1
+Rejects_ThousandSeparator=,
+Rejects_File=
+ImplicitContext_path=
+ImplicitContext_FileName=DEV.properties
+ImplicitContext_Separator==
+Events_ThousandSeparator=,
+Events_DecimalSeparator=.
+Events_Encoding=UTF-8
+Consolidated_File_DecimalSeparator=.
+Consolidated_File_ThousandSeparator=,
+Consolidated_File_Encoding=UTF-8
+TASB_DecimalSeparator=.
+TASB_ThousandSeparator=,
+TASB_Encoding=UTF-8
+TASB_FirstColumn=1
+TASF_AUTRES_DecimalSeparator=.
+TASF_AUTRES_FirstColumn=1
+TASF_AUTRES_ThousandSeparator=,
+TASF_AUTRES_Encoding=UTF-8
+
+
+
+RCFamilies_Encoding=UTF-8
+RCFamilies_DecimalSeparator=.
+RCFamilies_ThousandSeparator=,
+RCFamilies_FirstColumn=1
+RCFamilies_Header=1
+SocietyOrg_DecimalSeparator=.
+SocietyOrg_ThousandSeparator=,
+SocietyOrg_FirstColumn=1
+SocietyOrg_Encoding=UTF-8
+SocietyOrg_Header=1
+Rejects_TMP_DecimalSeparator=.
+Rejects_TMP_FirstColumn=1
+Rejects_TMP_Encoding=UTF-8
+Rejects_TMP_ThousandSeparator=,
+Rejects_TMP_Header=1
+ProgMap_Header=1
+ProgMap_Encoding=UTF-8
+ProgMap_FirstColumn=1
+ProgMap_DecimalSeparator=.
+ProgMap_ThousandSeparator=,

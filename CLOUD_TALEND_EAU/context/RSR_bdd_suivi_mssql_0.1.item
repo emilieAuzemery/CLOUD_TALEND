@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Dev" xmi:id="_bl5PwCOBEeueDqA07KoUbA">
+    <contextParameter comment="" name="RSR_suivi_mssql_Port" prompt="RSR_suivi_mssql_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_bl5PwSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Server" prompt="RSR_suivi_mssql_Server?" promptNeeded="false" type="id_String" value="10.0.171.215" xmi:id="_bl5PwiOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Database" prompt="RSR_suivi_mssql_Database?" promptNeeded="false" type="id_String" value="RSR_SUIVI_DEV" xmi:id="_bl5PwyOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Login" prompt="RSR_suivi_mssql_Login?" promptNeeded="false" type="id_String" value="rsr_suivi_dev" xmi:id="_bl5PxCOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_AdditionalParams" prompt="RSR_suivi_mssql_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_bl5PxSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" type="id_String" value="" xmi:id="_bl5PxiOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:NDAf+YLYecedhsOukJu6MIj4xMuionfnKe9+EGh7tv09tmb9" xmi:id="_bl5PxyOBEeueDqA07KoUbA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Int" xmi:id="_bl5PyCOBEeueDqA07KoUbA">
+    <contextParameter comment="" name="RSR_suivi_mssql_Port" prompt="RSR_suivi_mssql_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_bl5PySOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Server" prompt="RSR_suivi_mssql_Server?" promptNeeded="false" type="id_String" value="10.0.171.215" xmi:id="_bl5PyiOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Database" prompt="RSR_suivi_mssql_Database?" promptNeeded="false" type="id_String" value="RSR_SUIVI_INT" xmi:id="_bl5PyyOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Login" prompt="RSR_suivi_mssql_Login?" promptNeeded="false" type="id_String" value="rsr_suivi_int" xmi:id="_bl5PzCOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_AdditionalParams" prompt="RSR_suivi_mssql_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_bl5PzSOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" type="id_String" value="" xmi:id="_bl5PziOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:/G1LOfDLAhKKAWyw1at2zkM/o/cjaXPZjCrgrNoGunjExirN" xmi:id="_bl5PzyOBEeueDqA07KoUbA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Qualif" xmi:id="_bl5P0COBEeueDqA07KoUbA">
+    <contextParameter comment="" name="RSR_suivi_mssql_Port" prompt="RSR_suivi_mssql_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_bl5P0SOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Server" prompt="RSR_suivi_mssql_Server?" promptNeeded="false" type="id_String" value="10.0.171.215" xmi:id="_bl5P0iOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Database" prompt="RSR_suivi_mssql_Database?" promptNeeded="false" type="id_String" value="RSR_SUIVI_QUALIF" xmi:id="_bl5P0yOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Login" prompt="RSR_suivi_mssql_Login?" promptNeeded="false" type="id_String" value="rsr_suivi_qualif" xmi:id="_bl5P1COBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_AdditionalParams" prompt="RSR_suivi_mssql_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_bl5P1SOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Schema" prompt="RSR_suivi_mssql_Schema?" promptNeeded="false" type="id_String" value="" xmi:id="_bl5P1iOBEeueDqA07KoUbA"/>
+    <contextParameter comment="" name="RSR_suivi_mssql_Password" prompt="RSR_suivi_mssql_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:T6xD18WBGWvL9egxnJ/9pTH5KJrfHSRpaAiYj0YdWCp3ozb6" xmi:id="_bl5P1yOBEeueDqA07KoUbA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fd46c066-e4b8-479b-9130-dbea2d2a04be"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AU6iHJplt0awdFqF3tRG2Gk9qjxbg2Oo7h9WDekT++ffuR8N888TC//n+EvCkS4ZYfoxGVNeAuBL&#13;
+ikslWAnCVQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_81bc9b74-015e-4249-8c38-1b5a43d5fc0e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>V0fatHbi8def4lTLs5xnwiXmri69oE5JjFnp0wh1qm2bsDQlvxD64Yh1iyUgaN4dy/jW67wlbB0B&#13;
+whef4tKyIA==</DigestValue></Reference></SignedInfo><SignatureValue>bL5P4gYxbOFsZhACsgi/DAx87Ln2UubptsAALZehQ06H5MdvTGoP6aOqWozUQiYfVlRxZlEdhXoL&#13;
+9qTvv4Vosjx7H1hZE9JUoNB2mN+zLM2lbwiA4fGEcqQEp8JzMKOUsSf3PDVh0/o+1/GplLKcrGS+&#13;
+LJrSA1T6Xnlhb9bQbQWT53ierILq3s51I1H2Tfq04vfWxI5OOO/XGuMuEoGRNel+Vmr84iHzQdVz&#13;
+BzQWeEpsLzfFiHBq4YKs4FQR+LtYL4SjEz/truZH6tgI3gZgjvfcGVGp1zVx58sD28vmwQ40Gz9a&#13;
+7BaMEYH0oBh2s4IHx5JvGSbLR+r2EusdOdVUcA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_81bc9b74-015e-4249-8c38-1b5a43d5fc0e" Target="#_fd46c066-e4b8-479b-9130-dbea2d2a04be"><Timestamp>2022-01-17 14:24:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <model:JobletProcess defaultContext="DEV">
+    <context confirmationNeeded="false" name="DEV">
+      <contextParameter comment="" name="ORA_DB_IPC_AdditionalParams" prompt="ORA_DB_IPC_AdditionalParams?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value=""/>
+      <contextParameter comment="" name="ORA_DB_IPC_Login" prompt="ORA_DB_IPC_Login?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="UserIpc"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Password" prompt="ORA_DB_IPC_Password?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_Password" value="enc:system.encryption.key.v1:0j/RNVWwI6THIjpBZ5sKRAzX3Sz7Y7CfeOPkRTzyPxqtH2bqMxs="/>
+      <contextParameter comment="" name="ORA_DB_IPC_Port" prompt="ORA_DB_IPC_Port?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="1521"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Schema" prompt="ORA_DB_IPC_Schema?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IPC"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Server" prompt="ORA_DB_IPC_Server?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="tOracle"/>
+      <contextParameter comment="" name="ORA_DB_IPC_ServiceName" prompt="ORA_DB_IPC_ServiceName?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="AgriCore_Int"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_DOWNLOAD" prompt="ORA_DB_IPC_TASKCODE_DOWNLOAD?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="DOWNLOAD"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_EXTRACT" prompt="ORA_DB_IPC_TASKCODE_EXTRACT?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="EXTRACT"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_RESTACK" prompt="ORA_DB_IPC_TASKCODE_RESTACK?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="RESTACK"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_SHP_AND_DIM" prompt="ORA_DB_IPC_TASKCODE_SHP_AND_DIM?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SHP_AND_DIM"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_SMAC" prompt="ORA_DB_IPC_TASKCODE_SMAC?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SMAC"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_TRANSFER_OPS" prompt="ORA_DB_IPC_TASKCODE_TRANSFER_OPS?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="TRANSFER_OPS"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_COMPLETED" prompt="ORA_DB_IPC_TASKSTATUS_COMPLETED?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="COMPLETED"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_IN_ERROR" prompt="ORA_DB_IPC_TASKSTATUS_IN_ERROR?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IN_ERROR"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_IN_PROGRESS" prompt="ORA_DB_IPC_TASKSTATUS_IN_PROGRESS?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IN_PROGRESS"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_SCHEDULED" prompt="ORA_DB_IPC_TASKSTATUS_SCHEDULED?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SCHEDULED"/>
+    </context>
+    <context confirmationNeeded="false" name="VALID">
+      <contextParameter comment="" name="ORA_DB_IPC_AdditionalParams" prompt="ORA_DB_IPC_AdditionalParams?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value=""/>
+      <contextParameter comment="" name="ORA_DB_IPC_Login" prompt="ORA_DB_IPC_Login?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="UserIpc"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Password" prompt="ORA_DB_IPC_Password?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_Password" value="enc:system.encryption.key.v1:QZ7GkrOTafpJdKdy5nT4QMrangXmiQH5t3xT41PNTsAWDABb+NI="/>
+      <contextParameter comment="" name="ORA_DB_IPC_Port" prompt="ORA_DB_IPC_Port?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="1521"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Schema" prompt="ORA_DB_IPC_Schema?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IPC"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Server" prompt="ORA_DB_IPC_Server?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="tOracle"/>
+      <contextParameter comment="" name="ORA_DB_IPC_ServiceName" prompt="ORA_DB_IPC_ServiceName?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="AgriCore_Val"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_DOWNLOAD" prompt="ORA_DB_IPC_TASKCODE_DOWNLOAD?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="DOWNLOAD"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_EXTRACT" prompt="ORA_DB_IPC_TASKCODE_EXTRACT?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="EXTRACT"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_RESTACK" prompt="ORA_DB_IPC_TASKCODE_RESTACK?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="RESTACK"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_SHP_AND_DIM" prompt="ORA_DB_IPC_TASKCODE_SHP_AND_DIM?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SHP_AND_DIM"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_SMAC" prompt="ORA_DB_IPC_TASKCODE_SMAC?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SMAC"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_TRANSFER_OPS" prompt="ORA_DB_IPC_TASKCODE_TRANSFER_OPS?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="TRANSFER_OPS"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_COMPLETED" prompt="ORA_DB_IPC_TASKSTATUS_COMPLETED?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="COMPLETED"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_IN_ERROR" prompt="ORA_DB_IPC_TASKSTATUS_IN_ERROR?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IN_ERROR"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_IN_PROGRESS" prompt="ORA_DB_IPC_TASKSTATUS_IN_PROGRESS?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IN_PROGRESS"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_SCHEDULED" prompt="ORA_DB_IPC_TASKSTATUS_SCHEDULED?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SCHEDULED"/>
+    </context>
+    <context confirmationNeeded="false" name="INT">
+      <contextParameter comment="" name="ORA_DB_IPC_AdditionalParams" prompt="ORA_DB_IPC_AdditionalParams?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value=""/>
+      <contextParameter comment="" name="ORA_DB_IPC_Login" prompt="ORA_DB_IPC_Login?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="UserIpc"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Password" prompt="ORA_DB_IPC_Password?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_Password" value="enc:system.encryption.key.v1:MJVN6T8dZh2AlIkAfGjPlT9Q7mX4F+sRHE5gohEd1/ShdnFJkwk="/>
+      <contextParameter comment="" name="ORA_DB_IPC_Port" prompt="ORA_DB_IPC_Port?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="1521"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Schema" prompt="ORA_DB_IPC_Schema?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IPC"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Server" prompt="ORA_DB_IPC_Server?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="tOracle"/>
+      <contextParameter comment="" name="ORA_DB_IPC_ServiceName" prompt="ORA_DB_IPC_ServiceName?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="AgriCore_Int"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_DOWNLOAD" prompt="ORA_DB_IPC_TASKCODE_DOWNLOAD?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="DOWNLOAD"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_EXTRACT" prompt="ORA_DB_IPC_TASKCODE_EXTRACT?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="EXTRACT"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_RESTACK" prompt="ORA_DB_IPC_TASKCODE_RESTACK?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="RESTACK"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_SHP_AND_DIM" prompt="ORA_DB_IPC_TASKCODE_SHP_AND_DIM?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SHP_AND_DIM"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_SMAC" prompt="ORA_DB_IPC_TASKCODE_SMAC?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SMAC"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_TRANSFER_OPS" prompt="ORA_DB_IPC_TASKCODE_TRANSFER_OPS?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="TRANSFER_OPS"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_COMPLETED" prompt="ORA_DB_IPC_TASKSTATUS_COMPLETED?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="COMPLETED"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_IN_ERROR" prompt="ORA_DB_IPC_TASKSTATUS_IN_ERROR?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IN_ERROR"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_IN_PROGRESS" prompt="ORA_DB_IPC_TASKSTATUS_IN_PROGRESS?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IN_PROGRESS"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_SCHEDULED" prompt="ORA_DB_IPC_TASKSTATUS_SCHEDULED?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SCHEDULED"/>
+    </context>
+    <context confirmationNeeded="false" name="EXT_INT">
+      <contextParameter comment="" name="ORA_DB_IPC_AdditionalParams" prompt="ORA_DB_IPC_AdditionalParams?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value=""/>
+      <contextParameter comment="" name="ORA_DB_IPC_Login" prompt="ORA_DB_IPC_Login?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="UserIpc"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Password" prompt="ORA_DB_IPC_Password?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_Password" value="enc:system.encryption.key.v1:w8I8GSkBBu4l2dFsAYEz/2vH6aYMjYKvVe+ulOw3fuWXL7g51A=="/>
+      <contextParameter comment="" name="ORA_DB_IPC_Port" prompt="ORA_DB_IPC_Port?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="1521"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Schema" prompt="ORA_DB_IPC_Schema?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IPC"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Server" prompt="ORA_DB_IPC_Server?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="192.168.34.11"/>
+      <contextParameter comment="" name="ORA_DB_IPC_ServiceName" prompt="ORA_DB_IPC_ServiceName?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="AgriCore_Ei"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_DOWNLOAD" prompt="ORA_DB_IPC_TASKCODE_DOWNLOAD?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="DOWNLOAD"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_EXTRACT" prompt="ORA_DB_IPC_TASKCODE_EXTRACT?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="EXTRACT"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_RESTACK" prompt="ORA_DB_IPC_TASKCODE_RESTACK?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="RESTACK"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_SHP_AND_DIM" prompt="ORA_DB_IPC_TASKCODE_SHP_AND_DIM?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SHP_AND_DIM"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_SMAC" prompt="ORA_DB_IPC_TASKCODE_SMAC?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SMAC"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_TRANSFER_OPS" prompt="ORA_DB_IPC_TASKCODE_TRANSFER_OPS?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="TRANSFER_OPS"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_COMPLETED" prompt="ORA_DB_IPC_TASKSTATUS_COMPLETED?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="COMPLETED"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_IN_ERROR" prompt="ORA_DB_IPC_TASKSTATUS_IN_ERROR?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IN_ERROR"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_IN_PROGRESS" prompt="ORA_DB_IPC_TASKSTATUS_IN_PROGRESS?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IN_PROGRESS"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_SCHEDULED" prompt="ORA_DB_IPC_TASKSTATUS_SCHEDULED?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SCHEDULED"/>
+    </context>
+    <context confirmationNeeded="false" name="PROD_EU">
+      <contextParameter comment="" name="ORA_DB_IPC_AdditionalParams" prompt="ORA_DB_IPC_AdditionalParams?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value=""/>
+      <contextParameter comment="" name="ORA_DB_IPC_Login" prompt="ORA_DB_IPC_Login?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="UserIpc"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Password" prompt="ORA_DB_IPC_Password?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_Password" value="enc:system.encryption.key.v1:TxnaCYCMtskjPWICpT+mF/WmEuMKZ98nbaiRJxj3rWZSqMLmofs="/>
+      <contextParameter comment="" name="ORA_DB_IPC_Port" prompt="ORA_DB_IPC_Port?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="1521"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Schema" prompt="ORA_DB_IPC_Schema?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IPC"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Server" prompt="ORA_DB_IPC_Server?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="nOracle-Eame"/>
+      <contextParameter comment="" name="ORA_DB_IPC_ServiceName" prompt="ORA_DB_IPC_ServiceName?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="PeuAgriCore"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_DOWNLOAD" prompt="ORA_DB_IPC_TASKCODE_DOWNLOAD?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="DOWNLOAD"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_EXTRACT" prompt="ORA_DB_IPC_TASKCODE_EXTRACT?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="EXTRACT"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_RESTACK" prompt="ORA_DB_IPC_TASKCODE_RESTACK?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="RESTACK"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_SHP_AND_DIM" prompt="ORA_DB_IPC_TASKCODE_SHP_AND_DIM?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SHP_AND_DIM"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_SMAC" prompt="ORA_DB_IPC_TASKCODE_SMAC?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SMAC"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_TRANSFER_OPS" prompt="ORA_DB_IPC_TASKCODE_TRANSFER_OPS?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="TRANSFER_OPS"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_COMPLETED" prompt="ORA_DB_IPC_TASKSTATUS_COMPLETED?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="COMPLETED"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_IN_ERROR" prompt="ORA_DB_IPC_TASKSTATUS_IN_ERROR?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IN_ERROR"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_IN_PROGRESS" prompt="ORA_DB_IPC_TASKSTATUS_IN_PROGRESS?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IN_PROGRESS"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_SCHEDULED" prompt="ORA_DB_IPC_TASKSTATUS_SCHEDULED?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SCHEDULED"/>
+    </context>
+    <context confirmationNeeded="false" name="PROD_US">
+      <contextParameter comment="" name="ORA_DB_IPC_AdditionalParams" prompt="ORA_DB_IPC_AdditionalParams?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value=""/>
+      <contextParameter comment="" name="ORA_DB_IPC_Login" prompt="ORA_DB_IPC_Login?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="UserIpc"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Password" prompt="ORA_DB_IPC_Password?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_Password" value="enc:system.encryption.key.v1:cdQcktyUqwLNJVymOkmI8cWiuJ6xvZlty2tY4ce5EkUQjtLww9o="/>
+      <contextParameter comment="" name="ORA_DB_IPC_Port" prompt="ORA_DB_IPC_Port?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="1521"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Schema" prompt="ORA_DB_IPC_Schema?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IPC"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Server" prompt="ORA_DB_IPC_Server?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="192.168.34.11"/>
+      <contextParameter comment="" name="ORA_DB_IPC_ServiceName" prompt="ORA_DB_IPC_ServiceName?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="PusAgriCore"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_DOWNLOAD" prompt="ORA_DB_IPC_TASKCODE_DOWNLOAD?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="DOWNLOAD"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_EXTRACT" prompt="ORA_DB_IPC_TASKCODE_EXTRACT?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="EXTRACT"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_RESTACK" prompt="ORA_DB_IPC_TASKCODE_RESTACK?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="RESTACK"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_SHP_AND_DIM" prompt="ORA_DB_IPC_TASKCODE_SHP_AND_DIM?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SHP_AND_DIM"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_SMAC" prompt="ORA_DB_IPC_TASKCODE_SMAC?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SMAC"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_TRANSFER_OPS" prompt="ORA_DB_IPC_TASKCODE_TRANSFER_OPS?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="TRANSFER_OPS"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_COMPLETED" prompt="ORA_DB_IPC_TASKSTATUS_COMPLETED?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="COMPLETED"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_IN_ERROR" prompt="ORA_DB_IPC_TASKSTATUS_IN_ERROR?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IN_ERROR"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_IN_PROGRESS" prompt="ORA_DB_IPC_TASKSTATUS_IN_PROGRESS?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IN_PROGRESS"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_SCHEDULED" prompt="ORA_DB_IPC_TASKSTATUS_SCHEDULED?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SCHEDULED"/>
+    </context>
+    <context confirmationNeeded="false" name="PROD_SCUS">
+      <contextParameter comment="" name="ORA_DB_IPC_AdditionalParams" prompt="ORA_DB_IPC_AdditionalParams?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value=""/>
+      <contextParameter comment="" name="ORA_DB_IPC_Login" prompt="ORA_DB_IPC_Login?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="useripc"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Password" prompt="ORA_DB_IPC_Password?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_Password" value="enc:system.encryption.key.v1:3hKOX/xuNkOum6+rH5nOCdUPCl2fU5Sk78Ou6btLtMN4miY2HpPG"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Port" prompt="ORA_DB_IPC_Port?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="1521"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Schema" prompt="ORA_DB_IPC_Schema?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IPC"/>
+      <contextParameter comment="" name="ORA_DB_IPC_Server" prompt="ORA_DB_IPC_Server?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="ORA-01-SCUS"/>
+      <contextParameter comment="" name="ORA_DB_IPC_ServiceName" prompt="ORA_DB_IPC_ServiceName?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="PusAgriCore"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_DOWNLOAD" prompt="ORA_DB_IPC_TASKCODE_DOWNLOAD?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="DOWNLOAD"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_EXTRACT" prompt="ORA_DB_IPC_TASKCODE_EXTRACT?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="EXTRACT"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_RESTACK" prompt="ORA_DB_IPC_TASKCODE_RESTACK?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="RESTACK"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_SHP_AND_DIM" prompt="ORA_DB_IPC_TASKCODE_SHP_AND_DIM?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SHP_AND_DIM"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_SMAC" prompt="ORA_DB_IPC_TASKCODE_SMAC?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SMAC"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKCODE_TRANSFER_OPS" prompt="ORA_DB_IPC_TASKCODE_TRANSFER_OPS?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="TRANSFER_OPS"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_COMPLETED" prompt="ORA_DB_IPC_TASKSTATUS_COMPLETED?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="COMPLETED"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_IN_ERROR" prompt="ORA_DB_IPC_TASKSTATUS_IN_ERROR?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IN_ERROR"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_IN_PROGRESS" prompt="ORA_DB_IPC_TASKSTATUS_IN_PROGRESS?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="IN_PROGRESS"/>
+      <contextParameter comment="" name="ORA_DB_IPC_TASKSTATUS_SCHEDULED" prompt="ORA_DB_IPC_TASKSTATUS_SCHEDULED?" promptNeeded="false" repositoryContextId="_CmdGUOeSEeWgs5E-uxBJJQ" type="id_String" value="SCHEDULED"/>
+    </context>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" show="false" value="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" show="false" value="25000"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/TALEND_PLATFORM_STUDIO/studio/workspace2/in.csv&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:MTXz/hUge7L+hNFRuDFVBhnqDTxk83oEx6Re8XSh"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+      <routinesParameter id="_imIMQNAKEeWK7tYTuJulPg" name="DQTechnical"/>
+      <routinesParameter id="_iUtsINAKEeWK7tYTuJulPg" name="DataOperation"/>
+      <routinesParameter id="_ijJwwNAKEeWK7tYTuJulPg" name="DataQualityDependencies"/>
+      <routinesParameter id="_ih07ENAKEeWK7tYTuJulPg" name="DataQuality"/>
+      <routinesParameter id="_ikje8NAKEeWK7tYTuJulPg" name="DqStringHandling"/>
+      <routinesParameter id="_iWcxgNAKEeWK7tYTuJulPg" name="Mathematical"/>
+      <routinesParameter id="_iYEiINAKEeWK7tYTuJulPg" name="Numeric"/>
+      <routinesParameter id="_iZrrsNAKEeWK7tYTuJulPg" name="Relational"/>
+      <routinesParameter id="_iSoogtAKEeWK7tYTuJulPg" name="SQLike"/>
+      <routinesParameter id="_ibQZANAKEeWK7tYTuJulPg" name="StringHandling"/>
+      <routinesParameter id="_ic4wsNAKEeWK7tYTuJulPg" name="TalendDataGenerator"/>
+      <routinesParameter id="_iexAANAKEeWK7tYTuJulPg" name="TalendDate"/>
+      <routinesParameter id="_igSqANAKEeWK7tYTuJulPg" name="TalendString"/>
+      <routinesParameter id="_haUiwCZ1EeamrpGwIi232g" name="MDM"/>
+    </parameters>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_CK6TIPBAEeWJ5uXsMbNuPA-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="tMap_2"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="IMAGETASK_IP" name="itk">
+        <column comment="PK - Sequence." key="true" length="9" name="ITK_ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="PK - Sequence."/>
+        </column>
+        <column comment="FK to Ipc.Image_IP." key="false" length="9" name="ITK_IDIMAGEIP" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="FK to Ipc.Image_IP."/>
+        </column>
+        <column comment="Code of the task to be applied to the image." key="false" length="50" name="ITK_TASKCODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Code of the task to be applied to the image."/>
+        </column>
+        <column comment="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD." key="false" length="50" name="ITK_STATUS" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD."/>
+        </column>
+        <column comment="Task creation date." key="false" length="7" name="ITK_CREATIONDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Task creation date."/>
+        </column>
+        <column comment="Start of processing date. Nullable." key="false" length="7" name="ITK_STARTDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Start of processing date. Nullable."/>
+        </column>
+        <column comment="End of processing date. Nullable." key="false" length="7" name="ITK_ENDDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="End of processing date. Nullable."/>
+        </column>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+        <outputTables name="itk" sizeState="INTERMEDIATE">
+          <mapperTableEntries expression="itk_seq.ITK_ID " name="ITK_ID" type="id_BigDecimal"/>
+          <mapperTableEntries expression="image.IDIMAGE " name="ITK_IDIMAGEIP" type="id_BigDecimal"/>
+          <mapperTableEntries expression="image.TASKCODE " name="ITK_TASKCODE" type="id_String"/>
+          <mapperTableEntries expression="context.ORA_DB_IPC_TASKSTATUS_SCHEDULED" name="ITK_STATUS" type="id_String"/>
+          <mapperTableEntries expression="TalendDate.getCurrentDate()" name="ITK_CREATIONDATE" type="id_Date"/>
+          <mapperTableEntries expression="null" name="ITK_STARTDATE" nullable="true" type="id_Date"/>
+          <mapperTableEntries expression="null" name="ITK_ENDDATE" nullable="true" type="id_Date"/>
+        </outputTables>
+        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="image" sizeState="INTERMEDIATE">
+          <mapperTableEntries name="TASKCODE" nullable="true" type="id_String"/>
+          <mapperTableEntries name="IDIMAGE" nullable="true" type="id_BigDecimal"/>
+        </inputTables>
+        <inputTables activateCondensedTool="true" lookupMode="RELOAD" matchingMode="ALL_ROWS" name="itk_seq" sizeState="INTERMEDIATE">
+          <mapperTableEntries name="ITK_ID" nullable="true" type="id_BigDecimal"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleOutput_1"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_m-AZEOeQEeWgs5E-uxBJJQ"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+      <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.ORA_DB_IPC_Server"/>
+      <elementParameter field="TEXT" name="HOST" show="false" value="context.ORA_DB_IPC_Server"/>
+      <elementParameter field="TEXT" name="PORT" show="false" value="context.ORA_DB_IPC_Port"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
+      <elementParameter field="TEXT" name="DBNAME" show="false" value="context.ORA_DB_IPC_ServiceName"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.ORA_DB_IPC_ServiceName"/>
+      <elementParameter field="TEXT" name="TABLESCHEMA" show="false" value="context.ORA_DB_IPC_Schema"/>
+      <elementParameter field="TEXT" name="USER" show="false" value="context.ORA_DB_IPC_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:XLmVPC0wGHxi0zNmRkDYj9V8Ou6+PZm1tf5UGWXyt4coDyO3lNr69avmRquTZ2/YphoOx0/O5w=="/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;IMAGETASK_IP&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+      <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+      <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+      <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.ORA_DB_IPC_AdditionalParams"/>
+      <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+      <elementParameter field="TABLE" name="ADD_COLS"/>
+      <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+      <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="ITK_ID"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="ITK_IDIMAGEIP"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="ITK_TASKCODE"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="ITK_STATUS"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="ITK_CREATIONDATE"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="ITK_STARTDATE"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="ITK_ENDDATE"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+      <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+      <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
+      <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+      <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" value="false"/>
+      <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
+      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+      <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
+      <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="&quot;IMAGETASK_IP&quot;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="IMAGETASK_IP" name="tOracleOutput_1">
+        <column comment="PK - Sequence." key="true" length="9" name="ITK_ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="PK - Sequence."/>
+        </column>
+        <column comment="FK to Ipc.Image_IP." key="false" length="9" name="ITK_IDIMAGEIP" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="FK to Ipc.Image_IP."/>
+        </column>
+        <column comment="Code of the task to be applied to the image." key="false" length="50" name="ITK_TASKCODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Code of the task to be applied to the image."/>
+        </column>
+        <column comment="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD." key="false" length="50" name="ITK_STATUS" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD."/>
+        </column>
+        <column comment="Task creation date." key="false" length="7" name="ITK_CREATIONDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Task creation date."/>
+        </column>
+        <column comment="Start of processing date. Nullable." key="false" length="7" name="ITK_STARTDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Start of processing date. Nullable."/>
+        </column>
+        <column comment="End of processing date. Nullable." key="false" length="7" name="ITK_ENDDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="End of processing date. Nullable."/>
+        </column>
+      </metadata>
+      <metadata connector="REJECT" label="IMAGETASK_IP" name="REJECT">
+        <column comment="PK - Sequence." key="true" length="9" name="ITK_ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="PK - Sequence."/>
+        </column>
+        <column comment="FK to Ipc.Image_IP." key="false" length="9" name="ITK_IDIMAGEIP" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="FK to Ipc.Image_IP."/>
+        </column>
+        <column comment="Code of the task to be applied to the image." key="false" length="50" name="ITK_TASKCODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Code of the task to be applied to the image."/>
+        </column>
+        <column comment="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD." key="false" length="50" name="ITK_STATUS" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD."/>
+        </column>
+        <column comment="Task creation date." key="false" length="7" name="ITK_CREATIONDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Task creation date."/>
+        </column>
+        <column comment="Start of processing date. Nullable." key="false" length="7" name="ITK_STARTDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Start of processing date. Nullable."/>
+        </column>
+        <column comment="End of processing date. Nullable." key="false" length="7" name="ITK_ENDDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="End of processing date. Nullable."/>
+        </column>
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="320">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleInput_1"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_m-AZEOeQEeWgs5E-uxBJJQ"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+      <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.ORA_DB_IPC_Server"/>
+      <elementParameter field="TEXT" name="HOST" show="false" value="context.ORA_DB_IPC_Server"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
+      <elementParameter field="TEXT" name="PORT" show="false" value="context.ORA_DB_IPC_Port"/>
+      <elementParameter field="TEXT" name="DBNAME" show="false" value="context.ORA_DB_IPC_ServiceName"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.ORA_DB_IPC_ServiceName"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="context.ORA_DB_IPC_Schema"/>
+      <elementParameter field="TEXT" name="USER" show="false" value="context.ORA_DB_IPC_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:V5O7rWVQS3gcInHCvkrH9mv2ZJ3B1Hhwxc+99XUDQARaA4LjJvJ5egliLXWaOXcYhcFDyuzkuQ=="/>
+      <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;DATASETTASK_IP&quot;"/>
+      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+      <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &quot;+context.ORA_DB_IPC_Schema+&quot;.SEQ_IMAGETASK_IP.NEXTVAL  AS ITK_ID FROM DUAL&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+      <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.ORA_DB_IPC_AdditionalParams"/>
+      <elementParameter field="LABEL" name="NOTE" show="false" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+      <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+      <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+      <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+      <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+      <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+      <elementParameter field="TABLE" name="TRIM_COLUMN">
+        <elementValue elementRef="SCHEMA_COLUMN" value="ITK_ID"/>
+        <elementValue elementRef="TRIM" value="false"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="SEQ_IMAGETASK_IP"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tOracleInput_1">
+        <column comment="" defaultValue="" key="true" length="0" name="ITK_ID" nullable="true" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tOracleConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleConnection_1"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_m-AZEOeQEeWgs5E-uxBJJQ"/>
+      <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CHECK" name="USE_TNS_FILE" value="false"/>
+      <elementParameter field="FILE" name="TNS_FILE" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TNS_EDITOR" name="TNS_EDITOR" show="false" value=""/>
+      <elementParameter field="TEXT" name="HOST" value="context.ORA_DB_IPC_Server"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
+      <elementParameter field="TEXT" name="PORT" value="context.ORA_DB_IPC_Port"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.ORA_DB_IPC_ServiceName"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB" value="context.ORA_DB_IPC_Schema"/>
+      <elementParameter field="TEXT" name="USER" value="context.ORA_DB_IPC_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mollo86lZ7aj28GPNe7t/1v6pVGGtM1W7n2HzaDqkn11FS3XGWrDmNloY+7UFMSUhAJZbPJBcg=="/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.ORA_DB_IPC_AdditionalParams"/>
+      <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+      <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="true"/>
+      <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="&quot;CONN_IPC&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:thin:USER/MDP@server&quot;"/>
+      <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="CONNEXION_JOBLET"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    </node>
+    <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="64">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+      <elementParameter field="TEXT" name="LABEL" value="tPrejob_1"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    </node>
+    <connection connectorName="FLOW" label="image" lineStyle="0" metaname="INPUT_1" offsetLabelX="0" offsetLabelY="0" source="INPUT_1" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="image"/>
+    </connection>
+    <connection connectorName="FLOW" label="itk" lineStyle="0" metaname="itk" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tOracleOutput_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="itk"/>
+    </connection>
+    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tOracleOutput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleOutput_1" target="OUTPUT_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+    </connection>
+    <connection connectorName="FLOW" label="itk_seq" lineStyle="8" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" source="tOracleInput_1" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="itk_seq"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tOracleConnection_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="INPUT_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tOracleConnection_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+    </subjob>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" input="true" offsetLabelX="0" offsetLabelY="0" posX="160" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+      <elementParameter field="CHECK" name="START" show="false" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="INPUT_1"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="INPUT_1">
+        <column comment="" key="false" length="-1" name="TASKCODE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="IDIMAGE" nullable="true" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="false"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="OUTPUT_1"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" label="IMAGETASK_IP" name="OUTPUT_1">
+        <column comment="PK - Sequence." key="true" length="9" name="ITK_ID" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="PK - Sequence."/>
+        </column>
+        <column comment="FK to Ipc.Image_IP." key="false" length="9" name="ITK_IDIMAGEIP" nullable="false" pattern="" precision="0" sourceType="DEC" type="id_BigDecimal" usefulColumn="true">
+          <additionalField key="Comment" value="FK to Ipc.Image_IP."/>
+        </column>
+        <column comment="Code of the task to be applied to the image." key="false" length="50" name="ITK_TASKCODE" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Code of the task to be applied to the image."/>
+        </column>
+        <column comment="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD." key="false" length="50" name="ITK_STATUS" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value="Task status, among : SCHEDULED, IN_PROGRESS, COMPLETED, IN_ERROR, ON_HOLD."/>
+        </column>
+        <column comment="Task creation date." key="false" length="7" name="ITK_CREATIONDATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Task creation date."/>
+        </column>
+        <column comment="Start of processing date. Nullable." key="false" length="7" name="ITK_STARTDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="Start of processing date. Nullable."/>
+        </column>
+        <column comment="End of processing date. Nullable." key="false" length="7" name="ITK_ENDDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value="End of processing date. Nullable."/>
+        </column>
+      </metadata>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bc2f6cb8-f04d-43fb-8e0d-606c9a8a9f5f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HSnf6VQn78NwC/lzCwwavRi6XRn7Cc49HwGsm37Yn+Q02Xnt83oNc6I0/dfmZHwzXvZLAa9G6x6l&#13;
+wFTRGKUVvQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_41d9a817-bc14-4b88-88b3-1e3ba9534717"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MaYZ+cYSLKvmDUXIAt9WsRMH39b8uChHUFmqTA1Z1sUL964oS2T9VMYJu2Oq+2t7O4hXCDrcI8Zk&#13;
+mGAuAKyg3Q==</DigestValue></Reference></SignedInfo><SignatureValue>mJtvFq8R/MJprJ++K+BhBTvwpwTwW232Kict74J2lfEm3XGilKykyrqSjoUJNcPjnh8H3kWScnle&#13;
+75d/lRGbAOc+cc4+qKNk4LI8r2x+zSjYaIPVFQteg7vOE1MCWy17ta2myYsryt4EKE+KpsdKbh3S&#13;
+mlcROi41Ck/EbgAx2gK1rUXq6vzCmtzHSnmbwu4zwC1kff6X8VwfC5gBa0ksltskrpMShcaJAjGc&#13;
+wpJQerCDa7XyfGaCrEoVh65aT2pjnxfkY2/spann8LJiW8w34Yl5Pr90Lx6R/7TCeGw9JmtU3xO5&#13;
+cgQqNTQKOFLDZ3nRQutD8hGJlpB7s9CTbhxmUw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_41d9a817-bc14-4b88-88b3-1e3ba9534717" Target="#_bc2f6cb8-f04d-43fb-8e0d-606c9a8a9f5f"><Timestamp>2022-01-17 14:24:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

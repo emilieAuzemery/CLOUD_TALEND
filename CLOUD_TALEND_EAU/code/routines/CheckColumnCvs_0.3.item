@@ -1,0 +1,193 @@
+package routines;
+
+import java.text.*;
+import java.util.*;
+
+//import jdk.nashorn.internal.runtime.Context;
+
+public class CheckColumnCvs {
+	/**
+	 * fonction permettant de vérifier le type de données de la colonne du fichier à tester
+	 * @param String formatDonneeARespecter : format de données à respecter parmi "NUMERIC", "BOOLEEN", "DATE"
+     * @param champ : champ dont on souhaite vérifier le type de données
+     * @param ligneFichier : la ligne de fichier à traiter
+     * @param cle : clé fonctionnelle du fichier
+     */
+	public static String  estTypeDonneeOK(String formatDonneeARespecter, String champ, String [] ligneFichier, ArrayList cle){	
+		// VARCHAR2 NUMERIC BOOLEEN DATE
+		if(formatDonneeARespecter.equals("NUMERIC") && (!"".equals(champ) && champ.matches("^-?[0-9]*\\.?[0-9]+$") == false)){
+			return construireLibelleAno("SVC_T_02", ligneFichier, cle, champ);
+		}
+		if(formatDonneeARespecter.equals("BOOLEEN") && (!(champ.equals("0") || champ.equals("1") || champ.equals(""))) ){
+			return construireLibelleAno("SVC_T_02", ligneFichier, cle, champ);
+		}
+		if(formatDonneeARespecter.equals("DATE") == true && !champ.equals("")){
+			DateFormat df = new SimpleDateFormat("yyyyMMdd");
+			// saleté : java est trop indulgent sur le format date donc 
+			// obligé de modifier le lenient sinon le 31/02 est calculé en tant que 03/03
+			df.setLenient(false);
+			try{
+				// si le parse se passe sans erreur, c'est que le format de date est conforme sinon on passe dans le catch exception
+				Date myDate = df.parse(champ);
+			}
+			catch(ParseException e)	{
+				return construireLibelleAno("SVC_T_02", ligneFichier, cle, champ);
+			}
+		}
+		return null;
+	}
+	
+    /**
+     * Méthode permettant de vérifier si la longueur du champ à tester est respectée
+     * @param longueurARespecter : longueur à vérifier
+     * @param champ : champ dont on souhaite vérifier la longueur
+     * @param ligneFichier : la ligne de fichier à traiter
+     * @param cle : clé fonctionnelle du fichier
+     */
+	public static String estLongueurOK(String longueurARespecter, String formatDonneeARespecter, String champ, String [] ligneFichier, ArrayList cle){
+    	if(formatDonneeARespecter.equals("NUMERIC")){
+			//String longueurARespecterModifier = longueurARespecter.replace(".", ",");
+			String champModifier = champ.replace(".", ",");
+			if(champModifier.contains(","))
+			{
+	
+	    		// découpage en partie entière et décimale de la valeur reçue
+	    		String [] champVerif = champModifier.split(",", -1);
+	    		//champ à vérifier
+	    		int lgPartieEntiereChamp = champVerif[0].length();
+	    		int lgPartieDecimaleChamp = 0;
+	    		if(champVerif.length>1){
+	    			//lgPartieEntiereChamp = lgPartieEntiereChamp - champVerif[1].length();
+	    			lgPartieDecimaleChamp = champVerif[1].length();
+	    		}
+	    		
+	    		// découpage en partie entière et décimale de la longueur max attendue
+	    		String [] lg =  longueurARespecter.split(",", -1);
+	    		// longueur à vérifier
+	    		int lgPartieEntiereLongueur = Integer.parseInt(lg[0]);
+	    		int lgPartieDecimaleLongueur = 0;
+	    		if(lg.length>1){
+	    			lgPartieEntiereLongueur = lgPartieEntiereLongueur - Integer.parseInt(lg[1]);
+	    			lgPartieDecimaleLongueur = Integer.parseInt(lg[1]);
+	    		}
+	    		
+	    		// dans le cas où la partie entière ou la partie décimale ne respectent pas la longueur attendue
+	    		if(lgPartieEntiereChamp > lgPartieEntiereLongueur || lgPartieDecimaleChamp > lgPartieDecimaleLongueur)
+	    		{
+	    			return construireLibelleAno("SVC_T_03", ligneFichier, cle, champ);
+	    		}
+	    		else
+	    		{
+	    			return null;
+	    		}
+	    	}
+			else
+			{
+				
+				// découpage en partie entière et décimale de la longueur max attendue
+	    		String [] lg =  longueurARespecter.split(",", -1);
+	    		// longueur à vérifier
+	    		int lgPartieEntiereLongueur = Integer.parseInt(lg[0]);
+	    		if(lg.length>1)
+	    		{
+	    			lgPartieEntiereLongueur = lgPartieEntiereLongueur - Integer.parseInt(lg[1]);
+	    		}
+	    		
+				// La longueur à respecter est un entier
+				if( lgPartieEntiereLongueur < champ.length())
+				{
+	        		return construireLibelleAno("SVC_T_03", ligneFichier, cle, champ);
+	        	}else
+	        	{
+	        		return null;
+	        	}
+			}
+    	}
+    	else
+    	{	// Test type de données VARCHAR2
+    		if(formatDonneeARespecter.equals("VARCHAR2"))
+    		{
+    			// Longueur réelle du champ supérieure à la longueur attendue
+    			if(champ.length()> Integer.parseInt(longueurARespecter))
+    			{
+    				return construireLibelleAno("SVC_T_03", ligneFichier, cle, champ);
+    			}
+    			else
+    			{
+    				return null;
+    			}
+    		}
+    		else
+    		{
+    			return null;
+    		}
+    	}
+      }
+    
+    /**
+     * Méthode permettant de vérifier si le champ obligatoire est bien renseigné
+     * @param champOblig : indique si le champ est obligatoire ou pas
+     * @param champ : champ à vérifier
+     * @param ligneFichier : la ligne de fichier à traiter
+     * @param cle : clé fonctionnelle du fichier
+     */
+    public static String estRenseigne(int champOblig, String champ, String [] ligneFichier, ArrayList cle){
+    	if(champ.isEmpty() && champOblig == 1){
+    		return construireLibelleAno("SVC_T_05", ligneFichier, cle, champ);
+    	}else{
+    		return null;
+    	}
+    }
+    
+    /**
+     * Fonction permettant de vérifier que chaque ligne du fichier a le bon nombre de colonnes
+     * @param longueurLigneAttendue : nombre de colonnes attendu pour la ligne de fichier à traiter
+     * @param ligneFichier : la ligne de fichier à traiter
+     * @param cle : clé fonctionnelle du fichier
+     */
+    public static String estStructureFichierOK(int longueurLigneAttendue, String [] ligneFichier, ArrayList cle){
+    	if(longueurLigneAttendue!=ligneFichier.length){
+			return construireLibelleAno("SVC_T_01", ligneFichier, cle, "");
+    	}else{
+    		return null;
+    	}
+    }
+    
+/**
+ * Fonction permettant de construire le libellé de l'anomalie à tracer en base de suivi.
+ * @param codeAno : Code de l'anomalie à relever
+ * @param ligneFichier : Ligne de fichier à traiter pour récupérer la clé fonctionnelle (permet d'identifier la ligne en erreur
+ * @param cle : clé fonctionnelle du fichier
+ * @param valKo : valeur testée qui provoque une anomalie
+ * @return libellé complet de l'anomalie avec le codeAno + "|" + la clé fonctionnelle + "|" + la valeur ko
+ */
+    public static String construireLibelleAno(String codeAno, String [] ligneFichier, ArrayList cle, String valKo){
+		String libRejet = "";
+		int valArecup;
+		int j;
+
+		if (ligneFichier.length >= cle.size())
+		{
+			// Il y a suffisament de colonne dans le fichier pour contenir la clé fonctionnelle
+			j=cle.size();	
+		}
+		else
+		{ 
+			// il n'y a pas assez de champs dans la ligne pour contenir la clé
+			j=ligneFichier.length;
+		}
+		for(int i = 0; i < j;i++){
+
+			valArecup = (Short)cle.get(i)-1;
+		
+			if(valArecup != ligneFichier.length){
+				if(i == 0){
+					libRejet += ligneFichier[valArecup];
+				}else{			
+					libRejet += " / " + ligneFichier[valArecup];
+				}
+			}
+		}
+		return (codeAno + "|" + libRejet + "|" + valKo);
+    }
+}

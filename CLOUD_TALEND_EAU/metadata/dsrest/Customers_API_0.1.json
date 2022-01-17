@@ -1,0 +1,171 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : " An API for keeping track of your customers",
+    "version" : "1.0.0",
+    "title" : "Customers API",
+    "contact" : { }
+  },
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/customers" : {
+      "get" : {
+        "summary" : "Get the list of customers",
+        "description" : "Loads the list of customers",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Statut 200",
+            "schema" : {
+              "$ref" : "#/definitions/Customers"
+            },
+            "examples" : {
+              "application/json" : "{\n\t\"Customer\": [{\n\t\t\t\"ID\": \"461140\",\n\t\t\t\"NAME\": \"Jason\",\n\t\t\t\"LAST_NAME\": \"HARRISON\",\n\t\t\t\"EMAIL\": \"jharrison5z@vistaprint.com\",\n\t\t\t\"JOB_TITLE\": \"Electrical Engineer\",\n\t\t\t\"CREDITCARDNUMBER\": \"4343354898-76-9480\",\n\t\t\t\"COMPANY\": \"Zoonder\",\n\t\t\t\"CITY\": \"Portland\",\n\t\t\t\"STATE\": \"\"\n\t\t}, {\n\t\t\t\"ID\": \"380630\",\n\t\t\t\"NAME\": \"VICTOR\",\n\t\t\t\"LAST_NAME\": \"COX\",\n\t\t\t\"EMAIL\": \"vcoxc9@virginia.edu\",\n\t\t\t\"JOB_TITLE\": \"Librarian\",\n\t\t\t\"CREDITCARDNUMBER\": \"30003746-83-0775\",\n\t\t\t\"COMPANY\": \"Skalith\",\n\t\t\t\"CITY\": \"Bend\",\n\t\t\t\"STATE\": \"\"\n\t\t}, {\n\t\t\t\"ID\": \"149072\",\n\t\t\t\"NAME\": \"Beverly\",\n\t\t\t\"LAST_NAME\": \"WRIGHT\",\n\t\t\t\"EMAIL\": \"bwrighth3@arizona.edu\",\n\t\t\t\"JOB_TITLE\": \"Biostatistician\",\n\t\t\t\"CREDITCARDNUMBER\": \"6011204780-36-8180\",\n\t\t\t\"COMPANY\": \"Skynoodle\",\n\t\t\t\"CITY\": \"Indianapolis\",\n\t\t\t\"STATE\": \"\"\n\t\t}, {\n\t\t\t\"ID\": \"678157\",\n\t\t\t\"NAME\": \"Kenneth\",\n\t\t\t\"LAST_NAME\": \"HARPER\",\n\t\t\t\"EMAIL\": \"kharperfu@craigslist.org\",\n\t\t\t\"JOB_TITLE\": \"Structural Engineer\",\n\t\t\t\"CREDITCARDNUMBER\": \"6249148211-57-8650\",\n\t\t\t\"COMPANY\": \"Dynava\",\n\t\t\t\"CITY\": \"Overland Park\",\n\t\t\t\"STATE\": \"\"\n\t\t}\t]\n}\n"
+            }
+          }
+        }
+      },
+      "post" : {
+        "summary" : "Create a customer",
+        "description" : "adds a new customer",
+        "consumes" : [ ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Customer"
+          },
+          "x-examples" : {
+            "application/json" : "{\n\t\t\t\"ID\": \"461140\",\n\t\t\t\"NAME\": \"Jason\",\n\t\t\t\"LAST_NAME\": \"HARRISON\",\n\t\t\t\"EMAIL\": \"jharrison5z@vistaprint.com\",\n\t\t\t\"JOB_TITLE\": \"Electrical Engineer\",\n\t\t\t\"CREDITCARDNUMBER\": \"4343354898-76-9480\",\n\t\t\t\"COMPANY\": \"Zoonder\",\n\t\t\t\"CITY\": \"Portland\",\n\t\t\t\"STATE\": \"\"\n\t\t}"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Statut 201",
+            "schema" : {
+              "$ref" : "#/definitions/Customer"
+            },
+            "examples" : {
+              "application/json" : "{\n\t\t\t\"ID\": \"461140\",\n\t\t\t\"NAME\": \"Jason\",\n\t\t\t\"LAST_NAME\": \"HARRISON\",\n\t\t\t\"EMAIL\": \"jharrison5z@vistaprint.com\",\n\t\t\t\"JOB_TITLE\": \"Electrical Engineer\",\n\t\t\t\"CREDITCARDNUMBER\": \"4343354898-76-9480\",\n\t\t\t\"COMPANY\": \"Zoonder\",\n\t\t\t\"CITY\": \"Portland\",\n\t\t\t\"STATE\": \"\"\n\t\t}"
+            }
+          },
+          "409" : {
+            "description" : "Status 409. Record could not be added.",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            },
+            "examples" : {
+              "application/json" : "{\n\t\"ID\": \"461145\",\n\t\"errorCode\": \"23000\",\n\t\"errorMessage\": \"Duplicate entry '461145' for key 'PRIMARY' - Line: 0\"\n}"
+            }
+          }
+        }
+      },
+      "parameters" : [ ]
+    },
+    "/customers/{id} " : {
+      "put" : {
+        "summary" : "Update a customer",
+        "description" : "Updates a customer",
+        "consumes" : [ ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Customer"
+          },
+          "x-examples" : {
+            "application/json" : "{\n\t\t\t\"ID\": \"461140\",\n\t\t\t\"NAME\": \"Jason\",\n\t\t\t\"LAST_NAME\": \"HARRISON\",\n\t\t\t\"EMAIL\": \"jharrison5z@vistaprint.com\",\n\t\t\t\"JOB_TITLE\": \"Electrical Engineer\",\n\t\t\t\"CREDITCARDNUMBER\": \"4343354898-76-9480\",\n\t\t\t\"COMPANY\": \"Zoonder\",\n\t\t\t\"CITY\": \"Portland\",\n\t\t\t\"STATE\": \"\"\n\t\t}"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Statut 200",
+            "schema" : {
+              "$ref" : "#/definitions/Customer"
+            },
+            "examples" : {
+              "application/json" : "{\n\t\t\t\"ID\": \"461140\",\n\t\t\t\"NAME\": \"Jason\",\n\t\t\t\"LAST_NAME\": \"HARRISON\",\n\t\t\t\"EMAIL\": \"jharrison5z@vistaprint.com\",\n\t\t\t\"JOB_TITLE\": \"Electrical Engineer\",\n\t\t\t\"CREDITCARDNUMBER\": \"4343354898-76-9480\",\n\t\t\t\"COMPANY\": \"Zoonder\",\n\t\t\t\"CITY\": \"Portland\",\n\t\t\t\"STATE\": \"\"\n\t\t}"
+            }
+          }
+        }
+      },
+      "delete" : {
+        "summary" : "Delete a customer",
+        "description" : "Deletes a customer",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Statut 200"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "id",
+        "in" : "path",
+        "required" : true,
+        "type" : "string"
+      } ]
+    }
+  },
+  "definitions" : {
+    "Customer" : {
+      "type" : "object",
+      "properties" : {
+        "ID" : {
+          "type" : "string"
+        },
+        "NAME" : {
+          "type" : "string"
+        },
+        "LAST_NAME" : {
+          "type" : "string"
+        },
+        "EMAIL" : {
+          "type" : "string"
+        },
+        "JOB_TITLE" : {
+          "type" : "string"
+        },
+        "CREDITCARDNUMBER" : {
+          "type" : "string"
+        },
+        "COMPANY" : {
+          "type" : "string"
+        },
+        "CITY" : {
+          "type" : "string"
+        },
+        "STATE" : {
+          "type" : "string"
+        }
+      },
+      "example" : "{\n\t\t\t\"ID\": \"461140\",\n\t\t\t\"NAME\": \"Jason\",\n\t\t\t\"LAST_NAME\": \"HARRISON\",\n\t\t\t\"EMAIL\": \"jharrison5z@vistaprint.com\",\n\t\t\t\"JOB_TITLE\": \"Electrical Engineer\",\n\t\t\t\"CREDITCARDNUMBER\": \"4343354898-76-9480\",\n\t\t\t\"COMPANY\": \"Zoonder\",\n\t\t\t\"CITY\": \"Portland\",\n\t\t\t\"STATE\": \"\"\n\t\t}"
+    },
+    "Customers" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "#/definitions/Customer"
+      }
+    },
+    "Error" : {
+      "type" : "object",
+      "required" : [ "ID" ],
+      "properties" : {
+        "ID" : {
+          "type" : "string"
+        },
+        "errorCode" : {
+          "type" : "integer",
+          "minimum" : 400,
+          "maximum" : 599
+        },
+        "errorMessage" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

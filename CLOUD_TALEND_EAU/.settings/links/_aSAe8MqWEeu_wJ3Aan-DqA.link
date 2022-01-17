@@ -1,0 +1,48 @@
+{
+  "itemId" : "_aSAe8MqWEeu_wJ3Aan-DqA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_3HQBYMqVEeu_wJ3Aan-DqA",
+    "parameterList" : [ {
+      "id" : "_RZlswMqWEeu_wJ3Aan-DqA",
+      "name" : "fic_clients_in"
+    }, {
+      "id" : "_RZlswcqWEeu_wJ3Aan-DqA",
+      "name" : "fic_clients_out"
+    }, {
+      "id" : "_3HmmscqVEeu_wJ3Aan-DqA",
+      "name" : "G_Rep_In"
+    }, {
+      "id" : "_3HmmssqVEeu_wJ3Aan-DqA",
+      "name" : "G_Rep_Out"
+    }, {
+      "id" : "_3Hmms8qVEeu_wJ3Aan-DqA",
+      "name" : "G_Rep_Tmp"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "__P1CQOPUEeuTRIKpTdi5fA",
+    "parameterList" : [ {
+      "id" : "__REYZePUEeuTRIKpTdi5fA",
+      "name" : "PG_LOGS_BDD_Login"
+    }, {
+      "id" : "__REYZOPUEeuTRIKpTdi5fA",
+      "name" : "PG_LOGS_BDD_Port"
+    }, {
+      "id" : "__REYY-PUEeuTRIKpTdi5fA",
+      "name" : "PG_LOGS_BDD_Database"
+    }, {
+      "id" : "__REYYOPUEeuTRIKpTdi5fA",
+      "name" : "PG_LOGS_BDD_Server"
+    }, {
+      "id" : "__RDxUePUEeuTRIKpTdi5fA",
+      "name" : "PG_LOGS_BDD_Password"
+    }, {
+      "id" : "__REYYePUEeuTRIKpTdi5fA",
+      "name" : "PG_LOGS_BDD_AdditionalParams"
+    }, {
+      "id" : "__REYYuPUEeuTRIKpTdi5fA",
+      "name" : "PG_LOGS_BDD_Schema"
+    } ]
+  } ]
+}

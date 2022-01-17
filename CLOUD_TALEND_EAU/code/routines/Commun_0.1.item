@@ -1,0 +1,204 @@
+package routines;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class Commun {
+
+	public static String dateFormat = "dd/MM/yyyy HH:mm:ss";
+
+	public static String niveauTrace ="TRACE";
+	public static String niveauDebug ="DEBUG";
+	public static String niveauInfo ="INFO";
+	public static String niveauAvert ="AVERT";
+	public static String niveauErreur ="ERROR";
+	public static String niveauFatal ="FATAL";
+	
+    /**
+     * ecritureConsole : ecrit sur la console un message précédé de l'heure
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("message") input: le message à écrire.
+     * 
+     * {example} ecritureConsole("Bonjour") # 01/01/2017 13:00:00 - Bonjour
+     */
+    public static void ecritureConsole(String message) {
+        
+        System.out.println(TalendDate.getDate(dateFormat) +" - "+ message); 
+    }
+    
+    /**
+     * ecritureConsoleInfo : ecrit sur la console un message précédé de l'heure et du tag INFO
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("message") input: le message à écrire.
+     * 
+     * {example} ecritureConsoleInfo("Bonjour") #  01/01/2017 13:00:00 - INFO - Bonjour
+     */
+    public static void ecritureConsoleInfo(String message) {
+        
+        ecritureConsole(niveauInfo+" - "+message); 
+    }
+
+    /**
+     * ecritureConsoleError : ecrit sur la console un message précédé de l'heure et du tag ERROR
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("message") input: le message à écrire.
+     * 
+     * {example} ecritureConsoleError("Bonjour") #  01/01/2017 13:00:00 - ERROR - Bonjour
+     */
+    public static void ecritureConsoleError(String message) {
+        
+        ecritureConsole(niveauErreur+" - "+message); 
+    }
+    
+    /**
+     * ecritureConsoleFatal : ecrit sur la console un message précédé de l'heure et du tag FATAL
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("message") input: le message à écrire.
+     * 
+     * {example} ecritureConsoleFatal("Bonjour") #  01/01/2017 13:00:00 - FATAL - Bonjour
+     */ 
+    public static void ecritureConsoleFatal(String message) {
+        
+        ecritureConsole(niveauFatal+" - "+message); 
+    }
+ 
+    /**
+     * ecritureConsoleAvert : ecrit sur la console un message précédé de l'heure et du tag AVERT
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("message") input: le message à écrire.
+     * 
+     * {example} ecritureConsoleAvert("Bonjour") #  01/01/2017 13:00:00 - AVERT - Bonjour
+     */
+    public static void ecritureConsoleAvert(String message) {
+        
+        ecritureConsole(niveauAvert+" - "+message); 
+    }
+ 
+    /**
+     * ecritureConsoleDebug : ecrit sur la console un message précédé de l'heure et du tag EBUGRT
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("message") input: le message à écrire.
+     * 
+     * {example} ecritureConsoleAvert("Bonjour") #  01/01/2017 13:00:00 - DEBUG - Bonjour
+     */
+    public static void ecritureConsoleDebug(String message) {
+        
+        ecritureConsole(niveauAvert+" - "+message); 
+    }
+ 
+    /**
+     * ecritureConsole : ecrit sur la console un message précédé de l'heure passée en paramètre
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("message") input: le message à écrire.
+     * {param} date("date") input: la date à indiquer.
+     * 
+     * {example} ecritureConsole("Bonjour",Date) # Date (au format DD/MM/YYYY HH:mm:ss)  - Bonjour
+     */
+    public static void ecritureConsole(String message, java.util.Date date) {
+    	java.text.DateFormat df = new java.text.SimpleDateFormat(dateFormat);
+    	
+        System.out.println(df.format(date)+" - "+ message); 
+    }
+    
+    /**
+     * traductionPrioriteLog : traduit les id des priorité des composants tWarn/tDie
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} integer("priority") input: id priorité.
+     * 
+     * {example} traductionPrioriteLog(3) #  retourne INFO
+     */
+    public static String traductionPrioriteLog(Integer priority) {
+        
+        switch (priority) {
+        case 1 : return niveauTrace; 
+        case 2 : return niveauDebug; 
+        case 3 : return niveauInfo; 
+        case 4 : return niveauAvert; 
+        case 5 : return niveauErreur; 
+        case 6 : return niveauFatal; 
+        default : return "";
+        }        
+    }
+    
+    /**
+     * isNull : teste si un string en entrée est null ou vide (utilisé pour les lignes de commande)
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("code") input: le code à tester.
+     * 
+     * {example} isNull("") # true
+     */
+    public static boolean isNull(String code) {
+    	
+        if(Relational.ISNULL(code)){
+        	return true;
+        }
+        
+        code = code.toUpperCase();
+        
+        if("".equals(code) || "NULL".equals(code)){
+        	return true;
+        }
+    	
+        return false;
+    }
+}
