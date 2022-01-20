@@ -2,28 +2,22 @@
   "itemId" : "_hKvGYHeiEeymUK72RnFQEA",
   "contextList" : [ {
     "contextName" : "Default",
-    "repoId" : "__P1CQOPUEeuTRIKpTdi5fA",
+    "repoId" : "_cAQAgHn9EeymUK72RnFQEA",
     "parameterList" : [ {
-      "id" : "__REYZePUEeuTRIKpTdi5fA",
-      "name" : "PG_LOGS_BDD_Login"
+      "id" : "_3hDDE3n9EeymUK72RnFQEA",
+      "name" : "aiwatch_file_properties"
     }, {
-      "id" : "__REYZOPUEeuTRIKpTdi5fA",
-      "name" : "PG_LOGS_BDD_Port"
+      "id" : "_3hDDEHn9EeymUK72RnFQEA",
+      "name" : "aiwatch_rep_in"
     }, {
-      "id" : "__REYY-PUEeuTRIKpTdi5fA",
-      "name" : "PG_LOGS_BDD_Database"
+      "id" : "_3hDDEXn9EeymUK72RnFQEA",
+      "name" : "aiwatch_rep_out"
     }, {
-      "id" : "__REYYOPUEeuTRIKpTdi5fA",
-      "name" : "PG_LOGS_BDD_Server"
+      "id" : "_3hDDEnn9EeymUK72RnFQEA",
+      "name" : "aiwatch_rep_param"
     }, {
-      "id" : "__RDxUePUEeuTRIKpTdi5fA",
-      "name" : "PG_LOGS_BDD_Password"
-    }, {
-      "id" : "__REYYePUEeuTRIKpTdi5fA",
-      "name" : "PG_LOGS_BDD_AdditionalParams"
-    }, {
-      "id" : "__REYYuPUEeuTRIKpTdi5fA",
-      "name" : "PG_LOGS_BDD_Schema"
+      "id" : "_3hDDFHn9EeymUK72RnFQEA",
+      "name" : "aiwatch_rep_work"
     } ]
   } ]
 }
