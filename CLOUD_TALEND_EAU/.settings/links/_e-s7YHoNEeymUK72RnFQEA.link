@@ -1,0 +1,23 @@
+{
+  "itemId" : "_e-s7YHoNEeymUK72RnFQEA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_cAQAgHn9EeymUK72RnFQEA",
+    "parameterList" : [ {
+      "id" : "_3hDDE3n9EeymUK72RnFQEA",
+      "name" : "aiwatch_file_properties"
+    }, {
+      "id" : "_3hDDEHn9EeymUK72RnFQEA",
+      "name" : "aiwatch_rep_in"
+    }, {
+      "id" : "_3hDDEXn9EeymUK72RnFQEA",
+      "name" : "aiwatch_rep_out"
+    }, {
+      "id" : "_3hDDEnn9EeymUK72RnFQEA",
+      "name" : "aiwatch_rep_param"
+    }, {
+      "id" : "_3hDDFHn9EeymUK72RnFQEA",
+      "name" : "aiwatch_rep_work"
+    } ]
+  } ]
+}
