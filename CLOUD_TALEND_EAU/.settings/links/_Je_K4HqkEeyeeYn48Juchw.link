@@ -1,0 +1,38 @@
+{
+  "itemId" : "_Je_K4HqkEeyeeYn48Juchw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_cAQAgHn9EeymUK72RnFQEA",
+    "parameterList" : [ {
+      "id" : "_3hDDE3n9EeymUK72RnFQEA",
+      "name" : "aiwatch_file_properties"
+    }, {
+      "id" : "_3hDDEHn9EeymUK72RnFQEA",
+      "name" : "aiwatch_rep_in"
+    }, {
+      "id" : "_3hDDEXn9EeymUK72RnFQEA",
+      "name" : "aiwatch_rep_out"
+    }, {
+      "id" : "_3hDDEnn9EeymUK72RnFQEA",
+      "name" : "aiwatch_rep_param"
+    }, {
+      "id" : "_3hDDFHn9EeymUK72RnFQEA",
+      "name" : "aiwatch_rep_work"
+    }, {
+      "id" : "_j0qKA3qXEeyeeYn48Juchw",
+      "name" : "aiwatch_total_eur_2018"
+    }, {
+      "id" : "_j0qKAnqXEeyeeYn48Juchw",
+      "name" : "aiwatch_total_eur_2019"
+    }, {
+      "id" : "_j0qKAXqXEeyeeYn48Juchw",
+      "name" : "aiwatch_total_eur_2020"
+    }, {
+      "id" : "_j0qKAHqXEeyeeYn48Juchw",
+      "name" : "aiwatch_total_eur_2021"
+    }, {
+      "id" : "_j0qKBHqXEeyeeYn48Juchw",
+      "name" : "aiwatch_total_eur_def"
+    } ]
+  } ]
+}
