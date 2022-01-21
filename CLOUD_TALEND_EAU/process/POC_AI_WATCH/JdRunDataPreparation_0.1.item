@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" internalId="_JDq-UHqYEeyeeYn48Juchw" name="aiwatch_file_properties" prompt="aiwatch_file_properties?" promptNeeded="false" repositoryContextId="_cAQAgHn9EeymUK72RnFQEA" type="id_String" value="C:/Talend/data/AIWATCH/param/properties.ini"/>
     <contextParameter comment="" internalId="_JDq-UXqYEeyeeYn48Juchw" name="aiwatch_rep_in" prompt="aiwatch_rep_in?" promptNeeded="false" repositoryContextId="_cAQAgHn9EeymUK72RnFQEA" type="id_String" value="C:/Talend/data/AIWATCH/in/"/>
@@ -14,7 +14,7 @@
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="256"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="224"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -54,7 +54,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:voFEqlNMFCPWji1dnUphEFpjMXLfr4eAJaKPNO4I"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:J1BBlA86a/B3oq0rgTtuyuJ/N8JN3E27nQCPNAMu"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -89,7 +89,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:cZ+SLESOOjyFq8gX0dsjLfpPJdtL9dQduZWlIrAw"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+z9juwcKmvSUCGACy9a6OORsW0DRQUDrKZVOOqUu"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -124,823 +124,11 @@
     <routinesParameter id="_rAH1UJGtEemnL8byKcTwDw" name="TalendStringUtil"/>
     <routinesParameter id="_rABusJGtEemnL8byKcTwDw" name="TalendString"/>
   </parameters>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="480">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_7"/>
-    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.aiwatch_rep_in+&quot;Pharmacompass Hydroxy Sulfate.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:Nyo7eO05AFDd0LJyYGyfxuAq8Ypw7KbjhfqVQsOo"/>
-    <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
-    <elementParameter field="TABLE" name="SHEETLIST">
-      <elementValue elementRef="SHEETNAME" value="&quot;API Imports&quot;"/>
-      <elementValue elementRef="USE_REGEX" value=""/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="HEADER" value="1"/>
-    <elementParameter field="TEXT" name="FOOTER" value="0"/>
-    <elementParameter field="TEXT" name="LIMIT" value=""/>
-    <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
-    <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
-    <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_N5fkYHoBEeymUK72RnFQEA - metadata"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_N5fkYHoBEeymUK72RnFQEA - metadata"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="','"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="'.'"/>
-    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
-    <elementParameter field="TABLE" name="TRIMSELECT">
-      <elementValue elementRef="SCHEMA_COLUMN" value="DATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INDIAN_COMPANY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ADDRESS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CITY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INDIAN_PORT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_COMPANY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_ADDRESS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_PORT__COUNTRY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT_RATE__FOREIGN_CURRENCY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CURRENCY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_VALUE___FOREIGN_CURRENCY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT_RATE__INR"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_VALUE__INR"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DUTY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="HS_CODE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
-    <elementParameter field="TABLE" name="DATESELECT" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="DATE"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INDIAN_COMPANY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ADDRESS"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CITY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INDIAN_PORT"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_COMPANY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_ADDRESS"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_PORT__COUNTRY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT_RATE__FOREIGN_CURRENCY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CURRENCY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_VALUE___FOREIGN_CURRENCY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT_RATE__INR"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_VALUE__INR"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DUTY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="HS_CODE"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-    </elementParameter>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
-    <elementParameter field="CHECK" name="READ_REAL_VALUE" show="false" value="false"/>
-    <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="false"/>
-    <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" show="false" value="false"/>
-    <elementParameter field="CHECK" name="SUPPRESS_WARN" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
-    <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" show="false" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="AIWATCH_IN_Imports"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_7">
-      <column comment="" key="false" length="10" name="DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="42" name="INDIAN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="69" name="ADDRESS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="34" name="CITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="INDIAN_PORT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="44" name="FOREIGN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="FOREIGN_ADDRESS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="26" name="FOREIGN_PORT__COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="40" name="PRODUCT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="UNIT_RATE__FOREIGN_CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="TOTAL_VALUE___FOREIGN_CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="UNIT_RATE__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="11" name="TOTAL_VALUE__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="DUTY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="HS_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="10" name="DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="42" name="INDIAN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="69" name="ADDRESS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="34" name="CITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="INDIAN_PORT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="44" name="FOREIGN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="FOREIGN_ADDRESS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="26" name="FOREIGN_PORT__COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="40" name="PRODUCT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="UNIT_RATE__FOREIGN_CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="TOTAL_VALUE___FOREIGN_CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="UNIT_RATE__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="11" name="TOTAL_VALUE__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="DUTY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="HS_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="480">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_7"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_e-s7YHoNEeymUK72RnFQEA-tMap_7-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
-    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
-    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="out_imports">
-      <column comment="" key="false" length="4" name="DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="Month" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Quarter" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="119" name="PRODUCT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="39" name="API_Importer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="41" name="FOREIGN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="Country_of_origin" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="Subregion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="QTY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="11" name="Total_Value__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="Total_Value__EUR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="Average_Price_per_Qty__EUR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="16" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Validation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
-      <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="!Relational.ISNULL(row9.FOREIGN_PORT__COUNTRY)?&#13;&#10;row9.FOREIGN_PORT__COUNTRY.contains(&quot;,&quot;)?&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY.split(&quot;,&quot;)[1]):&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY)&#13;&#10;:null " name="country" type="id_String"/>
-        <mapperTableEntries expression="TalendDate.getPartOfDate(&quot;YEAR&quot;,row9.DATE) " name="year" type="id_Integer"/>
-        <mapperTableEntries expression="row9.TOTAL_VALUE__INR == null || &quot;&quot;.equals(row9.TOTAL_VALUE__INR) ? Double.parseDouble(&quot;0.00&quot;) : Double.parseDouble(row9.TOTAL_VALUE__INR.replace(&quot;  &quot;,&quot;&quot;).replace(',','.')) " name="tot_value_comma" type="id_Double"/>
-        <mapperTableEntries expression="Var.year == 2021 ? context.aiwatch_total_eur_2021 * Var.tot_value_comma :&#13;&#10;Var.year == 2020 ? context.aiwatch_total_eur_2020 * Var.tot_value_comma :&#13;&#10;Var.year == 2019 ? context.aiwatch_total_eur_2019 * Var.tot_value_comma :&#13;&#10;Var.year == 2018 ? context.aiwatch_total_eur_2018 * Var.tot_value_comma :&#13;&#10;context.aiwatch_total_eur_def * Var.tot_value_comma " name="total_eur" type="id_Double"/>
-        <mapperTableEntries expression="row9.QUANTITY == null || &quot;&quot;.equals(row9.QUANTITY) ? Double.parseDouble(&quot;0.00&quot;) : Double.parseDouble(row9.QUANTITY.replace(&quot;  &quot;,&quot;&quot;).replace(',','.')) " name="qty_value_comma" type="id_Double"/>
-      </varTables>
-      <outputTables name="out_imports" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="Var.year " name="DATE" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="Integer.toString(TalendDate.getPartOfDate(&quot;MONTH&quot;,row9.DATE)) " name="Month" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="&quot;Q&quot;+ Integer.toString(TalendDate.getPartOfDate(&quot;MONTH&quot;,row9.DATE)/3+1) " name="Quarter" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row9.PRODUCT " name="PRODUCT" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row9.INDIAN_COMPANY " name="API_Importer" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row9.FOREIGN_COMPANY " name="FOREIGN_COMPANY" nullable="true" type="id_String"/>
-        <mapperTableEntries expression=" Var.country " name="Country_of_origin" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="in_country_imp.Subregion " name="Subregion" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="in_country_imp.Region " name="Region" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row9.QUANTITY " name="QTY" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row9.UNIT " name="UNIT" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row9.TOTAL_VALUE__INR " name="Total_Value__INR" nullable="true" type="id_String"/>
-        <mapperTableEntries expression=" Var.total_eur " name="Total_Value__EUR" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression=" Var.total_eur  /  Var.qty_value_comma " name="Average_Price_per_Qty__EUR" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="&quot;JAPAN&quot;.equals(Var.country) || &quot;UNITED STATES&quot;.equals(Var.country) ? 1 : 0 " name="Validation" nullable="true" type="id_Integer"/>
-      </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row9" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="DATE" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="INDIAN_COMPANY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ADDRESS" nullable="true" type="id_String"/>
-        <mapperTableEntries name="CITY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="INDIAN_PORT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FOREIGN_COMPANY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FOREIGN_ADDRESS" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FOREIGN_PORT__COUNTRY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PRODUCT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="QUANTITY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="UNIT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="UNIT_RATE__FOREIGN_CURRENCY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="CURRENCY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="TOTAL_VALUE___FOREIGN_CURRENCY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="UNIT_RATE__INR" nullable="true" type="id_String"/>
-        <mapperTableEntries name="TOTAL_VALUE__INR" nullable="true" type="id_String"/>
-        <mapperTableEntries name="DUTY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="HS_CODE" nullable="true" type="id_Integer"/>
-      </inputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="in_country_imp" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="!Relational.ISNULL(row9.FOREIGN_PORT__COUNTRY)?&#13;&#10;row9.FOREIGN_PORT__COUNTRY.contains(&quot;,&quot;)?&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY.split(&quot;,&quot;)[1]):&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY)&#13;&#10;:null " name="Country" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Region" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Subregion" nullable="true" type="id_String"/>
-      </inputTables>
-    </nodeData>
-  </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="480">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_6"/>
-    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
-    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.aiwatch_rep_work+&quot;Pharmacompass Hydroxy Sulfate tmp.xlsx&quot;"/>
-    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;API Imports&quot;"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
-    <elementParameter field="CHECK" name="APPEND_FILE" value="true"/>
-    <elementParameter field="CHECK" name="APPEND_SHEET" value="false"/>
-    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
-    <elementParameter field="TEXT" name="FIRST_CELL_X" show="false" value="0"/>
-    <elementParameter field="TEXT" name="FIRST_CELL_Y" show="false" value="0"/>
-    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
-    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
-    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
-      <elementValue elementRef="SCHEMA_COLUMN" value="DATE"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Month"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Quarter"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="API_Importer"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_COMPANY"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Country_of_origin"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Subregion"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Region"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTY"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Value__INR"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Value__EUR"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Average_Price_per_Qty__EUR"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Validation"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PROTECT_FILE" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:lhA8UiN8DAhZ1trRAuFtJsghQAjV5oDObBNL4k2Y"/>
-    <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
-    <elementParameter field="CHECK" name="TRUNCATE_EXCEEDING_CHARACTERS" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" show="false" value="false"/>
-    <elementParameter field="CHECK" name="STREAMING_APPEND" value="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="LABEL" value="AIWATCH_IN_EXPORTS"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFileOutputExcel_6">
-      <column comment="" key="false" length="4" name="DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="Month" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Quarter" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="119" name="PRODUCT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="39" name="API_Importer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="41" name="FOREIGN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="Country_of_origin" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="Subregion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="QTY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="11" name="Total_Value__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="Total_Value__EUR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="Average_Price_per_Qty__EUR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="16" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Validation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="352">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_6"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_FARVYHoLEeymUK72RnFQEA"/>
-    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/eauzemery/Desktop/PROJETS/SANOFI/AI WATCH/Regional Mapping.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:Vv4A190I6XY6sYKkD6dROIfjAfVnflBg4m2WBF3n"/>
-    <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
-    <elementParameter field="TABLE" name="SHEETLIST" show="false">
-      <elementValue elementRef="SHEETNAME" value="&quot;Mapping&quot;"/>
-      <elementValue elementRef="USE_REGEX" value=""/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="HEADER" value="1"/>
-    <elementParameter field="TEXT" name="FOOTER" value="0"/>
-    <elementParameter field="TEXT" name="LIMIT" value=""/>
-    <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
-    <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
-    <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_FARVYHoLEeymUK72RnFQEA - metadata"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_FARVYHoLEeymUK72RnFQEA - metadata"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="','"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="'.'"/>
-    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
-    <elementParameter field="TABLE" name="TRIMSELECT">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Country"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Region"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Subregion"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
-    <elementParameter field="TABLE" name="DATESELECT" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Country"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Region"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Subregion"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-    </elementParameter>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
-    <elementParameter field="CHECK" name="READ_REAL_VALUE" show="false" value="false"/>
-    <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="false"/>
-    <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" show="false" value="false"/>
-    <elementParameter field="CHECK" name="SUPPRESS_WARN" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
-    <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" show="false" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="AIWATCH_REGIONS"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_6">
-      <column comment="" key="false" length="22" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="Subregion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="22" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="Subregion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_8"/>
-    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.aiwatch_rep_in+&quot;Pharmacompass Hydroxy Sulfate.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:thcuahO5FodLqG8Tr5Y7gOFfIwJnQSmYFvGHrhxv"/>
-    <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
-    <elementParameter field="TABLE" name="SHEETLIST">
-      <elementValue elementRef="SHEETNAME" value="&quot;API Exports&quot;"/>
-      <elementValue elementRef="USE_REGEX" value=""/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="HEADER" value="1"/>
-    <elementParameter field="TEXT" name="FOOTER" value="0"/>
-    <elementParameter field="TEXT" name="LIMIT" value=""/>
-    <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
-    <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
-    <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_Lr2BEHoBEeymUK72RnFQEA - metadata"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_Lr2BEHoBEeymUK72RnFQEA - metadata"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="','"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="'.'"/>
-    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
-    <elementParameter field="TABLE" name="TRIMSELECT">
-      <elementValue elementRef="SCHEMA_COLUMN" value="DATE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="HS_CODE"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INDIAN_COMPANY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_COMPANY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT_RATE__FOREIGN_CURRENCY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CURRENCY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_VALUE___FOREIGN_CURRENCY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT_RATE__INR"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_VALUE__INR"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ADDRESS"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CITY"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INDIAN_PORT"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BILL_NO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
-    <elementParameter field="TABLE" name="DATESELECT" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="DATE"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="HS_CODE"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INDIAN_COMPANY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_COMPANY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT_RATE__FOREIGN_CURRENCY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CURRENCY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_VALUE___FOREIGN_CURRENCY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT_RATE__INR"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_VALUE__INR"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ADDRESS"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CITY"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INDIAN_PORT"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BILL_NO"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-    </elementParameter>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
-    <elementParameter field="CHECK" name="READ_REAL_VALUE" show="false" value="false"/>
-    <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="false"/>
-    <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" show="false" value="false"/>
-    <elementParameter field="CHECK" name="SUPPRESS_WARN" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
-    <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" show="false" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="AIWATCH_IN_Exports"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_8">
-      <column comment="" key="false" length="10" name="DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="HS_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="36" name="INDIAN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="35" name="FOREIGN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="28" name="COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="122" name="PRODUCT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="UNIT_RATE__FOREIGN_CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="TOTAL_VALUE___FOREIGN_CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="UNIT_RATE__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="11" name="TOTAL_VALUE__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="65" name="ADDRESS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="35" name="CITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="INDIAN_PORT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="BILL_NO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="10" name="DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="HS_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="36" name="INDIAN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="35" name="FOREIGN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="28" name="COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="122" name="PRODUCT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="UNIT_RATE__FOREIGN_CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="TOTAL_VALUE___FOREIGN_CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="UNIT_RATE__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="11" name="TOTAL_VALUE__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="65" name="ADDRESS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="35" name="CITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="INDIAN_PORT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="BILL_NO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_4"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_e-s7YHoNEeymUK72RnFQEA-tMap_4-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
-    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
-    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="out_exports">
-      <column comment="" key="false" length="4" name="DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="Month" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Quarter" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="33" name="API_Supplier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="35" name="Customer_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Country_of_destination" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="Subregion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="Qty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="11" name="Total_FOB_in_INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="EUR_Value__total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="8" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="Average_Price_per_Qty__EUR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="110" name="PRODUCT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Validation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
-      <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="!Relational.ISNULL(row6.COUNTRY)?&#13;&#10;row6.COUNTRY.contains(&quot;,&quot;)?&#13;&#10;StringHandling.UPCASE(row6.COUNTRY.split(&quot;,&quot;)[0]):&#13;&#10;StringHandling.UPCASE(row6.COUNTRY)&#13;&#10;:null " name="country" type="id_String"/>
-        <mapperTableEntries expression="TalendDate.getPartOfDate(&quot;YEAR&quot;,row6.DATE) " name="year" type="id_Integer"/>
-        <mapperTableEntries expression="row6.TOTAL_VALUE__INR == null || &quot;&quot;.equals(row6.TOTAL_VALUE__INR) ? Double.parseDouble(&quot;0.00&quot;) : Double.parseDouble(row6.TOTAL_VALUE__INR.replace(&quot;  &quot;,&quot;&quot;).replace(',','.')) " name="tot_value_comma" type="id_Double"/>
-        <mapperTableEntries expression="row6.QUANTITY == null || &quot;&quot;.equals(row6.QUANTITY) ? Double.parseDouble(&quot;0.00&quot;) : Double.parseDouble(row6.QUANTITY.replace(&quot;  &quot;,&quot;&quot;).replace(',','.')) " name="qty_value_comma" type="id_Double"/>
-        <mapperTableEntries expression="Var.year == 2021 ? context.aiwatch_total_eur_2021 * Var.tot_value_comma :&#13;&#10;Var.year == 2020 ? context.aiwatch_total_eur_2020 * Var.tot_value_comma :&#13;&#10;Var.year == 2019 ? context.aiwatch_total_eur_2019 * Var.tot_value_comma :&#13;&#10;Var.year == 2018 ? context.aiwatch_total_eur_2018 * Var.tot_value_comma :&#13;&#10;context.aiwatch_total_eur_def * Var.tot_value_comma " name="eur_value" type="id_Double"/>
-      </varTables>
-      <outputTables name="out_exports" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="Var.year " name="DATE" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="Integer.toString(TalendDate.getPartOfDate(&quot;MONTH&quot;,row6.DATE)) " name="Month" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="&quot;Q&quot;+ Integer.toString(TalendDate.getPartOfDate(&quot;MONTH&quot;,row6.DATE)/3+1) " name="Quarter" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row6.INDIAN_COMPANY " name="API_Supplier" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row6.FOREIGN_COMPANY " name="Customer_Name" nullable="true" type="id_String"/>
-        <mapperTableEntries expression=" Var.country " name="Country_of_destination" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="in_country.Subregion " name="Subregion" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="in_country.Region " name="Region" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row6.QUANTITY " name="Qty" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row6.UNIT " name="UNIT" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row6.TOTAL_VALUE__INR " name="Total_FOB_in_INR" nullable="true" type="id_String"/>
-        <mapperTableEntries expression=" Var.eur_value " name="EUR_Value__total" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="Var.eur_value / Var.qty_value_comma " name="Average_Price_per_Qty__EUR" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="row6.PRODUCT " name="PRODUCT" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="&quot;JAPAN&quot;.equals(Var.country) || &quot;UNITED STATES&quot;.equals(Var.country) ? 1 : 0 " name="Validation" nullable="true" type="id_Integer"/>
-      </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row6" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="DATE" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="HS_CODE" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="INDIAN_COMPANY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FOREIGN_COMPANY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="COUNTRY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PRODUCT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="QUANTITY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="UNIT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="UNIT_RATE__FOREIGN_CURRENCY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="CURRENCY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="TOTAL_VALUE___FOREIGN_CURRENCY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="UNIT_RATE__INR" nullable="true" type="id_String"/>
-        <mapperTableEntries name="TOTAL_VALUE__INR" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ADDRESS" nullable="true" type="id_String"/>
-        <mapperTableEntries name="CITY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="INDIAN_PORT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="BILL_NO" nullable="true" type="id_Integer"/>
-      </inputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="in_country" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="!Relational.ISNULL(row6.COUNTRY)?&#13;&#10;row6.COUNTRY.contains(&quot;,&quot;)?&#13;&#10;StringHandling.UPCASE(row6.COUNTRY.split(&quot;,&quot;)[0]):&#13;&#10;StringHandling.UPCASE(row6.COUNTRY)&#13;&#10;:null " name="Country" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Region" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Subregion" nullable="true" type="id_String"/>
-      </inputTables>
-    </nodeData>
-  </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="224">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_3"/>
-    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
-    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.aiwatch_rep_work+&quot;Pharmacompass Hydroxy Sulfate tmp.xlsx&quot;"/>
-    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;API Exports&quot;"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
-    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
-    <elementParameter field="CHECK" name="APPEND_SHEET" show="false" value="false"/>
-    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
-    <elementParameter field="TEXT" name="FIRST_CELL_X" show="false" value="0"/>
-    <elementParameter field="TEXT" name="FIRST_CELL_Y" show="false" value="0"/>
-    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
-    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
-    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
-      <elementValue elementRef="SCHEMA_COLUMN" value="DATE"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Month"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Quarter"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="API_Supplier"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Name"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Country_of_destination"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Subregion"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Region"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Qty"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UNIT"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Total_FOB_in_INR"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EUR_Value__total"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Average_Price_per_Qty__EUR"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Validation"/>
-      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PROTECT_FILE" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:WRTLaZ6aR8JxjdFTtM8FlSd7N3RCWpjW825s0a8t"/>
-    <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
-    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
-    <elementParameter field="CHECK" name="TRUNCATE_EXCEEDING_CHARACTERS" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" show="false" value="false"/>
-    <elementParameter field="CHECK" name="STREAMING_APPEND" show="false" value="false"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="LABEL" value="AIWATCH_OUT_EXPORTS"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFileOutputExcel_3">
-      <column comment="" key="false" length="4" name="DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="Month" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="Quarter" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="33" name="API_Supplier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="35" name="Customer_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Country_of_destination" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="Subregion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="Qty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="11" name="Total_FOB_in_INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="EUR_Value__total" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="8" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="Average_Price_per_Qty__EUR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="110" name="PRODUCT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Validation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_3"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_FARVYHoLEeymUK72RnFQEA"/>
-    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/eauzemery/Desktop/PROJETS/SANOFI/AI WATCH/Regional Mapping.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:udw4OEr2TCvDlKXmPStXLV+SPsK5vbotl7NGXzWn"/>
-    <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
-    <elementParameter field="TABLE" name="SHEETLIST" show="false">
-      <elementValue elementRef="SHEETNAME" value="&quot;Mapping&quot;"/>
-      <elementValue elementRef="USE_REGEX" value=""/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="HEADER" value="1"/>
-    <elementParameter field="TEXT" name="FOOTER" value="0"/>
-    <elementParameter field="TEXT" name="LIMIT" value=""/>
-    <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
-    <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
-    <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_FARVYHoLEeymUK72RnFQEA - metadata"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_FARVYHoLEeymUK72RnFQEA - metadata"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="','"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="'.'"/>
-    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
-    <elementParameter field="TABLE" name="TRIMSELECT">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Country"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Region"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Subregion"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
-    <elementParameter field="TABLE" name="DATESELECT" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Country"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Region"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Subregion"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-    </elementParameter>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
-    <elementParameter field="CHECK" name="READ_REAL_VALUE" show="false" value="false"/>
-    <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="false"/>
-    <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" show="false" value="false"/>
-    <elementParameter field="CHECK" name="SUPPRESS_WARN" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
-    <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" show="false" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="AIWATCH_REGIONS"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_3">
-      <column comment="" key="false" length="22" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="Subregion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="22" name="Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="Region" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="Subregion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.aiwatch_rep_in+&quot;Pharmacompass Hydroxy Sulfate.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:Kwakq/SUQHQB/R30M4OfMYHHIEL9944PvCh9UFmm"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:ZT4Z0gyL3uhDH/loB9pFyeoGBszU9K8bKmbvCeK1"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
       <elementValue elementRef="SHEETNAME" value="&quot;API Exports&quot;"/>
@@ -1102,11 +290,38 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tDataprepRun" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="-224">
+  <node componentName="tDatasetOutput" componentVersion="0.37.0" offsetLabelX="0" offsetLabelY="0" posX="480" posY="-192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDatasetOutput_1"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter name="PROPERTIES" value="{&quot;@type&quot;:&quot;org.talend.components.dataprep.tdatasetoutput.TDataSetOutputProperties&quot;,&quot;__version&quot;:2,&quot;mode&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;Create&quot;},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.Arrays$ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;Create&quot;},{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;Update&quot;},{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;CreateOrUpdate&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;mode&quot;,&quot;tags&quot;:null},&quot;dataSetNameForCreateMode&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetNameForCreateMode&quot;,&quot;tags&quot;:null},&quot;dataSetName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;ADD_QUOTES&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetName&quot;,&quot;tags&quot;:null},&quot;dataSetId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetId&quot;,&quot;tags&quot;:null},&quot;limit&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;int&quot;,&quot;value&quot;:100},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Integer&quot;,&quot;name&quot;:&quot;limit&quot;,&quot;tags&quot;:null},&quot;schema&quot;:{&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;metadata\&quot;,\&quot;fields\&quot;:[{\&quot;name\&quot;:\&quot;DATE\&quot;,\&quot;type\&quot;:[{\&quot;type\&quot;:\&quot;long\&quot;,\&quot;java-class\&quot;:\&quot;java.util.Date\&quot;},\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;DATE\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Date\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;10\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;DATE\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;HS_CODE\&quot;,\&quot;type\&quot;:[\&quot;int\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;HS_CODE\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Integer\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;8\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;HS_CODE\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;INDIAN_COMPANY\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;INDIAN_COMPANY\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;36\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;INDIAN_COMPANY\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;FOREIGN_COMPANY\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;FOREIGN_COMPANY\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;35\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;FOREIGN_COMPANY\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;COUNTRY\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;COUNTRY\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;28\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;COUNTRY\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PRODUCT\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PRODUCT\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;122\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;PRODUCT\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;QUANTITY\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;QUANTITY\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;8\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;QUANTITY\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;UNIT\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;UNIT\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;3\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;UNIT\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;UNIT_RATE__FOREIGN_CURRENCY\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;UNIT_RATE__FOREIGN_CURRENCY\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;8\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;UNIT_RATE__FOREIGN_CURRENCY\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;CURRENCY\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;CURRENCY\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;3\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;CURRENCY\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;TOTAL_VALUE___FOREIGN_CURRENCY\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;TOTAL_VALUE___FOREIGN_CURRENCY\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;9\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;TOTAL_VALUE___FOREIGN_CURRENCY\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;UNIT_RATE__INR\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;UNIT_RATE__INR\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;15\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;UNIT_RATE__INR\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;TOTAL_VALUE__INR\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;TOTAL_VALUE__INR\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;11\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;TOTAL_VALUE__INR\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;ADDRESS\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;ADDRESS\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;65\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;ADDRESS\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;CITY\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;CITY\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;35\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;CITY\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;INDIAN_PORT\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;INDIAN_PORT\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;18\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;INDIAN_PORT\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;BILL_NO\&quot;,\&quot;type\&quot;:[\&quot;int\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;BILL_NO\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_Integer\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;dd-MM-yyyy\&quot;,\&quot;talend.field.length\&quot;:\&quot;7\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.column.originalLength\&quot;:\&quot;0\&quot;,\&quot;di.table.label\&quot;:\&quot;BILL_NO\&quot;,\&quot;talend.field.precision\&quot;:\&quot;0\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;}],\&quot;di.table.name\&quot;:\&quot;tDatasetOutput_1\&quot;,\&quot;di.table.label\&quot;:\&quot;metadata\&quot;}&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;schema&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;mainConnector&quot;:{&quot;propertyPath&quot;:&quot;schema&quot;,&quot;name&quot;:&quot;MAIN&quot;,&quot;tags&quot;:null},&quot;url&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;url&quot;,&quot;tags&quot;:null},&quot;login&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;login&quot;,&quot;tags&quot;:null},&quot;pass&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;}]},&quot;storedValue&quot;:&quot;enc:system.encryption.key.v1:7HKp7L/2B0E8p/we+ncIAX0AdekSlYTpvoV6nxgZ&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;pass&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;root&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null}"/>
+    <metadata connector="FLOW" label="metadata" name="tDatasetOutput_1">
+      <column comment="" key="false" length="10" name="DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="HS_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="36" name="INDIAN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="FOREIGN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="122" name="PRODUCT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="UNIT_RATE__FOREIGN_CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="TOTAL_VALUE___FOREIGN_CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="UNIT_RATE__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="TOTAL_VALUE__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="65" name="ADDRESS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="CITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="INDIAN_PORT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="BILL_NO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tDataprepRun" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="-64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDataprepRun_1"/>
     <elementParameter field="TEXT" name="URL" value="&quot;http://localhost&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:r5rI37qW9axvkE0wuxNnuWwDBvZCAbXu0OAHNQ0v"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:fZoGgBwMUPPWsp1PejZSe2FKYaxXRM20X6bWeMtI"/>
     <elementParameter field="CHECK" name="USE_PREP_PATH" value="false"/>
     <elementParameter field="DATA_PREP_ID" name="PREPARATION_ID" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="PREPARATION_NAME" show="false" value="&quot;&quot;"/>
@@ -1119,11 +334,11 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDataprepRun_1"/>
   </node>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-64">
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_2"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.aiwatch_rep_in+&quot;Pharmacompass Hydroxy Sulfate.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:mPq6CFxgTw9ozKEeerUT6L+iETcU4pbRLkI/Qqsc"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:3vI48hWw1QPP/EVGgSVnVitfKHMgtIqzjrIYPYLC"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
       <elementValue elementRef="SHEETNAME" value="&quot;API Imports&quot;"/>
@@ -1292,363 +507,52 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tDatasetOutput" componentVersion="0.37.0" offsetLabelX="0" offsetLabelY="0" posX="448" posY="-192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDatasetOutput_1"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" show="false" value=""/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter name="PROPERTIES" value="{&quot;@type&quot;:&quot;org.talend.components.dataprep.tdatasetoutput.TDataSetOutputProperties&quot;,&quot;__version&quot;:2,&quot;mode&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;Create&quot;},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.Arrays$ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;Create&quot;},{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;Update&quot;},{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;CreateOrUpdate&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;mode&quot;,&quot;tags&quot;:null},&quot;dataSetNameForCreateMode&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetNameForCreateMode&quot;,&quot;tags&quot;:null},&quot;dataSetName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;ADD_QUOTES&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetName&quot;,&quot;tags&quot;:null},&quot;dataSetId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetId&quot;,&quot;tags&quot;:null},&quot;limit&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;int&quot;,&quot;value&quot;:100},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Integer&quot;,&quot;name&quot;:&quot;limit&quot;,&quot;tags&quot;:null},&quot;schema&quot;:{&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;EmptyRecord\&quot;,\&quot;fields\&quot;:[]}&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;schema&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;mainConnector&quot;:{&quot;propertyPath&quot;:&quot;schema&quot;,&quot;name&quot;:&quot;MAIN&quot;,&quot;tags&quot;:null},&quot;url&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;url&quot;,&quot;tags&quot;:null},&quot;login&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;login&quot;,&quot;tags&quot;:null},&quot;pass&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;}]},&quot;storedValue&quot;:&quot;enc:system.encryption.key.v1:Xc6ebOOyXhAdLVIu4cTIY0flymVz0MvQDsXedtBI&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;pass&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;root&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null}"/>
-    <metadata connector="FLOW" name="tDatasetOutput_1"/>
-  </node>
-  <node componentName="tDatasetInput" componentVersion="0.37.0" offsetLabelX="0" offsetLabelY="0" posX="608" posY="-96">
+  <node componentName="tDatasetInput" componentVersion="0.37.0" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDatasetInput_1"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter name="PROPERTIES" value="{&quot;@type&quot;:&quot;org.talend.components.dataprep.tdatasetinput.TDataSetInputProperties&quot;,&quot;dataSetId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetId&quot;,&quot;tags&quot;:null},&quot;dataSetName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;DESIGN_TIME_ONLY&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetName&quot;,&quot;tags&quot;:null},&quot;schema&quot;:{&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;EmptyRecord\&quot;,\&quot;fields\&quot;:[]}&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;schema&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;mainConnector&quot;:{&quot;propertyPath&quot;:&quot;schema&quot;,&quot;name&quot;:&quot;MAIN&quot;,&quot;tags&quot;:null},&quot;url&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;url&quot;,&quot;tags&quot;:null},&quot;login&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;login&quot;,&quot;tags&quot;:null},&quot;pass&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;}]},&quot;storedValue&quot;:&quot;enc:system.encryption.key.v1:TtZxbS6itCu/fGjhSrpdLnWo4R+h3mgniQdB/8oN&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;pass&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;root&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null}"/>
+    <elementParameter name="PROPERTIES" value="{&quot;@type&quot;:&quot;org.talend.components.dataprep.tdatasetinput.TDataSetInputProperties&quot;,&quot;dataSetId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetId&quot;,&quot;tags&quot;:null},&quot;dataSetName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;DESIGN_TIME_ONLY&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetName&quot;,&quot;tags&quot;:null},&quot;schema&quot;:{&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;EmptyRecord\&quot;,\&quot;fields\&quot;:[]}&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;schema&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;mainConnector&quot;:{&quot;propertyPath&quot;:&quot;schema&quot;,&quot;name&quot;:&quot;MAIN&quot;,&quot;tags&quot;:null},&quot;url&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;url&quot;,&quot;tags&quot;:null},&quot;login&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;login&quot;,&quot;tags&quot;:null},&quot;pass&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;}]},&quot;storedValue&quot;:&quot;enc:system.encryption.key.v1:Je9vYkX7dGfKHQooI1+cKpzyCl5VDTwUzIrn8xTA&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;pass&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;root&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null}"/>
     <metadata connector="MAIN" name="MAIN"/>
   </node>
-  <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tFileInputExcel_7" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_7" target="tMap_7">
+  <node componentName="tDatasetOutput" componentVersion="0.37.0" offsetLabelX="0" offsetLabelY="0" posX="672" posY="-160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDatasetOutput_2"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter name="PROPERTIES" value="{&quot;@type&quot;:&quot;org.talend.components.dataprep.tdatasetoutput.TDataSetOutputProperties&quot;,&quot;__version&quot;:2,&quot;mode&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;CreateOrUpdate&quot;},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false,&quot;CHANGED_BY_USER&quot;:true,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.Arrays$ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;Create&quot;},{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;Update&quot;},{&quot;@type&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;CreateOrUpdate&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.dataprep.runtime.DataPrepOutputModes&quot;,&quot;name&quot;:&quot;mode&quot;,&quot;tags&quot;:null},&quot;dataSetNameForCreateMode&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;AI_WATCH_EXPORT_202201\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;CHANGED_BY_USER&quot;:true,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetNameForCreateMode&quot;,&quot;tags&quot;:null},&quot;dataSetName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;ADD_QUOTES&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetName&quot;,&quot;tags&quot;:null},&quot;dataSetId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;dataSetId&quot;,&quot;tags&quot;:null},&quot;limit&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;300&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;CHANGED_BY_USER&quot;:true,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Integer&quot;,&quot;name&quot;:&quot;limit&quot;,&quot;tags&quot;:null},&quot;schema&quot;:{&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;tDatasetOutput_1\&quot;,\&quot;fields\&quot;:[{\&quot;name\&quot;:\&quot;PER_AOC\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_AOC\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_AOC\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_DAC\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_DAC\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;yyyy/MM/dd HH:mm:ss\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_DAC\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_UTI\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_UTI\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_UTI\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_SUR\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_SUR\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_SUR\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_SCL\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_SCL\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_SCL\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PAR_NO\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PAR_NO\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PAR_NO\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_NOM\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_NOM\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_NOM\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_PRM\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_PRM\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_PRM\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_NJF\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_NJF\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_NJF\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_INS\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_INS\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_INS\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_CIN\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_CIN\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_CIN\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_DNS\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_DNS\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_DNS\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_RGN\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_RGN\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_RGN\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_DNL\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_DNL\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_DNL\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_SEX\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_SEX\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_SEX\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_DDC\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_DDC\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_DDC\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_AGE\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_AGE\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_AGE\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;UID_MCP\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;UID_MCP\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;UID_MCP\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;INS_OVD\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;INS_OVD\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;INS_OVD\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;OVD_CLE\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;OVD_CLE\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;OVD_CLE\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_CIV\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_CIV\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_CIV\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_CAT\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_CAT\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_CAT\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;PER_LIB\&quot;,\&quot;type\&quot;:[\&quot;string\&quot;,\&quot;null\&quot;],\&quot;di.table.comment\&quot;:\&quot;\&quot;,\&quot;talend.field.dbType\&quot;:\&quot;\&quot;,\&quot;talend.field.dbColumnName\&quot;:\&quot;PER_LIB\&quot;,\&quot;di.column.talendType\&quot;:\&quot;id_String\&quot;,\&quot;di.column.isNullable\&quot;:\&quot;true\&quot;,\&quot;talend.field.pattern\&quot;:\&quot;\&quot;,\&quot;di.column.relationshipType\&quot;:\&quot;\&quot;,\&quot;di.table.label\&quot;:\&quot;PER_LIB\&quot;,\&quot;di.column.relatedEntity\&quot;:\&quot;\&quot;}],\&quot;di.table.name\&quot;:\&quot;tDatasetOutput_1\&quot;,\&quot;di.table.label\&quot;:\&quot;tDatasetOutput_1\&quot;}&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;schema&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;mainConnector&quot;:{&quot;propertyPath&quot;:&quot;schema&quot;,&quot;name&quot;:&quot;MAIN&quot;,&quot;tags&quot;:null},&quot;url&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;https://tdp.eu.cloud.talend.com\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;CHANGED_BY_USER&quot;:true,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;url&quot;,&quot;tags&quot;:null},&quot;login&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;emilie.auzemery@nfr.businessdecision.com\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;CHANGED_BY_USER&quot;:true,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;login&quot;,&quot;tags&quot;:null},&quot;pass&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;}]},&quot;storedValue&quot;:&quot;enc:system.encryption.key.v1:WQM8jQJdpcyui1HjCvErJTuOZvfi2wYGNNKE489SENKN8ShYF9xJ&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;CHANGED_BY_USER&quot;:true,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;pass&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;root&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null}"/>
+    <metadata connector="FLOW" name="tDatasetOutput_2">
+      <column comment="" key="false" length="-1" name="PER_AOC" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_DAC" nullable="true" originalLength="-1" pattern="&quot;yyyy/MM/dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_UTI" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_SUR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_SCL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PAR_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_NOM" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_PRM" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_NJF" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_INS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_CIN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_DNS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_RGN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_DNL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_SEX" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_DDC" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_AGE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UID_MCP" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INS_OVD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OVD_CLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_CIV" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_CAT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PER_LIB" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tDatasetOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row9"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="out_imports" lineStyle="0" metaname="out_imports" offsetLabelX="0" offsetLabelY="0" source="tMap_7" target="tFileOutputExcel_6">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="CURRENCY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="FOREIGN_ADDRESS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="TOTAL_VALUE__INR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="INDIAN_PORT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="UNIT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="QUANTITY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="UNIT_RATE__FOREIGN_CURRENCY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="INDIAN_COMPANY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="FOREIGN_PORT__COUNTRY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="TOTAL_VALUE___FOREIGN_CURRENCY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="FOREIGN_COMPANY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DATE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="CITY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PRODUCT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DUTY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="ADDRESS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="HS_CODE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="UNIT_RATE__INR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Country_of_destination"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="BILL_NO"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Quarter"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Month"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Validation"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Customer_Name"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Most_recent_year"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="_01331"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Column16"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Column15"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Column18"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Column17"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="API_Supplier"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Subregion"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="_0133"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="_0125"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Previous_Years_Rate__N_1_N_2_N_3_N_4"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="EUR_Value__total"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Qty"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Total_FOB_in_INR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="_01252"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Region"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="_01251"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Current_Year_Rate__INR_to"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="_021"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Average_Price_per_Qty__EUR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="API_Importer"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Total_Value__EUR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Total_Value__INR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Country_of_origin"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="QTY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_imports"/>
-  </connection>
-  <connection connectorName="FLOW" label="in_country_imp" lineStyle="8" metaname="tFileInputExcel_6" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_6" target="tMap_7">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="in_country_imp"/>
-  </connection>
-  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tFileInputExcel_8" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_8" target="tMap_4">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputExcel_8" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_8" target="tFileInputExcel_7">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
-  </connection>
-  <connection connectorName="FLOW" label="out_exports" lineStyle="0" metaname="out_exports" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tFileOutputExcel_3">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="CURRENCY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="FOREIGN_ADDRESS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="TOTAL_VALUE__INR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="INDIAN_PORT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="UNIT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="QUANTITY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="UNIT_RATE__FOREIGN_CURRENCY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="INDIAN_COMPANY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="FOREIGN_PORT__COUNTRY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="TOTAL_VALUE___FOREIGN_CURRENCY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="FOREIGN_COMPANY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DATE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="CITY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="PRODUCT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DUTY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="ADDRESS"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="HS_CODE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="UNIT_RATE__INR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Country_of_destination"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="BILL_NO"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Quarter"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Month"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Validation"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Customer_Name"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Most_recent_year"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="_01331"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Column16"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Column15"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Column18"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Column17"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="API_Supplier"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Subregion"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="_0133"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="_0125"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Previous_Years_Rate__N_1_N_2_N_3_N_4"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="EUR_Value__total"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Qty"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Total_FOB_in_INR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="_01252"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Region"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="_01251"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Current_Year_Rate__INR_to"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="_021"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Average_Price_per_Qty__EUR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="API_Importer"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Total_Value__EUR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Total_Value__INR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Country_of_origin"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="QTY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_exports"/>
-  </connection>
-  <connection connectorName="FLOW" label="in_country" lineStyle="8" metaname="tFileInputExcel_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_3" target="tMap_4">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="in_country"/>
-  </connection>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_7"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Création des données Imports"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_8"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Création des données Exports"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
@@ -1665,22 +569,22 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDatasetOutput_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDatasetInput_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cb44068b-27a1-4c9d-8d6e-eaccae557989"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BnFcKptVfBECbAF2DTGwTyiqANYWM36NHFllWckKMBAPW4vOf5grTAmQPKKxe4eWP+Xu9hlXm0KP&#13;
-BCUIapTvfw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d6e548b7-7d56-457c-ad7f-6c3ac5d6c535"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>sa/SKZzAfbq0krX4cn3iMgqmTRY1aYI0ZMfUj5n4jvw70tiN+eoPpVg3MDcNiHKSvTyz/w2Q9KIP&#13;
-rt9KELEPpQ==</DigestValue></Reference></SignedInfo><SignatureValue>n1QtSDoTC0Bcv2uZ8vkGdk9TaIMFmyTVHC/OwvnEdDRkHO4b1ORIypps1kMWDD2dFDzV8Q1HEnaH&#13;
-MPxYHgYThMk9yVEVyM6LcsWmWnXM/CaKADEzSn+5e/z9IlNGJxhmdg00daZEYgFdJzyfjdCcetKN&#13;
-aH/fsousZp0/9YkiDzQjsCtIzme7gc6wn4ELUBSj26gTm+0sKnXeLEes2msS/aRNzMDM7Yq/oHNR&#13;
-Vy3qmnSsn7xqREk4IJVvobYEHiSwoSqeCjoO2DNyrPV2LGMY1LVKY25GyHCoTgAPqyM+cJmX/XdG&#13;
-KGr/bHncrlpcjCnjhpt9EzKu5xjc7kXM/L4gmA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDatasetOutput_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1b20d962-1983-4025-bbb4-fb151f68393a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zfaxbStKQRKFqtDHPvKow/rHSgW3r7Ug0PQsyu1HoMDvKE0s4RapmIFgExtGzhyUTOBiYkBghVlB&#13;
+hLIpuLIC5g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9ebfe490-8cec-4dbd-b428-0b45308fd7a7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eXwgGq0sZAtDwML1i1lLXBYcMd2QbE/aSl7cwVyvdALWPdvRYjfAmJASPkTYLQeNON340dT8BTH3&#13;
+OgXiLLthWQ==</DigestValue></Reference></SignedInfo><SignatureValue>lLgkPNnXd1y6Pf8K4itHziCwd0a9FqlULeQdmPI4amTr5ticJg23R+r93ECgt2YSHLpUSzmOxjev&#13;
+5igAgECjcSmL8p4jYAGNyelkLLsh8UEIzvaE7l3tUYsi6DKKhvw5wYy6AT/LOATROhLsDJHwB7Mb&#13;
+ujqBe8zVNvgnGBHqJDzHr6VGpjwCgEtI50YLrWAPwU1tm660ZY4hhyyOknrSxWBOTPzunMzlqR2r&#13;
+ptCw2v5CZ3VMSdvTE7wUT9LqcO4g6aOu/6wrTcC89vNXrzk8Te6lJcAJjJ1f7qatTKGYSw2GiIYE&#13;
+f3dAXNRXG2EF2bs2CBO/tvTfZN2QV+1fwpkjQA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1702,4 +606,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d6e548b7-7d56-457c-ad7f-6c3ac5d6c535" Target="#_cb44068b-27a1-4c9d-8d6e-eaccae557989"><Timestamp>2022-01-21 10:24:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9ebfe490-8cec-4dbd-b428-0b45308fd7a7" Target="#_1b20d962-1983-4025-bbb4-fb151f68393a"><Timestamp>2022-01-21 10:26:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
