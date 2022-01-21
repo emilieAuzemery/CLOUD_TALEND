@@ -18,6 +18,21 @@
     }, {
       "id" : "_3hDDFHn9EeymUK72RnFQEA",
       "name" : "aiwatch_rep_work"
+    }, {
+      "id" : "_j0qKA3qXEeyeeYn48Juchw",
+      "name" : "aiwatch_total_eur_2018"
+    }, {
+      "id" : "_j0qKAnqXEeyeeYn48Juchw",
+      "name" : "aiwatch_total_eur_2019"
+    }, {
+      "id" : "_j0qKAXqXEeyeeYn48Juchw",
+      "name" : "aiwatch_total_eur_2020"
+    }, {
+      "id" : "_j0qKAHqXEeyeeYn48Juchw",
+      "name" : "aiwatch_total_eur_2021"
+    }, {
+      "id" : "_j0qKBHqXEeyeeYn48Juchw",
+      "name" : "aiwatch_total_eur_def"
     } ]
   } ]
 }
