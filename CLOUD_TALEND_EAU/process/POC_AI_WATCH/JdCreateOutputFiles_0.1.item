@@ -54,7 +54,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:+Z6Y+2rruT/t3HYNA+RUA9Tr5fXXQBgbPRZg+2Xj"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:rR3L/4Lonjb9OP+pBLX0XpxhCYsTzcvOVY9eLPXg"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -89,7 +89,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:vT9ba9HK7Tp7AbE7b0y6VVN2A+x0ZOR/NGBP09Fc"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:IFBplvg1pWv8sWXAg9+jUSx2niP8Topb4sG6ckag"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -128,7 +128,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_7"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.aiwatch_rep_work+&quot;Pharmacompass Hydroxy Sulfate tmp.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:ONTqdCtXP2SWzBESMkv4WBPCd35k8cAMqBK6UdcA"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:FN5QrW0PkzIjqIaRFRqI7hPMQZkBNTTPM8U0hGUu"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
       <elementValue elementRef="SHEETNAME" value="&quot;API Imports (2)&quot;"/>
@@ -141,8 +141,6 @@
     <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
     <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_N5fkYHoBEeymUK72RnFQEA - metadata"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_N5fkYHoBEeymUK72RnFQEA - metadata"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -150,7 +148,11 @@
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="'.'"/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
     <elementParameter field="TABLE" name="TRIMSELECT">
-      <elementValue elementRef="SCHEMA_COLUMN" value="DATE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_YEAR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_MONTH_LABEL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_QUARTER"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="INDIAN_COMPANY"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -162,9 +164,9 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_COMPANY"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_ADDRESS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_ADDDRESS"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_PORT__COUNTRY"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -189,7 +191,13 @@
     </elementParameter>
     <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
     <elementParameter field="TABLE" name="DATESELECT" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="DATE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_YEAR"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_MONTH_LABEL"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_QUARTER"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="INDIAN_COMPANY"/>
@@ -207,10 +215,10 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_COMPANY"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_ADDRESS"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_ADDDRESS"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_PORT__COUNTRY"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT"/>
@@ -255,44 +263,48 @@
     <elementParameter field="TEXT" name="LABEL" value="AIWATCH_IN_Imports"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_7">
-      <column comment="" key="false" length="10" name="DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="42" name="INDIAN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="69" name="ADDRESS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="34" name="CITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="INDIAN_PORT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="44" name="FOREIGN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="FOREIGN_ADDRESS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="26" name="FOREIGN_PORT__COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="40" name="PRODUCT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="UNIT_RATE__FOREIGN_CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="TOTAL_VALUE___FOREIGN_CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="UNIT_RATE__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="11" name="TOTAL_VALUE__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="DUTY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="HS_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_YEAR" nullable="false" originalDbColumnName="0020" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_MONTH_LABEL" nullable="false" originalDbColumnName="0018" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_QUARTER" nullable="false" originalDbColumnName="0019" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INDIAN_COMPANY" nullable="false" originalDbColumnName="0001" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ADDRESS" nullable="false" originalDbColumnName="0002" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CITY" nullable="false" originalDbColumnName="0003" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INDIAN_PORT" nullable="false" originalDbColumnName="0004" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FOREIGN_COMPANY" nullable="false" originalDbColumnName="0005" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FOREIGN_ADDDRESS" nullable="false" originalDbColumnName="0006" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="COUNTRY" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODUCT" nullable="false" originalDbColumnName="0008" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUANTITY" nullable="false" originalDbColumnName="0009" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT" nullable="false" originalDbColumnName="0010" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT_RATE__FOREIGN_CURRENCY" nullable="false" originalDbColumnName="0011" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CURRENCY" nullable="false" originalDbColumnName="0012" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_VALUE___FOREIGN_CURRENCY" nullable="false" originalDbColumnName="0013" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT_RATE__INR" nullable="false" originalDbColumnName="0014" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_VALUE__INR" nullable="false" originalDbColumnName="0015" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DUTY" nullable="false" originalDbColumnName="0016" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HS_CODE" nullable="false" originalDbColumnName="0017" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="10" name="DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="42" name="INDIAN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="69" name="ADDRESS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="34" name="CITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="INDIAN_PORT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="44" name="FOREIGN_COMPANY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="FOREIGN_ADDRESS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="26" name="FOREIGN_PORT__COUNTRY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="40" name="PRODUCT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="UNIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="UNIT_RATE__FOREIGN_CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="TOTAL_VALUE___FOREIGN_CURRENCY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="UNIT_RATE__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="11" name="TOTAL_VALUE__INR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="DUTY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="HS_CODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_YEAR" nullable="false" originalDbColumnName="0020" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_MONTH_LABEL" nullable="false" originalDbColumnName="0018" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_QUARTER" nullable="false" originalDbColumnName="0019" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INDIAN_COMPANY" nullable="false" originalDbColumnName="0001" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ADDRESS" nullable="false" originalDbColumnName="0002" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CITY" nullable="false" originalDbColumnName="0003" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INDIAN_PORT" nullable="false" originalDbColumnName="0004" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FOREIGN_COMPANY" nullable="false" originalDbColumnName="0005" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FOREIGN_ADDDRESS" nullable="false" originalDbColumnName="0006" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="COUNTRY" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODUCT" nullable="false" originalDbColumnName="0008" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUANTITY" nullable="false" originalDbColumnName="0009" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT" nullable="false" originalDbColumnName="0010" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT_RATE__FOREIGN_CURRENCY" nullable="false" originalDbColumnName="0011" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CURRENCY" nullable="false" originalDbColumnName="0012" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_VALUE___FOREIGN_CURRENCY" nullable="false" originalDbColumnName="0013" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNIT_RATE__INR" nullable="false" originalDbColumnName="0014" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_VALUE__INR" nullable="false" originalDbColumnName="0015" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DUTY" nullable="false" originalDbColumnName="0016" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HS_CODE" nullable="false" originalDbColumnName="0017" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -329,22 +341,21 @@
       <column comment="" key="false" length="1" name="Validation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="!Relational.ISNULL(row9.FOREIGN_PORT__COUNTRY)?&#13;&#10;row9.FOREIGN_PORT__COUNTRY.contains(&quot;,&quot;)?&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY.split(&quot;,&quot;)[1]):&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY)&#13;&#10;:null " name="country" type="id_String"/>
         <mapperTableEntries expression="TalendDate.getPartOfDate(&quot;YEAR&quot;,row9.DATE) " name="year" type="id_Integer"/>
         <mapperTableEntries expression="row9.TOTAL_VALUE__INR == null || &quot;&quot;.equals(row9.TOTAL_VALUE__INR) ? Double.parseDouble(&quot;0.00&quot;) : Double.parseDouble(row9.TOTAL_VALUE__INR.replace(&quot;  &quot;,&quot;&quot;).replace(',','.')) " name="tot_value_comma" type="id_Double"/>
         <mapperTableEntries expression="Var.year == 2021 ? context.aiwatch_total_eur_2021 * Var.tot_value_comma :&#13;&#10;Var.year == 2020 ? context.aiwatch_total_eur_2020 * Var.tot_value_comma :&#13;&#10;Var.year == 2019 ? context.aiwatch_total_eur_2019 * Var.tot_value_comma :&#13;&#10;Var.year == 2018 ? context.aiwatch_total_eur_2018 * Var.tot_value_comma :&#13;&#10;context.aiwatch_total_eur_def * Var.tot_value_comma " name="total_eur" type="id_Double"/>
         <mapperTableEntries expression="row9.QUANTITY == null || &quot;&quot;.equals(row9.QUANTITY) ? Double.parseDouble(&quot;0.00&quot;) : Double.parseDouble(row9.QUANTITY.replace(&quot;  &quot;,&quot;&quot;).replace(',','.')) " name="qty_value_comma" type="id_Double"/>
       </varTables>
       <outputTables name="out_imports" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="Var.year " name="DATE" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="Integer.toString(TalendDate.getPartOfDate(&quot;MONTH&quot;,row9.DATE)) " name="Month" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="&quot;Q&quot;+ Integer.toString(TalendDate.getPartOfDate(&quot;MONTH&quot;,row9.DATE)/3+1) " name="Quarter" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Integer.parseInt(row9.DATE_YEAR )" name="DATE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row9.DATE_MONTH_LABEL " name="Month" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row9.DATE_QUARTER " name="Quarter" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row9.PRODUCT " name="PRODUCT" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row9.INDIAN_COMPANY " name="API_Importer" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row9.FOREIGN_COMPANY " name="FOREIGN_COMPANY" nullable="true" type="id_String"/>
-        <mapperTableEntries expression=" Var.country " name="Country_of_origin" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row9.COUNTRY " name="Country_of_origin" nullable="true" type="id_String"/>
         <mapperTableEntries expression="in_country_imp.Subregion " name="Subregion" nullable="true" type="id_String"/>
         <mapperTableEntries expression="in_country_imp.Region " name="Region" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row9.QUANTITY " name="QTY" nullable="true" type="id_String"/>
@@ -352,30 +363,32 @@
         <mapperTableEntries expression="row9.TOTAL_VALUE__INR " name="Total_Value__INR" nullable="true" type="id_String"/>
         <mapperTableEntries expression=" Var.total_eur " name="Total_Value__EUR" nullable="true" type="id_Double"/>
         <mapperTableEntries expression=" Var.total_eur  /  Var.qty_value_comma " name="Average_Price_per_Qty__EUR" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="&quot;JAPAN&quot;.equals(Var.country) || &quot;UNITED STATES&quot;.equals(Var.country) ? 1 : 0 " name="Validation" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="&quot;JAPAN&quot;.equals(row9.COUNTRY) || &quot;UNITED STATES&quot;.equals(row9.COUNTRY) ? 1 : 0 " name="Validation" nullable="true" type="id_Integer"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row9" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="DATE" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="INDIAN_COMPANY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ADDRESS" nullable="true" type="id_String"/>
-        <mapperTableEntries name="CITY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="INDIAN_PORT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FOREIGN_COMPANY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FOREIGN_ADDRESS" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FOREIGN_PORT__COUNTRY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PRODUCT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="QUANTITY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="UNIT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="UNIT_RATE__FOREIGN_CURRENCY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="CURRENCY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="TOTAL_VALUE___FOREIGN_CURRENCY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="UNIT_RATE__INR" nullable="true" type="id_String"/>
-        <mapperTableEntries name="TOTAL_VALUE__INR" nullable="true" type="id_String"/>
-        <mapperTableEntries name="DUTY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="HS_CODE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="DATE_YEAR" type="id_String"/>
+        <mapperTableEntries name="DATE_MONTH_LABEL" type="id_String"/>
+        <mapperTableEntries name="DATE_QUARTER" type="id_String"/>
+        <mapperTableEntries name="INDIAN_COMPANY" type="id_String"/>
+        <mapperTableEntries name="ADDRESS" type="id_String"/>
+        <mapperTableEntries name="CITY" type="id_String"/>
+        <mapperTableEntries name="INDIAN_PORT" type="id_String"/>
+        <mapperTableEntries name="FOREIGN_COMPANY" type="id_String"/>
+        <mapperTableEntries name="FOREIGN_ADDDRESS" type="id_String"/>
+        <mapperTableEntries name="COUNTRY" type="id_String"/>
+        <mapperTableEntries name="PRODUCT" type="id_String"/>
+        <mapperTableEntries name="QUANTITY" type="id_String"/>
+        <mapperTableEntries name="UNIT" type="id_String"/>
+        <mapperTableEntries name="UNIT_RATE__FOREIGN_CURRENCY" type="id_String"/>
+        <mapperTableEntries name="CURRENCY" type="id_String"/>
+        <mapperTableEntries name="TOTAL_VALUE___FOREIGN_CURRENCY" type="id_String"/>
+        <mapperTableEntries name="UNIT_RATE__INR" type="id_String"/>
+        <mapperTableEntries name="TOTAL_VALUE__INR" type="id_String"/>
+        <mapperTableEntries name="DUTY" type="id_String"/>
+        <mapperTableEntries name="HS_CODE" type="id_String"/>
       </inputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="in_country_imp" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="!Relational.ISNULL(row9.FOREIGN_PORT__COUNTRY)?&#13;&#10;row9.FOREIGN_PORT__COUNTRY.contains(&quot;,&quot;)?&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY.split(&quot;,&quot;)[1]):&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY)&#13;&#10;:null " name="Country" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row9.COUNTRY " name="Country" nullable="true" operator="=" type="id_String"/>
         <mapperTableEntries name="Region" nullable="true" type="id_String"/>
         <mapperTableEntries name="Subregion" nullable="true" type="id_String"/>
       </inputTables>
@@ -430,7 +443,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:pJU6dnsTRzBro/h2TWJcEvpt9Y+m5TZOosX+953m"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:ElBg/ZNSyiuot3u6QtOgaMuBWjsPqXbupa+oiDJY"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -470,7 +483,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_FARVYHoLEeymUK72RnFQEA"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/eauzemery/Desktop/PROJETS/SANOFI/AI WATCH/Regional Mapping.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:YObOKCddJG/Dwng5JZTFcUHxtghsOgPUHe3i1u5X"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:7MxFYgmAYmCstICP74oMvtZuMRuKW/uWcnBkUqQj"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;Mapping&quot;"/>
@@ -538,7 +551,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_8"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.aiwatch_rep_work+&quot;Pharmacompass Hydroxy Sulfate tmp.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:8Y+yoePOsxYneAKz/lH12eHLk3hoX9fth0Yvq6Lb"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:+aC9/SuJG51DSJWC/ovmxjQSf8OOHbcNx7pJFEp4"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
       <elementValue elementRef="SHEETNAME" value="&quot;API Exports (2)&quot;"/>
@@ -751,21 +764,19 @@
       <column comment="" key="false" length="1" name="Validation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="!Relational.ISNULL(row6.COUNTRY)?&#13;&#10;row6.COUNTRY.contains(&quot;,&quot;)?&#13;&#10;StringHandling.UPCASE(row6.COUNTRY.split(&quot;,&quot;)[0]):&#13;&#10;StringHandling.UPCASE(row6.COUNTRY)&#13;&#10;:null " name="country" type="id_String"/>
-        <mapperTableEntries expression="TalendDate.getPartOfDate(&quot;YEAR&quot;,row6.DATE) " name="year" type="id_Integer"/>
         <mapperTableEntries expression="row6.TOTAL_VALUE__INR == null || &quot;&quot;.equals(row6.TOTAL_VALUE__INR) ? Double.parseDouble(&quot;0.00&quot;) : Double.parseDouble(row6.TOTAL_VALUE__INR.replace(&quot;  &quot;,&quot;&quot;).replace(',','.')) " name="tot_value_comma" type="id_Double"/>
         <mapperTableEntries expression="row6.QUANTITY == null || &quot;&quot;.equals(row6.QUANTITY) ? Double.parseDouble(&quot;0.00&quot;) : Double.parseDouble(row6.QUANTITY.replace(&quot;  &quot;,&quot;&quot;).replace(',','.')) " name="qty_value_comma" type="id_Double"/>
-        <mapperTableEntries expression="Var.year == 2021 ? context.aiwatch_total_eur_2021 * Var.tot_value_comma :&#13;&#10;Var.year == 2020 ? context.aiwatch_total_eur_2020 * Var.tot_value_comma :&#13;&#10;Var.year == 2019 ? context.aiwatch_total_eur_2019 * Var.tot_value_comma :&#13;&#10;Var.year == 2018 ? context.aiwatch_total_eur_2018 * Var.tot_value_comma :&#13;&#10;context.aiwatch_total_eur_def * Var.tot_value_comma " name="eur_value" type="id_Double"/>
+        <mapperTableEntries expression="row6.DATE_YEAR == 2021 ? context.aiwatch_total_eur_2021 * Var.tot_value_comma :&#13;&#10;row6.DATE_YEAR == 2020 ? context.aiwatch_total_eur_2020 * Var.tot_value_comma :&#13;&#10;row6.DATE_YEAR == 2019 ? context.aiwatch_total_eur_2019 * Var.tot_value_comma :&#13;&#10;row6.DATE_YEAR == 2018 ? context.aiwatch_total_eur_2018 * Var.tot_value_comma :&#13;&#10;context.aiwatch_total_eur_def * Var.tot_value_comma " name="eur_value" type="id_Double"/>
       </varTables>
       <outputTables name="out_exports" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="Var.year " name="DATE" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="Integer.toString(TalendDate.getPartOfDate(&quot;MONTH&quot;,row6.DATE)) " name="Month" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="&quot;Q&quot;+ Integer.toString(TalendDate.getPartOfDate(&quot;MONTH&quot;,row6.DATE)/3+1) " name="Quarter" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row6.DATE_YEAR " name="DATE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row6.DATE_MONTH_LABEL " name="Month" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row6.DATE_QUARTER " name="Quarter" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row6.INDIAN_COMPANY " name="API_Supplier" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row6.FOREIGN_COMPANY " name="Customer_Name" nullable="true" type="id_String"/>
-        <mapperTableEntries expression=" Var.country " name="Country_of_destination" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row6.COUNTRY " name="Country_of_destination" nullable="true" type="id_String"/>
         <mapperTableEntries expression="in_country.Subregion " name="Subregion" nullable="true" type="id_String"/>
         <mapperTableEntries expression="in_country.Region " name="Region" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row6.QUANTITY " name="Qty" nullable="true" type="id_String"/>
@@ -774,7 +785,7 @@
         <mapperTableEntries expression=" Var.eur_value " name="EUR_Value__total" nullable="true" type="id_Double"/>
         <mapperTableEntries expression="Var.eur_value / Var.qty_value_comma " name="Average_Price_per_Qty__EUR" nullable="true" type="id_Double"/>
         <mapperTableEntries expression="row6.PRODUCT " name="PRODUCT" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="&quot;JAPAN&quot;.equals(Var.country) || &quot;UNITED STATES&quot;.equals(Var.country) ? 1 : 0 " name="Validation" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="&quot;JAPAN&quot;.equals(row6.COUNTRY ) || &quot;UNITED STATES&quot;.equals(row6.COUNTRY ) ? 1 : 0 " name="Validation" nullable="true" type="id_Integer"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row6" sizeState="INTERMEDIATE">
         <mapperTableEntries name="DATE_YEAR" type="id_String"/>
@@ -799,7 +810,7 @@
         <mapperTableEntries name="field17" type="id_String"/>
       </inputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="in_country" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="!Relational.ISNULL(row6.COUNTRY)?&#13;&#10;row6.COUNTRY.contains(&quot;,&quot;)?&#13;&#10;StringHandling.UPCASE(row6.COUNTRY.split(&quot;,&quot;)[0]):&#13;&#10;StringHandling.UPCASE(row6.COUNTRY)&#13;&#10;:null " name="Country" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row6.COUNTRY " name="Country" nullable="true" operator="=" type="id_String"/>
         <mapperTableEntries name="Region" nullable="true" type="id_String"/>
         <mapperTableEntries name="Subregion" nullable="true" type="id_String"/>
       </inputTables>
@@ -854,7 +865,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:Q8muYCIkTmFq/DflhAwVKph0AzEviwde+tlF1M2W"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:7Ch0vwU+9JyI3BgguayAVuAgzAJwYh0HM+/sLeP6"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -894,7 +905,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_FARVYHoLEeymUK72RnFQEA"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/eauzemery/Desktop/PROJETS/SANOFI/AI WATCH/Regional Mapping.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:jgwJPC4X4LreXtpEMrXjy8pK2enahegDEODrhEGk"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:I5tzbZrjGOd5IOp5sUO3Q3mFnVTD34FAtYhCrBYY"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;Mapping&quot;"/>
@@ -976,6 +987,23 @@
     <metadata connector="FLOW" name="tFileCopy_1"/>
   </node>
   <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tFileInputExcel_7" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_7" target="tMap_7">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_QUARTER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FOREIGN_ADDDRESS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COUNTRY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_MONTH_LABEL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATE_YEAR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row9"/>
   </connection>
@@ -1336,13 +1364,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_207895b3-7ef6-4f98-b035-def14c99ccb8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lOq02CLDvEeRXH8exL2+4UUtIG5vnlIkhg5H/BuhjDOcefA7zYNT4VIsb5xEcJhhEDaOdx75Hs39&#13;
-1gBDuF4flg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_651aab52-5acb-4939-9256-6a2a558c5b7b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6uj40EOjQWZlVf2bYKuP9PnV6M3yu4TsnBeqJbTeCQR7AuA0cGuVlqJKvhR1xxRN4YZtW5d9TbYa&#13;
-PVwYX9aSrA==</DigestValue></Reference></SignedInfo><SignatureValue>Pr7vq6ZLjz9WGBT9DrYV60R8/+7E+NocgMisYnWxkPbxs46OFp18r15leOrpSTy88PfUzEpmVyK1&#13;
-HnACPSkicUvzPGRcGMNSqvNfvEQHQnKCEWcUMd1hjXgMQfBecjBg4oMLp929cxGPmpkrB/RVnDwF&#13;
-/ursHSK075bvxFrSak/OzBsqI/fyCQ3juxtfk5o6vQM6E0jAQEpukWE5Pi5KA/6y23QohYaZ9Ajs&#13;
-PaYDwMA8qOspsYZk6nlei28hhEOeJehK7hjikxVSdrSbP5+MRgLHuZNXmlU0fYQuvaqMftTnjLg6&#13;
-EfIweQVSCWJhh8NyKmoFjLGjXbde7r5OsFL29Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9742a3e6-5100-4e9e-86e2-f497428df12c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dm8WV34vyuFTgQ2BlUzqwktbqAGBcZg9+ZWo3SSQ1TRGd74TJwYZuEC9Fu1cIjVp3HgZ0TDSjqs1&#13;
+lC0zPiB4tQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0d3646c0-9a72-47e3-9095-657e4be54091"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>W/Ogu8D6J7mkN7eykRjrlSEe+5UZjI9dYaoYEAcvBcj/Xl9D1skbm5iegE1sjbzBIxwonKNYBqO1&#13;
+1YzAhxrKLQ==</DigestValue></Reference></SignedInfo><SignatureValue>WPmsxIP+7hzudkIoMyUmASQL1Foe4QURf5C1emKl8sHMn5+C6KiTbOff7DyQ/bqishT3NWrcjtbo&#13;
+93IAo/5tx373aC3ztxLsMpn8G47iRtHlbIZyuGQK222/bjUdY4GtieGBwtuXzvy+wZfEilJny2tp&#13;
+q2+8w/MgK1nYibVJ6pEvxEl0GfgMIEN5w+uk/NK2lfba/bGWKbVrsDDN8Y9UBL6ml4YbsyyYG3Sm&#13;
+UWG+TMAyzoZQqF2bOr7qoUhmee859WmgrYDRJTlPdRdnCLOz+ESMbafKl7Sa2qneYlwkVmqWle6P&#13;
+puqBOrfjXPHsGJknLXtcA4RHbdh2aCPd8cexrg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1364,4 +1392,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_651aab52-5acb-4939-9256-6a2a558c5b7b" Target="#_207895b3-7ef6-4f98-b035-def14c99ccb8"><Timestamp>2022-01-21 14:21:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0d3646c0-9a72-47e3-9095-657e4be54091" Target="#_9742a3e6-5100-4e9e-86e2-f497428df12c"><Timestamp>2022-01-21 14:24:48</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
