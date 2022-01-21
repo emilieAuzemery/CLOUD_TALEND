@@ -4,13 +4,18 @@
   <contextParameter comment="" name="aiwatch_rep_param" prompt="aiwatch_rep_param?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Talend/data/AIWATCH/param/" xmi:id="_3hDDEnn9EeymUK72RnFQEA"/>
   <contextParameter comment="" name="aiwatch_file_properties" prompt="aiwatch_file_properties?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Talend/data/AIWATCH/param/properties.ini" xmi:id="_3hDDE3n9EeymUK72RnFQEA"/>
   <contextParameter comment="" name="aiwatch_rep_work" prompt="aiwatch_rep_work?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Talend/data/AIWATCH/param/work/" xmi:id="_3hDDFHn9EeymUK72RnFQEA"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5cae36c7-56d3-424a-bd63-399d9904d9c7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>08+6zwM8dhmL5+N25IcPiiu/oFoYIaIVag+46hQqa6TKSzgFD2pD5u/tUXw5GKyiOXo0ugi7Yoby&#13;
-aHzjLbavkA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_24c6e1d7-7077-4ec8-8056-f16165c12187"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VAg1TXt5j9GyOWrjZN1r8b1N1Eky6VcR9E3UAoTlDRRjO3tDnVhwe1+Jx4GBGW23cXyI5Gq6smR6&#13;
-/ZXNEmI5nA==</DigestValue></Reference></SignedInfo><SignatureValue>ew85d5VkXv4NxXX3Av/bC31U7Wnnf7SBDRvpyo6xjTAnPP6Diagc1HnxDTwYkkgJlN4GX3QO3tv4&#13;
-wRYbqdUf0GHI6xkfXf2S3pR5E9RiIbPl+g42xwrdUn/CUSqL9aoYnGKco78cJQgULkFLJ1LaFA0p&#13;
-YF1/lnNYQCtQPmNG2KGcdKyVgmVToKrgVwvy5trcKHIlWQYx3Jf3I4NP3YrH5sOw7Fxqa/5nhQmZ&#13;
-Eh8iif6guNHCeUh0XOnYO4BGBMVA60LHJFcFsgVB7+cKPIPHSnyNJ/4fRfpQVvzjlaae8FKKNeTq&#13;
-ow6LGy99VJyYe9i9pWr7epxfBNUa281FL+UBeg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <contextParameter comment="" name="aiwatch_total_eur_2021" prompt="aiwatch_total_eur_2021?" promptNeeded="false" repositoryContextId="built-in" type="id_Double" value="0.0125" xmi:id="_j0qKAHqXEeyeeYn48Juchw"/>
+  <contextParameter comment="" name="aiwatch_total_eur_2020" prompt="aiwatch_total_eur_2020?" promptNeeded="false" repositoryContextId="built-in" type="id_Double" value="0.0125" xmi:id="_j0qKAXqXEeyeeYn48Juchw"/>
+  <contextParameter comment="" name="aiwatch_total_eur_2019" prompt="aiwatch_total_eur_2019?" promptNeeded="false" repositoryContextId="built-in" type="id_Double" value="0.0125" xmi:id="_j0qKAnqXEeyeeYn48Juchw"/>
+  <contextParameter comment="" name="aiwatch_total_eur_2018" prompt="aiwatch_total_eur_2018?" promptNeeded="false" repositoryContextId="built-in" type="id_Double" value="0.0133" xmi:id="_j0qKA3qXEeyeeYn48Juchw"/>
+  <contextParameter comment="" name="aiwatch_total_eur_def" prompt="aiwatch_total_eur_def?" promptNeeded="false" repositoryContextId="built-in" type="id_Double" value="0.0133" xmi:id="_j0qKBHqXEeyeeYn48Juchw"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4e20ea15-a8a2-44eb-8143-9f0e0a83bb81"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0cr1DaBsv5vGNCRpF4C0WoKC0WHrlnQG4IsbfGZitG74jBZCULmQ1l4yBzFSN90JeFuZ8R5C9apT&#13;
+9I58oNfhHA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_be24a5bf-84cf-484b-97c1-a2735b58b2ec"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GABUN2UbPbb281m8mjQnrfyst26CO4UbsMWFYwxM/qUsaLAu7RMKVF4mX8JqSfFGgj04H2av1bbs&#13;
+aE2AlaT26Q==</DigestValue></Reference></SignedInfo><SignatureValue>KV57kgheQkrYrH7mQVak2m3K+ygthlmRcPxSNBMyReGql+K/2ajuhGvWUrRwrLia/G8mh1Ju+Otm&#13;
+oOV3XzaFiY3WhGBA5inlONHColAe+pynhfIb8VGYIjnriYZE0cIA/CWmOSrYulyIEQvvPvpAgJtr&#13;
+dAfZHNRZ/snwwb8OLm2b373kUBkn9DhZMhfOn9PMO02dlgdFLdAmnNRi+6bbPK/WJM+gxDgU0EYV&#13;
+YPLOSV5kOcJNwetMJu5tr576vPkAnhfdQDpDYqbUyTFEJBdcu6M7n7vE8qzegQogOKcCrSW7zc+g&#13;
+C723CauE3wFs1LdPN/TQcNuHf6lqNL7Ycuj4AA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -32,4 +37,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_24c6e1d7-7077-4ec8-8056-f16165c12187" Target="#_5cae36c7-56d3-424a-bd63-399d9904d9c7"><Timestamp>2022-01-20 14:33:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_be24a5bf-84cf-484b-97c1-a2735b58b2ec" Target="#_4e20ea15-a8a2-44eb-8143-9f0e0a83bb81"><Timestamp>2022-01-21 08:53:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>
