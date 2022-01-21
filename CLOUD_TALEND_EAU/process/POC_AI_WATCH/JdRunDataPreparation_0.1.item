@@ -54,7 +54,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:i/w6Km45cr91DkxjSdHdSbHJWuCqe/7J74/K+OiE"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:7Cnoja10GOAa4VwikffrcbGPLnD8ddJbkiQMfLYx"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -89,7 +89,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:V9IpFCpMvXfmjbQGG2/kLINrOEsLcfdo+COZhdzL"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:p+SYQwxE3ZZb5UhWAOHS2R9ULRdYaMkpLSMFQ48l"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -128,7 +128,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.aiwatch_rep_in+&quot;Pharmacompass Hydroxy Sulfate.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:BIeJc5cvuUD4134M5hA9fc4nHXrtQUq10S5kr3Si"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:NX3sGvW+V8FlS11Dr/9F4zGDDHerED3I3bF2rKhH"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
       <elementValue elementRef="SHEETNAME" value="&quot;API Exports&quot;"/>
@@ -160,7 +160,7 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_COMPANY"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHIN_split_1"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -209,7 +209,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_COMPANY"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHIN_split_1"/>
       <elementValue elementRef="CONVERTDATE" value="false"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT"/>
@@ -263,18 +263,18 @@
     <elementParameter field="TEXT" name="LABEL" value="AIWATCH_IN_Exports"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileInputExcel_1">
-      <column comment="" key="false" length="-1" name="DATE_YEAR" nullable="false" originalDbColumnName="0020" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DATE_MONTH_LABEL" nullable="false" originalDbColumnName="0018" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DATE_QUARTER" nullable="false" originalDbColumnName="0019" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="HS_CODE" nullable="false" originalDbColumnName="0001" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="INDIAN_COMPANY" nullable="false" originalDbColumnName="0002" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FOREIGN_COMPANY" nullable="false" originalDbColumnName="0003" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="COUNTRY" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PRODUCT" nullable="false" originalDbColumnName="0005" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="QUANTITY" nullable="false" originalDbColumnName="0006" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="UNIT" nullable="false" originalDbColumnName="0007" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="UNIT_RATE__FOREIGN_CURRENCY" nullable="false" originalDbColumnName="0008" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CURRENCY" nullable="false" originalDbColumnName="0009" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DATE_YEAR" nullable="false" originalDbColumnName="0020" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DATE_MONTH_LABEL" nullable="false" originalDbColumnName="0018" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="DATE_QUARTER" nullable="false" originalDbColumnName="0019" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="HS_CODE" nullable="false" originalDbColumnName="0001" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="INDIAN_COMPANY" nullable="false" originalDbColumnName="0002" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FOREIGN_COMPANY" nullable="false" originalDbColumnName="0003" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CHIN_split_1" nullable="false" originalDbColumnName="0021" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="PRODUCT" nullable="false" originalDbColumnName="0005" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="QUANTITY" nullable="false" originalDbColumnName="0006" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="UNIT" nullable="false" originalDbColumnName="0007" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="UNIT_RATE__FOREIGN_CURRENCY" nullable="false" originalDbColumnName="0008" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CURRENCY" nullable="false" originalDbColumnName="0009" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="TOTAL_VALUE___FOREIGN_CURRENCY" nullable="false" originalDbColumnName="0010" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="UNIT_RATE__INR" nullable="false" originalDbColumnName="0011" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="TOTAL_VALUE__INR" nullable="false" originalDbColumnName="0012" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
@@ -313,7 +313,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDataprepRun_2"/>
     <elementParameter field="TEXT" name="URL" value="&quot;https://tdp.eu.cloud.talend.com&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;emilie.auzemery@nfr.businessdecision.com&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:viBwpWUC1+rUPh/hujUU3F2TctradaEriMYy5bKadFsDw5zILLJp"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:yhW6XCgvVMpYhygh002+HDMtaOkDsk4i9QsmKmVPemQO9Neupn+y"/>
     <elementParameter field="CHECK" name="USE_PREP_PATH" value="false"/>
     <elementParameter field="DATA_PREP_ID" name="PREPARATION_ID" value="&quot;72fd2423-7e16-4f47-a2e4-9eff546cfeb6&quot;"/>
     <elementParameter field="TEXT" name="PREPARATION_NAME" show="false" value="AI_WATCH_EXPORTS"/>
@@ -406,7 +406,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:eTujpLjPD9COyXKNBSAd3X3qej7MX2LgS9a5Jxmd"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:3f83NrDT1cyehtiNNtU4NeCXEZf3Ow3SJwgIw6+L"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -449,7 +449,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_2"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.aiwatch_rep_in+&quot;Pharmacompass Hydroxy Sulfate.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:n6GWIeMxUI9ZAzYjcuCY13oENHj3AyLBHJGjeEwu"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:6/zHD4UPro9r8WY5dSmTd5xr7L/r+y71XBWlgyF+"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
       <elementValue elementRef="SHEETNAME" value="&quot;API Imports&quot;"/>
@@ -606,18 +606,18 @@
       <column comment="" defaultValue="" key="false" length="-1" name="HS_CODE" nullable="false" originalDbColumnName="0017" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" defaultValue="" key="false" length="-1" name="DATE_YEAR" nullable="false" originalDbColumnName="0020" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DATE_MONTH_LABEL" nullable="false" originalDbColumnName="0018" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DATE_QUARTER" nullable="false" originalDbColumnName="0019" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="INDIAN_COMPANY" nullable="false" originalDbColumnName="0001" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="ADDRESS" nullable="false" originalDbColumnName="0002" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CITY" nullable="false" originalDbColumnName="0003" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="INDIAN_PORT" nullable="false" originalDbColumnName="0004" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="FOREIGN_COMPANY" nullable="false" originalDbColumnName="0005" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="FOREIGN_ADDDRESS" nullable="false" originalDbColumnName="0006" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="FOREIGN_PORT__COUNTRY_split_2" nullable="false" originalDbColumnName="0022" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PRODUCT" nullable="false" originalDbColumnName="0008" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="QUANTITY" nullable="false" originalDbColumnName="0009" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_YEAR" nullable="false" originalDbColumnName="0020" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_MONTH_LABEL" nullable="false" originalDbColumnName="0018" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_QUARTER" nullable="false" originalDbColumnName="0019" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INDIAN_COMPANY" nullable="false" originalDbColumnName="0001" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ADDRESS" nullable="false" originalDbColumnName="0002" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CITY" nullable="false" originalDbColumnName="0003" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INDIAN_PORT" nullable="false" originalDbColumnName="0004" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FOREIGN_COMPANY" nullable="false" originalDbColumnName="0005" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FOREIGN_ADDDRESS" nullable="false" originalDbColumnName="0006" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="COUNTRY" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODUCT" nullable="false" originalDbColumnName="0008" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUANTITY" nullable="false" originalDbColumnName="0009" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="UNIT" nullable="false" originalDbColumnName="0010" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="UNIT_RATE__FOREIGN_CURRENCY" nullable="false" originalDbColumnName="0011" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="CURRENCY" nullable="false" originalDbColumnName="0012" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
@@ -634,7 +634,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDataprepRun_1"/>
     <elementParameter field="TEXT" name="URL" value="&quot;https://tdp.eu.cloud.talend.com&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;emilie.auzemery@nfr.businessdecision.com&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:rRrI6lWbxYfUgV1jq2HeWkoDyAoC2DAF4H3VYrlo2IswIxb0nS+U"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:DJijgccB/R0Ctq/3grNbxC6Qtvsr63/DI5lagvLkClb1hj2veQYY"/>
     <elementParameter field="CHECK" name="USE_PREP_PATH" value="false"/>
     <elementParameter field="DATA_PREP_ID" name="PREPARATION_ID" value="&quot;b642335d-96a7-42b9-be38-77a8ca20552d&quot;"/>
     <elementParameter field="TEXT" name="PREPARATION_NAME" show="false" value="AI_WATCH_IMPORTS"/>
@@ -646,18 +646,18 @@
     <elementParameter field="TEXT" name="LIMIT_PREVIEW" value="1000"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDataprepRun_1">
-      <column comment="" defaultValue="" key="false" length="-1" name="DATE_YEAR" nullable="false" originalDbColumnName="0020" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DATE_MONTH_LABEL" nullable="false" originalDbColumnName="0018" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DATE_QUARTER" nullable="false" originalDbColumnName="0019" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="INDIAN_COMPANY" nullable="false" originalDbColumnName="0001" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="ADDRESS" nullable="false" originalDbColumnName="0002" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CITY" nullable="false" originalDbColumnName="0003" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="INDIAN_PORT" nullable="false" originalDbColumnName="0004" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="FOREIGN_COMPANY" nullable="false" originalDbColumnName="0005" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="FOREIGN_ADDDRESS" nullable="false" originalDbColumnName="0006" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="FOREIGN_PORT__COUNTRY_split_2" nullable="false" originalDbColumnName="0022" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PRODUCT" nullable="false" originalDbColumnName="0008" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="QUANTITY" nullable="false" originalDbColumnName="0009" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_YEAR" nullable="false" originalDbColumnName="0020" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_MONTH_LABEL" nullable="false" originalDbColumnName="0018" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_QUARTER" nullable="false" originalDbColumnName="0019" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INDIAN_COMPANY" nullable="false" originalDbColumnName="0001" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ADDRESS" nullable="false" originalDbColumnName="0002" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CITY" nullable="false" originalDbColumnName="0003" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INDIAN_PORT" nullable="false" originalDbColumnName="0004" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FOREIGN_COMPANY" nullable="false" originalDbColumnName="0005" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FOREIGN_ADDDRESS" nullable="false" originalDbColumnName="0006" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="COUNTRY" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODUCT" nullable="false" originalDbColumnName="0008" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUANTITY" nullable="false" originalDbColumnName="0009" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="UNIT" nullable="false" originalDbColumnName="0010" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="UNIT_RATE__FOREIGN_CURRENCY" nullable="false" originalDbColumnName="0011" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="CURRENCY" nullable="false" originalDbColumnName="0012" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
@@ -703,7 +703,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_ADDDRESS"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FOREIGN_PORT__COUNTRY_split_2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COUNTRY"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
@@ -727,7 +727,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:hqXyHw08GkpPYtvN/48uTDJPb+OK4GymwqCzIHz/"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:r92Mtc2QiH/gsXiz9Gs35U2IWU9EwIqbtbaNzSAC"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -741,21 +741,21 @@
     <elementParameter field="CHECK" name="RECALCULATE_FORMULA" show="false" value="false"/>
     <elementParameter field="CHECK" name="STREAMING_APPEND" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="LABEL" value="AIWATCH_OUT_IMPORTS"/>
+    <elementParameter field="TEXT" name="LABEL" value="AIWATCH_OUT_IPORTS"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileOutputExcel_2">
-      <column comment="" defaultValue="" key="false" length="-1" name="DATE_YEAR" nullable="false" originalDbColumnName="0020" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DATE_MONTH_LABEL" nullable="false" originalDbColumnName="0018" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="DATE_QUARTER" nullable="false" originalDbColumnName="0019" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="INDIAN_COMPANY" nullable="false" originalDbColumnName="0001" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="ADDRESS" nullable="false" originalDbColumnName="0002" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="CITY" nullable="false" originalDbColumnName="0003" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="INDIAN_PORT" nullable="false" originalDbColumnName="0004" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="FOREIGN_COMPANY" nullable="false" originalDbColumnName="0005" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="FOREIGN_ADDDRESS" nullable="false" originalDbColumnName="0006" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="FOREIGN_PORT__COUNTRY_split_2" nullable="false" originalDbColumnName="0022" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PRODUCT" nullable="false" originalDbColumnName="0008" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="QUANTITY" nullable="false" originalDbColumnName="0009" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_YEAR" nullable="false" originalDbColumnName="0020" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_MONTH_LABEL" nullable="false" originalDbColumnName="0018" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATE_QUARTER" nullable="false" originalDbColumnName="0019" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INDIAN_COMPANY" nullable="false" originalDbColumnName="0001" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ADDRESS" nullable="false" originalDbColumnName="0002" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CITY" nullable="false" originalDbColumnName="0003" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INDIAN_PORT" nullable="false" originalDbColumnName="0004" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FOREIGN_COMPANY" nullable="false" originalDbColumnName="0005" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FOREIGN_ADDDRESS" nullable="false" originalDbColumnName="0006" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="COUNTRY" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODUCT" nullable="false" originalDbColumnName="0008" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUANTITY" nullable="false" originalDbColumnName="0009" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="UNIT" nullable="false" originalDbColumnName="0010" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="UNIT_RATE__FOREIGN_CURRENCY" nullable="false" originalDbColumnName="0011" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="CURRENCY" nullable="false" originalDbColumnName="0012" originalLength="-1" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
@@ -820,13 +820,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cceaf145-a057-4bd1-a6ac-97040ea94938"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3ShDURJYpITXPo1G6Y7rmjmxx/E3DNClvyGFRsaKGC37wD/BSwxEIC/BW1oz02lwVzw4eSI96PPU&#13;
-0DMZD8r1EA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_10eec348-ce1c-4fad-b9d1-875b117cc7e9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DraEMYj8QIKi2ciWYPztXCSLEw5hLWqszyK7a1o5l7OrMp105UhpuHVKewIx/HTDAkznTO0iICTR&#13;
-3dRnffeEBw==</DigestValue></Reference></SignedInfo><SignatureValue>bfiU1ix/fLs5AdrFRHEnpHjxse3MGWqxoVHsGQ3ByaGHJmYJN1E9b6Y9tiCCfn8xxLIAB/yXn9TW&#13;
-cnMLIeFnuwq2yl1SOKNjoPYeD1nQnyhkErwgTxVZUDJo7RkcSbLvYcPn2j8jozIaU2lesRT+VnLB&#13;
-PqENLNlgYcmSbUA7esBkWvu59Qlrph2AoAQsBg8ZzWI2PW40nKzzL4e/GtQPLXZyNdbBgj/QpCIz&#13;
-4Qn9aNkdMHvUS25kcmSb6rVJS53VSHdWca9dVbZcgL9zrMZUnOCijFLe2YHmTPV/OWm6eMBvLd/k&#13;
-1WMsYHb7tCeyr8betHrUG1IZTpBbBcaZRFn4iw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7373776c-bf1b-49b7-80ff-6cd72f0e5109"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NsatBxwrXLXxL7B6E0DyYS+DHUxT0QpsTJcbqVO1VX2pq0isFghsKLt9/Q16YDXz5hzGHGdoRXMe&#13;
+OWKjuSi4CQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_089bdcec-58d8-460c-a620-fa32583cba8e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ur1+Z4yR+4xPtWT0u+8S+R7Lrb7QTEt/WHykcgvan4yL1lAHqzPOIqZqU/UuOhCdKYpNwNAPGqSP&#13;
+Q7xN+03y7w==</DigestValue></Reference></SignedInfo><SignatureValue>WHtpzv217HOOnW5KQShmttONys4ZuDh1L3K+6GuXcPpIxJh5RZxl4+GyqboB2ikapSiKiyvatzSi&#13;
+pb2LIKS13Vc1p5w4zkNYOnhXHr76+Nkinh89hwr1YuLGqNy9ugUmpOQ5F/lSTiWeSMvsIvnfq2VN&#13;
+OqVmQGCP3lXfYHEOzK4PJFCXCX7j/LYwQdWoaPVAtEqUuYBJgnbisI/VTo9soWkIbetkz78o4M3v&#13;
+ex1lEW/Xcg0uJ0VYc9r8zAbzqlfXJHG9OgveY0ECstk2aIW/+8SxjKk3jWyKIAXANq924Ds1M4A/&#13;
+w3CtSiaCW2O9hzkOt+4HfRbVQY/9R/OoVCYGmQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -848,4 +848,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_10eec348-ce1c-4fad-b9d1-875b117cc7e9" Target="#_cceaf145-a057-4bd1-a6ac-97040ea94938"><Timestamp>2022-01-21 14:15:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_089bdcec-58d8-460c-a620-fa32583cba8e" Target="#_7373776c-bf1b-49b7-80ff-6cd72f0e5109"><Timestamp>2022-01-21 14:15:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
