@@ -54,7 +54,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:ZTFpkpagyF68k3NadNn+RE3wJA2nLJ97INJzFhVO"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:67SFl2x92hGVFisxq1amP27uBqc+WLszypToPxqM"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -89,7 +89,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:on+EAJNv9DFGXku/vKBADqcc6eunEUO90TT07k30"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:mgyYTV/+dqieG/1Vi3UGw5lG5xyIqkB+LmLVUwIy"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -129,7 +129,7 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.aiwatch_rep_in+&quot;Pharmacompass Hydroxy Sulfate.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:JIwfXvpOUcyf3JH0lFwFunPmXyBFAvZREy4aocwX"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:8dWRrfsE9x0CV1n271aV4YR/XWEiZBtMxP+z6KnR"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
       <elementValue elementRef="SHEETNAME" value="&quot;FDF Exports&quot;"/>
@@ -398,7 +398,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" show="false" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:Ex5YK+dOMrTQv4CVem8gLwpRKdXMSOMAwmZf52db"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:5oWPZIgJUjKuE1MVWBmO3BbsjKhoHKGfb1j4Ti1S"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -436,7 +436,7 @@
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.aiwatch_rep_in+&quot;Pharmacompass Hydroxy Sulfate.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:1mK3XvzqyT/6C0+dq97xT2f4eCKf7YxTHSmMvPQh"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:IG3P+lXufN3XfiPeycLbiuuRMo4cbis7BUZbuFfP"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;Feuil1&quot;"/>
@@ -705,7 +705,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" show="false" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:+xpHwMP4vvjc+N6LDAoHXKqaIAwe0qQ690U5IG9t"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:eS/mbDDZh6fpymFsoEim/4c375dSeOeP8ZjDEX6C"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -744,7 +744,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_N5fkYHoBEeymUK72RnFQEA"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/eauzemery/Desktop/PROJETS/SANOFI/AI WATCH/Activité de nettoyage.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:bxwPhHWtpH68WObV+fN9P9NTfW9HxdLRJMahePel"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:P1kzv4jywtBSQrSVrGQhmLCRBq0qv1LHrlO15JdN"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
       <elementValue elementRef="SHEETNAME" value="&quot;API Imports&quot;"/>
@@ -947,7 +947,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="!Relational.ISNULL(row9.FOREIGN_PORT__COUNTRY)?&#13;&#10;row6.FOREIGN_PORT__COUNTRY.contains(&quot;,&quot;)?&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY.split(&quot;,&quot;)[1]):&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY)&#13;&#10;:null " name="country" type="id_String"/>
+        <mapperTableEntries expression="!Relational.ISNULL(row9.FOREIGN_PORT__COUNTRY)?&#13;&#10;row9.FOREIGN_PORT__COUNTRY.contains(&quot;,&quot;)?&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY.split(&quot;,&quot;)[1]):&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY)&#13;&#10;:null " name="country" type="id_String"/>
         <mapperTableEntries expression="TalendDate.getPartOfDate(&quot;YEAR&quot;,row9.DATE) " name="year" type="id_Integer"/>
         <mapperTableEntries expression="Var.year == 2021 ? context.aiwatch_total_eur_2021 * Double.parseDouble(row9.TOTAL_VALUE__INR) :&#13;&#10;Var.year == 2020 ? context.aiwatch_total_eur_2020 * Double.parseDouble(row9.TOTAL_VALUE__INR) :&#13;&#10;Var.year == 2019 ? context.aiwatch_total_eur_2019 * Double.parseDouble(row9.TOTAL_VALUE__INR) :&#13;&#10;Var.year == 2018 ? context.aiwatch_total_eur_2018 * Double.parseDouble(row9.TOTAL_VALUE__INR) :&#13;&#10;context.aiwatch_total_eur_def * Double.parseDouble(row9.TOTAL_VALUE__INR) " name="total_eur" type="id_Double"/>
       </varTables>
@@ -989,7 +989,7 @@
         <mapperTableEntries name="HS_CODE" nullable="true" type="id_Integer"/>
       </inputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="in_country_imp" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="!Relational.ISNULL(row9.FOREIGN_PORT__COUNTRY)?&#13;&#10;row6.FOREIGN_PORT__COUNTRY.contains(&quot;,&quot;)?&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY.split(&quot;,&quot;)[1]):&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY)&#13;&#10;:null " name="Country" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="!Relational.ISNULL(row9.FOREIGN_PORT__COUNTRY)?&#13;&#10;row9.FOREIGN_PORT__COUNTRY.contains(&quot;,&quot;)?&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY.split(&quot;,&quot;)[1]):&#13;&#10;StringHandling.UPCASE(row9.FOREIGN_PORT__COUNTRY)&#13;&#10;:null " name="Country" nullable="true" type="id_String"/>
         <mapperTableEntries name="Region" nullable="true" type="id_String"/>
         <mapperTableEntries name="Subregion" nullable="true" type="id_String"/>
       </inputTables>
@@ -1044,7 +1044,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" show="false" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:x+tHX3wxHxHa/54NlBJFvSZnc+Xy8GscRuqB1Qjl"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:s9DDEROPChZ0q+AljncqnkK+P/2JnGdQGn0eHfOs"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -1084,7 +1084,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_FARVYHoLEeymUK72RnFQEA"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/eauzemery/Desktop/PROJETS/SANOFI/AI WATCH/Regional Mapping.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:XX/8SdH5q0DU8X5bDD/RnT1fxf4KXMsYM6pssbYC"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:4u5w31qQaa1q1OOYXydFdXtjCI7peUJKGlowZmyu"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;Mapping&quot;"/>
@@ -1154,7 +1154,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_Lr2BEHoBEeymUK72RnFQEA"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/eauzemery/Desktop/PROJETS/SANOFI/AI WATCH/Activité de nettoyage.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:BHyRuvqp3KN5T+9qfXKSnAcklJrZT3tkGGlXRakt"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:z2lUJAcOTgZ5VcymK8lEoxkhHjPNUY6plJInEBaB"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
       <elementValue elementRef="SHEETNAME" value="&quot;API Exports&quot;"/>
@@ -1446,7 +1446,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" show="false" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:FLZLwZOsFG36//BbdXFnuFkrYr2zcqg/2AsfWz4B"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:k4Hxz/Y+TE+tHO0Jfre2z/cldTAof7GgClrqFZ6b"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -1486,7 +1486,7 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_FARVYHoLEeymUK72RnFQEA"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/eauzemery/Desktop/PROJETS/SANOFI/AI WATCH/Regional Mapping.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:c2gdJJS+suQYT/KqFcah6R5TSrCUC5q5HVNCoSz8"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:uV7752CgbEgyRcTa3W5vfe90ZEiJfmhIcwoG5csV"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;Mapping&quot;"/>
@@ -2223,13 +2223,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c3e1df56-0ecd-4df2-abb3-e610cb257d98"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>slQoQ3wfHHW4qSQuGCauNHd/Wz+r93HzHDecijx6zDumjR3/1NcmBDz7HWNVFHY9ZQ4SRtZtX5I8&#13;
-jyir+MvthQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_dfca9976-b2ec-445a-983a-192f0034abc8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dAsFu3nwwnZOjgmTGTljhrt4Kx5vEVUVOqYqAbd4QoR2RefDTU6Z/Vmr3xM98XzdN7C+0NFR9yG3&#13;
-rMphY7Uudg==</DigestValue></Reference></SignedInfo><SignatureValue>hDG4QbGpigRfX2Gn1hpVK/slKDFyosPNE767wqLdb9YGzrOBaEogbcGl9CGajeNfURBoxyguzlGK&#13;
-0ywVxc5F6ZgRLZ02czTROmcO1URyBlnQUn0hM6lXBaxw48k7WSAxYA0k7FXWfu0Zh0TQnBpiJGX1&#13;
-WbxHkRTW5C657/dG8HRPlO3Q+x/119QL3oD358aLlQrzQ4zgNpbEaSLPLxkGPGFVx2GLNLIISDBw&#13;
-2+uZLeuCl2LrDCVYZyg2EypiwWq5qR7ZVEowcCIr7l9KjCBPDrmnnTYONqYvMihVwyJFtdIOC+69&#13;
-z7dc4zdlbR3bqm8QcF2KvWA/UJyrurMLOUHfSg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9896a587-bdf6-447a-a81a-ee96d71b1a19"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1jqOJJwQutbUFRPJg/Ud++yqa/b/f5aS86pA7lJzm+K60iEwfELStLGnjpxFWmrOLOLlYorjZkSQ&#13;
+18+2VqmZqA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_126c221a-e03d-412b-a3b1-4941f206c3fd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Kh3RGWmTlN/YkF2jRVIXTIvauCUaBep7dgaWy8saOJoaOpFIP2jbHdKuAwRIZ8tUVnnMcGPQmibJ&#13;
+FZd2Sq6tMQ==</DigestValue></Reference></SignedInfo><SignatureValue>n8YZzzdQ5DZy9dZfDcnQKpqAzn98MxggCUnRw5MizRv3ZFfdMmq875kehStZd8EaiSy0phMNca8m&#13;
+ou0AnGyduiFzXXQzvWNqXSJ2HehbJaWIcX4RRn6lKTEVUQJKqxhrX8Sd1VGsv6sYpPegyhaOPO0j&#13;
+euH4oQPEivL/Cq4jXxaZHYwDYS7m0Npy2M1f5dieej60fwAI0cTXtkOwAUxh3wiQBZVMMHKiaQjo&#13;
+y9PAw3i1EboiH5UzaY+LTFZNfuDhmhUMgUzQXVDS0UIGGCLjVtvoSiCZStONmMH13M8s8tzBfST2&#13;
+dKFleMtpd5WopXLbPOywOvY/RB+UhL15DHdXxA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2251,4 +2251,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_dfca9976-b2ec-445a-983a-192f0034abc8" Target="#_c3e1df56-0ecd-4df2-abb3-e610cb257d98"><Timestamp>2022-01-21 09:09:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_126c221a-e03d-412b-a3b1-4941f206c3fd" Target="#_9896a587-bdf6-447a-a81a-ee96d71b1a19"><Timestamp>2022-01-21 09:11:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
