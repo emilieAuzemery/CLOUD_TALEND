@@ -130,6 +130,11 @@
     "version" : "7.3.1",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.camel.designer.migration.RenameHawtdbToLeveldbMigrationTask",
+    "breaks" : "7.3.1",
+    "version" : "8.0.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.camel.designer.migration.RenameToCSoapAndCRestMigrationTask",
     "breaks" : "5.6.0",
     "version" : "6.4.0",
@@ -213,6 +218,10 @@
     "id" : "org.talend.camel.designer.migration.UpdatecSOAPServiceNamePortNameDefault",
     "breaks" : "5.4.1",
     "version" : "5.6.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.datacleansing.core.migration.UpdateTDataMaskAddParamTask",
+    "version" : "8.0.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.datacleansing.core.migration.UpdateTMatchGroupOutPutSchemaTask",
@@ -492,6 +501,11 @@
     "id" : "org.talend.repository.ftp.repository.migration.UnifyPasswordEncryption4FtpConnectionMigrationTask",
     "breaks" : "5.6.0",
     "version" : "5.6.0",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.generic.model.migration.ChangeDbmsIdMigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.repository.generic.model.migration.NewSalesforceMigrationTask",
@@ -958,6 +972,11 @@
     "breaks" : "7.0.1",
     "version" : "7.0.2",
     "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.AddUseScientificNotationCheckboxTWriteJSONField",
+    "breaks" : "8.0.0",
+    "version" : "8.0.1",
+    "status" : "ok"
   }, {
     "id" : "org.talend.repository.model.migration.ApplySecurityAfterAdvancedKafkaProperties",
     "breaks" : "8.0.0",
@@ -1563,6 +1582,11 @@
     "version" : "5.1.2",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.model.migration.FixProjectResourceLink",
+    "breaks" : "5.1.1",
+    "version" : "5.1.2",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.repository.model.migration.FixUnevenItemContextParametersMigrationTask",
     "breaks" : "6.1.0",
     "version" : "6.4.0",
@@ -2089,6 +2113,11 @@
     "id" : "org.talend.repository.model.migration.SetForceCopyFortFileCopy",
     "breaks" : "7.3.0",
     "version" : "7.3.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.SetKeystoreKafkaMigrationTask",
+    "breaks" : "8.0.0",
+    "version" : "8.0.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.repository.model.migration.SetReadByJSONPathToFalse",
