@@ -225,6 +225,10 @@
     "version" : "5.6.1",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.datacleansing.core.migration.UpdateTDataEncryptAndDecryptParamTask",
+    "version" : "8.0.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.datacleansing.core.migration.UpdateTDataMaskAddParamTask",
     "version" : "8.0.1",
     "status" : "noimpact"
@@ -2217,6 +2221,11 @@
     "id" : "org.talend.repository.model.migration.TExtractJSONSplitListMigrationTask",
     "breaks" : "7.0.1",
     "version" : "7.0.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.TSendMailOAuthMigrationTask",
+    "breaks" : "8.0.0",
+    "version" : "8.0.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.repository.model.migration.TeradataTPTAddDatabaseNameToOptionalTablesMigrationTask",
