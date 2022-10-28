@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/Projets</deletedFolders>
+  <deletedFolders>process/Projets/Orange</deletedFolders>
+  <deletedFolders>process/Projets/Orange/OrangeRH</deletedFolders>
   <deletedItems id="_0OSM4CmTEeecDJL797YE_g" path="" type="CONTEXT"/>
   <deletedItems id="_NeMIQHncEeymUK72RnFQEA" path="" type="METADATA_FILE_EXCEL"/>
   <deletedItems id="_wcFdYHq_EeykpdIU5EeVpA" path="POC_AI_WATCH" type="PROCESS"/>
