@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Param" xmi:id="_w6wwgLRwEeqJFKZVehoJKw">
+    <contextParameter comment="" name="LogDatabase" prompt="LogDatabase?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwgbRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogServer" prompt="LogServer?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwgrRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogPort" prompt="LogPort?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwg7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogLogin" prompt="LogLogin?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwhLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogPassword" prompt="LogPassword?" promptNeeded="false" type="id_Password" value="" xmi:id="_w6wwhbRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogSchema" prompt="LogSchema?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwhrRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogAdditionalParameters" prompt="LogAdditionalParameters?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwh7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="WorkflowTable" prompt="WorkflowTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwiLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="JobTable" prompt="JobTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwibRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="WorkflowExecutionTable" prompt="WorkflowExecutionTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwirRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="JobExecutionTable" prompt="JobExecutionTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwi7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="ExecutionStatusTable" prompt="ExecutionStatusTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwjLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="FileExecutionTable" prompt="FileExecutionTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwjbRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="FileTable" prompt="FileTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwjrRwEeqJFKZVehoJKw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Development" xmi:id="_w6wwj7RwEeqJFKZVehoJKw">
+    <contextParameter comment="" name="LogDatabase" prompt="LogDatabase?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwkLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogServer" prompt="LogServer?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwkbRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogPort" prompt="LogPort?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwkrRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogLogin" prompt="LogLogin?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwk7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogPassword" prompt="LogPassword?" promptNeeded="false" type="id_Password" value="" xmi:id="_w6wwlLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogSchema" prompt="LogSchema?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwlbRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogAdditionalParameters" prompt="LogAdditionalParameters?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwlrRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="WorkflowTable" prompt="WorkflowTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwl7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="JobTable" prompt="JobTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwmLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="WorkflowExecutionTable" prompt="WorkflowExecutionTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwmbRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="JobExecutionTable" prompt="JobExecutionTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwmrRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="ExecutionStatusTable" prompt="ExecutionStatusTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwm7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="FileExecutionTable" prompt="FileExecutionTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwnLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="FileTable" prompt="FileTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwnbRwEeqJFKZVehoJKw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Qualification" xmi:id="_w6wwnrRwEeqJFKZVehoJKw">
+    <contextParameter comment="" name="LogDatabase" prompt="LogDatabase?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwn7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogServer" prompt="LogServer?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwoLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogPort" prompt="LogPort?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwobRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogLogin" prompt="LogLogin?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wworRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogPassword" prompt="LogPassword?" promptNeeded="false" type="id_Password" value="" xmi:id="_w6wwo7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogSchema" prompt="LogSchema?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwpLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogAdditionalParameters" prompt="LogAdditionalParameters?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwpbRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="WorkflowTable" prompt="WorkflowTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwprRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="JobTable" prompt="JobTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwp7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="WorkflowExecutionTable" prompt="WorkflowExecutionTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwqLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="JobExecutionTable" prompt="JobExecutionTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwqbRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="ExecutionStatusTable" prompt="ExecutionStatusTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwqrRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="FileExecutionTable" prompt="FileExecutionTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwq7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="FileTable" prompt="FileTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwrLRwEeqJFKZVehoJKw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PreProduction" xmi:id="_w6wwrbRwEeqJFKZVehoJKw">
+    <contextParameter comment="" name="LogDatabase" prompt="LogDatabase?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwrrRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogServer" prompt="LogServer?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwr7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogPort" prompt="LogPort?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwsLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogLogin" prompt="LogLogin?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwsbRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogPassword" prompt="LogPassword?" promptNeeded="false" type="id_Password" value="" xmi:id="_w6wwsrRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogSchema" prompt="LogSchema?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wws7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogAdditionalParameters" prompt="LogAdditionalParameters?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwtLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="WorkflowTable" prompt="WorkflowTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwtbRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="JobTable" prompt="JobTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwtrRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="WorkflowExecutionTable" prompt="WorkflowExecutionTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwt7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="JobExecutionTable" prompt="JobExecutionTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwuLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="ExecutionStatusTable" prompt="ExecutionStatusTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwubRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="FileExecutionTable" prompt="FileExecutionTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwurRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="FileTable" prompt="FileTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwu7RwEeqJFKZVehoJKw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Production" xmi:id="_w6wwvLRwEeqJFKZVehoJKw">
+    <contextParameter comment="" name="LogDatabase" prompt="LogDatabase?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwvbRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogServer" prompt="LogServer?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwvrRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogPort" prompt="LogPort?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwv7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogLogin" prompt="LogLogin?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwwLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogPassword" prompt="LogPassword?" promptNeeded="false" type="id_Password" value="" xmi:id="_w6wwwbRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogSchema" prompt="LogSchema?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwwrRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="LogAdditionalParameters" prompt="LogAdditionalParameters?" promptNeeded="false" type="id_String" value="" xmi:id="_w6www7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="WorkflowTable" prompt="WorkflowTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwxLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="JobTable" prompt="JobTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwxbRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="WorkflowExecutionTable" prompt="WorkflowExecutionTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwxrRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="JobExecutionTable" prompt="JobExecutionTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwx7RwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="ExecutionStatusTable" prompt="ExecutionStatusTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwyLRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="FileExecutionTable" prompt="FileExecutionTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwybRwEeqJFKZVehoJKw"/>
+    <contextParameter comment="" name="FileTable" prompt="FileTable?" promptNeeded="false" type="id_String" value="" xmi:id="_w6wwyrRwEeqJFKZVehoJKw"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_17f754de-de14-49d0-826a-dc910f967a9d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>z6RcXzAWevmVrVuf//EJBDHOKbQxOozGYZ3Jrr+JyqXeerzAN6csQOQqUAWtG+c2WrrCipsVFM3D&#13;
+tBtk0MRbNA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f4719de2-60a5-477d-bf82-30e4ae12940d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KKj48nTb/cim12zXTPMbykyjCTidpZrEoUN3fcq/eCcsXCxKmba1Wc5qsT00kVDWhc9xDnSqcQiD&#13;
+SDVedcP+kg==</DigestValue></Reference></SignedInfo><SignatureValue>mK4jEp5NRACZk6f4Vmly/JdAzEjcsrLZ1g0mBBSjaTAgUghVVmDBXfbXPrM0FDkvfp8KdS4IfZgr&#13;
+kxITkF8CxQD1EO4rcb6TtgZem6hNp+Je4xYMOeBnt6FrQ4q1fv2bneblxP6SQMW+wED3KVpTw0WH&#13;
+5c98RkjAy0JWg8IrMeY1k7ebI0CXptNUpZHhv0QOB3BktgjBRrvsBeYtTNFNmMiroFZYEkdTNcBT&#13;
+bElznRoE3CVYBxRj3FuCPzAYqBqVNjjbeKu9tsoR4B7bDK2gRGHE+3w50ZnMFhfCcSSWbeDmBjhH&#13;
+kBIDbFAM9YEN5jWRgIk8K1n9Fbf0ul+2FqtXZw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f4719de2-60a5-477d-bf82-30e4ae12940d" Target="#_17f754de-de14-49d0-826a-dc910f967a9d"><Timestamp>2023-07-10 15:32:07</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

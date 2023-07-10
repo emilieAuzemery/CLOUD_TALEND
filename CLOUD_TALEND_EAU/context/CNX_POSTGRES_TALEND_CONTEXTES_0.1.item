@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_j8K8cKS2EeyYN4NUQdLS0Q">
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_username" prompt="connection_PostgresOdsTalendContext_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="_talend" xmi:id="_j8K8caS2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_port" prompt="connection_PostgresOdsTalendContext_port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="5432" xmi:id="_j8K8cqS2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_password" prompt="connection_PostgresOdsTalendContext_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:oCAOOxtYrVNrR/ozaCWalVGa4itvPvH679dMxBHzq3R7MojyBj7vYR345pux6sVt0ZmTTyEeCHTEz12k" xmi:id="_j8K8c6S2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_database" prompt="connection_PostgresOdsTalendContext_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ods" xmi:id="_j8K8dKS2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_params" prompt="connection_PostgresOdsTalendContext_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_j8K8daS2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_schema" prompt="connection_PostgresOdsTalendContext_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_contextes" xmi:id="_j8K8dqS2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_host" prompt="connection_PostgresOdsTalendContext_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.200.1.191" xmi:id="_j8K8d6S2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="CNX_POSTGRES_ODS_TALEND_CONTEXT_T_CONTEXTES" prompt="CNX_POSTGRES_ODS_TALEND_CONTEXT_T_CONTEXTES?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="context_configuration" xmi:id="_EOX4gKS3EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="REPERTOIRE_BULK" prompt="REPERTOIRE_BULK?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_2uHFwGDlEe2IMMpzquDyiw"/>
+    <contextParameter comment="" name="REPERTOIRE_TRAVAIL" prompt="REPERTOIRE_TRAVAIL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_xw4rEHSfEe2SMP7I9BHDww"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="REC" xmi:id="_j8K8gKS2EeyYN4NUQdLS0Q">
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_username" prompt="connection_PostgresOdsTalendContext_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="_ors" xmi:id="_j8K8gaS2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_port" prompt="connection_PostgresOdsTalendContext_port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="5432" xmi:id="_j8K8gqS2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_password" prompt="connection_PostgresOdsTalendContext_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:dXAHehaq6EuQ+1SSmT2tjwu5BwizVW69+vsvagK31x1ohW1hYodwHpNR/9HaKg7Xy5RYHyiA2HKTKPkH" xmi:id="_j8K8g6S2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_database" prompt="connection_PostgresOdsTalendContext_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ods" xmi:id="_j8K8hKS2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_params" prompt="connection_PostgresOdsTalendContext_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_j8K8haS2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_schema" prompt="connection_PostgresOdsTalendContext_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_contextes" xmi:id="_j8K8hqS2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_host" prompt="connection_PostgresOdsTalendContext_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.200.1.191" xmi:id="_j8K8h6S2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="CNX_POSTGRES_ODS_TALEND_CONTEXT_T_CONTEXTES" prompt="CNX_POSTGRES_ODS_TALEND_CONTEXT_T_CONTEXTES?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="context_configuration" xmi:id="_EOYfkaS3EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="REPERTOIRE_BULK" prompt="REPERTOIRE_BULK?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_2uHFwWDlEe2IMMpzquDyiw"/>
+    <contextParameter comment="" name="REPERTOIRE_TRAVAIL" prompt="REPERTOIRE_TRAVAIL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_xw4rEXSfEe2SMP7I9BHDww"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PROD" xmi:id="_j8K8eKS2EeyYN4NUQdLS0Q">
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_username" prompt="connection_PostgresOdsTalendContext_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="_ors" xmi:id="_j8K8eaS2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_port" prompt="connection_PostgresOdsTalendContext_port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="5432" xmi:id="_j8K8eqS2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_password" prompt="connection_PostgresOdsTalendContext_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:JLg0IVxUOhGoaWo5GPF8nyl/w+o6oCl+xQ5fEwlRJPffsy4Lla3F3syAgd9JnkNcDg/Nl59Icd6loih2" xmi:id="_j8K8e6S2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_database" prompt="connection_PostgresOdsTalendContext_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ods" xmi:id="_j8K8fKS2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_params" prompt="connection_PostgresOdsTalendContext_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_j8K8faS2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_schema" prompt="connection_PostgresOdsTalendContext_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_contextes" xmi:id="_j8K8fqS2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendContext_host" prompt="connection_PostgresOdsTalendContext_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.200.1.191" xmi:id="_j8K8f6S2EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="CNX_POSTGRES_ODS_TALEND_CONTEXT_T_CONTEXTES" prompt="CNX_POSTGRES_ODS_TALEND_CONTEXT_T_CONTEXTES?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="context_configuration" xmi:id="_EOYfkKS3EeyYN4NUQdLS0Q"/>
+    <contextParameter comment="" name="REPERTOIRE_BULK" prompt="REPERTOIRE_BULK?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_2uHFwmDlEe2IMMpzquDyiw"/>
+    <contextParameter comment="" name="REPERTOIRE_TRAVAIL" prompt="REPERTOIRE_TRAVAIL?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_xw4rEnSfEe2SMP7I9BHDww"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d8a883b2-1abf-43bb-aafb-d931b277f660"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hFt/VwSjNQg/kQnz7VoTVWNVl46uFCrdBfB4g0O3tyDQDh5JTdxLNEaWnpzP5AnuJ7OK9gideiSF&#13;
+C9w5G4CaMw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6a1e2448-4af6-4b23-b7f7-7aa120b2bcc5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0ZjiKys9DDBpsMKQecgJQbHmkWxKkeBLHJzsKvDGN8nnsEDFTLbPVAQ15QjMPo/z1m5Y09F+xlej&#13;
+kR1IR3ZJpg==</DigestValue></Reference></SignedInfo><SignatureValue>aZ1EuGNkHA7rTPK3jJBCuh4ATETZuB37EZI1/450QvrkFuvYfMYz3AoEBgG9EwnU1bSxnQOENzWq&#13;
+Vl4KV/kwhRIdglp1O27/ZUpmahPKDVwQurUXSPychsTtNpsVEQi3ELJFRt5hI8jvtyG6Iit9wJak&#13;
+b+tFEDAK9KuWqX8wNEhdT67B/4S56wrShfSwiRNat/y+x9BTLV/PwLBwmYwHL924buEI/5pJGsNa&#13;
+6CzLuE96DfD3LYdy+rhHVAfVgBSQxPTE7MnFq+oEqm3lcKU+cVmoVjH7Ew3Lgfs73fPuSXy9A0QP&#13;
+3hu8lfjPT1nj7ZzLcuyUUftnNc4ekyAc2HD0aA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6a1e2448-4af6-4b23-b7f7-7aa120b2bcc5" Target="#_d8a883b2-1abf-43bb-aafb-d931b277f660"><Timestamp>2022-12-05 13:21:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

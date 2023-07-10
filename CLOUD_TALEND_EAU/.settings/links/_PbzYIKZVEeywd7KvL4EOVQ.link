@@ -1,0 +1,182 @@
+{
+  "itemId" : "_PbzYIKZVEeywd7KvL4EOVQ",
+  "contextList" : [ {
+    "contextName" : "DEV",
+    "repoId" : "_RY0pAKZWEeywd7KvL4EOVQ",
+    "parameterList" : [ {
+      "id" : "_RZRU8aZWEeywd7KvL4EOVQ",
+      "name" : "connection_PostgresOdsPrep_username"
+    }, {
+      "id" : "_RZRU8qZWEeywd7KvL4EOVQ",
+      "name" : "connection_PostgresOdsPrep_password"
+    }, {
+      "id" : "_RZRU86ZWEeywd7KvL4EOVQ",
+      "name" : "connection_PostgresOdsPrep_schema"
+    }, {
+      "id" : "_RZRU9KZWEeywd7KvL4EOVQ",
+      "name" : "connection_PostgresOdsPrep_port"
+    }, {
+      "id" : "_RZRU9aZWEeywd7KvL4EOVQ",
+      "name" : "connection_PostgresOdsPrep_database"
+    }, {
+      "id" : "_RZRU9qZWEeywd7KvL4EOVQ",
+      "name" : "connection_PostgresOdsPrep_params"
+    }, {
+      "id" : "_RZRU96ZWEeywd7KvL4EOVQ",
+      "name" : "connection_PostgresOdsPrep_host"
+    }, {
+      "id" : "_RCg_AKacEeywd7KvL4EOVQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_UNITES_NON_FONCIERES_SEULES"
+    }, {
+      "id" : "_RCg_AaacEeywd7KvL4EOVQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_UNITE_FONCIERE"
+    }, {
+      "id" : "_RCg_AqacEeywd7KvL4EOVQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_UNITE_NON_FONCIERE"
+    }, {
+      "id" : "_Jau8kLDUEeyMW-NpYLKF4A",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_SAFER"
+    }, {
+      "id" : "_z7xZELWTEey2KcsE4V4DSA",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_PERSONNE_NON_SAFER"
+    }, {
+      "id" : "_nSCewLyhEey_IJdewrprJw",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_OBJECTIFS_LEGAUX"
+    }, {
+      "id" : "_rJ-mQMCqEeyVNM4Q62YDXg",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_LOCALISATION"
+    }, {
+      "id" : "_0qYmMMRzEeyeyYDZWoa4Vg",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_ACQUISITION"
+    }, {
+      "id" : "_qYPb8M9_EeyyO6a7mlIOsA",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_TEMP_ECH_VERSEMENT"
+    }, {
+      "id" : "_OnkdANTzEeyX155vPeigcA",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_AVIS_CDG"
+    }, {
+      "id" : "_82zWwNqoEeyl8a-uSnItrQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_ENGAGEMENT"
+    }, {
+      "id" : "_N7vEcOMaEeydCqeQ4ULRkw",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_CONSEILLER_FONCIER"
+    }, {
+      "id" : "_N7vEceMaEeydCqeQ4ULRkw",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_REDACTEUR"
+    }, {
+      "id" : "_N7vEcuMaEeydCqeQ4ULRkw",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_REDACTEUR_2"
+    }, {
+      "id" : "_N7vEc-MaEeydCqeQ4ULRkw",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_RESP_SUIVI"
+    }, {
+      "id" : "_pbzq8OcPEeydCqeQ4ULRkw",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_VENDEUR"
+    }, {
+      "id" : "_SAmOoOv6EeyMnNzciLTdbw",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_ACQUEREUR"
+    }, {
+      "id" : "_T0-TcCecEe2imcJnn_wp6w",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_RETROCESSION"
+    }, {
+      "id" : "_s1tUkCe-Ee2imcJnn_wp6w",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_TEMP_TIERS_FONCTION"
+    }, {
+      "id" : "_s1tUkSe-Ee2imcJnn_wp6w",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_TEMP_TIERS_PERSONNE"
+    }, {
+      "id" : "_bceNEChcEe2imcJnn_wp6w",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_TIERS"
+    }, {
+      "id" : "_NxXW4Ch7Ee2imcJnn_wp6w",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_ACQUI_RD"
+    }, {
+      "id" : "_Ml85ICkqEe2imcJnn_wp6w",
+      "name" : "CNX_POSTGRES_ODS_PREP_DATE_SIGNATURE_ACTE_NOMBRE_JOURS"
+    }, {
+      "id" : "_Ml85ISkqEe2imcJnn_wp6w",
+      "name" : "CNX_POSTGRES_ODS_PREP_DATE_EFFET_NOMBRE_JOURS"
+    }, {
+      "id" : "_TlXiUCkqEe2imcJnn_wp6w",
+      "name" : "CNX_POSTGRES_ODS_PREP_ID_SAFER"
+    }, {
+      "id" : "_KByToDWpEe292b-QcPf1NQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_TEMP_DESTINATAIRE_FONCTION"
+    }, {
+      "id" : "_YOmZ0DW4Ee292b-QcPf1NQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_DATE_ECHEANCE_NOMBRE_JOURS"
+    }, {
+      "id" : "_wvv6wDXAEe292b-QcPf1NQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_TEMP_DESTINATAIRE_PERSONNE"
+    }, {
+      "id" : "_Qc7hYDXFEe292b-QcPf1NQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_DESTINATAIRE"
+    }, {
+      "id" : "_79TvoDXREe292b-QcPf1NQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_TEMP_ECH_VERS_RAPPROCHES"
+    }, {
+      "id" : "_5CsjMDXSEe292b-QcPf1NQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_DATE_VERSEMENT_NOMBRE_JOURS"
+    }, {
+      "id" : "_dXaVoDXXEe292b-QcPf1NQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_TEMP_VERSEMENT_SANS_ECH"
+    }, {
+      "id" : "_WO3DEDbeEe292b-QcPf1NQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_TEMP_ECHEANCE_SANS_VERS"
+    }, {
+      "id" : "_IllBQDhPEe292b-QcPf1NQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_DATE_ABONDON_NOMBRE_JOURS"
+    }, {
+      "id" : "_rFE4sDi6Ee292b-QcPf1NQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_ACQUI_ECH_VERS"
+    }, {
+      "id" : "_zbCFwD2WEe2txciGTQMx9w",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_RETRO_ECH_VERS"
+    }, {
+      "id" : "_awRKQD2YEe2txciGTQMx9w",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_RETRO_RD"
+    }, {
+      "id" : "_zzzIAD57Ee2txciGTQMx9w",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_REC_DEPENSES"
+    }, {
+      "id" : "_l3okQD_dEe2txciGTQMx9w",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_UNITE_FONCIERE_NOTIF"
+    }, {
+      "id" : "__x5nsD_6Ee2txciGTQMx9w",
+      "name" : "CNX_POSTGRES_ODS_PREP_DATE_RECEPTION_NOMBRE_JOURS"
+    }, {
+      "id" : "_J8R7sEDlEe2txciGTQMx9w",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_EXEMPTION"
+    }, {
+      "id" : "_Fct2MEMAEe2txciGTQMx9w",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_CEDANT"
+    }, {
+      "id" : "_B4gy0EMEEe2txciGTQMx9w",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_UNITE_NON_FONCIERE_NOTIF"
+    }, {
+      "id" : "_fyJj8EMjEe2txciGTQMx9w",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_CESSIONNAIRE"
+    }, {
+      "id" : "_y6AU0FA4Ee2jFLtm4Qn9kQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_NOTIFICATION"
+    }, {
+      "id" : "_xMwykGUCEe2ik4KThDnfQQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_RETRO_ACQUI"
+    }, {
+      "id" : "_kfdFIGWUEe2ik4KThDnfQQ",
+      "name" : "CNX_POSTGRES_ODS_PREP_DATE_DEPOT_NOMBRE_JOURS"
+    }, {
+      "id" : "__OZgsG8bEe2rW_G8r-Ds4Q",
+      "name" : "CNX_POSTGRES_ODS_PREP_DATE_DEBUT_NOMBRE_JOURS"
+    }, {
+      "id" : "__OZgsW8bEe2rW_G8r-Ds4Q",
+      "name" : "CNX_POSTGRES_ODS_PREP_DATE_CREATION_NOMBRE_JOURS"
+    }, {
+      "id" : "_5AMrYHDDEe2rW_G8r-Ds4Q",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_ACQUI_NOTIF"
+    }, {
+      "id" : "_4LZ3cHIuEe2rW_G8r-Ds4Q",
+      "name" : "CNX_POSTGRES_ODS_PREP_T_CHARGE_VENTE"
+    } ]
+  } ]
+}

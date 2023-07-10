@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ContextType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" confirmationNeeded="false" name="Param" xmi:id="_7M3DYCDsEeq6TZrIw94mUA" xmi:version="2.0">
+  <contextParameter comment="" name="ReferenceDate" prompt="ReferenceDate?" promptNeeded="false" type="id_Integer" value="" xmi:id="_7M3DYSDsEeq6TZrIw94mUA"/>
+  <contextParameter comment="" name="TimeZoneName" prompt="TimeZoneName?" promptNeeded="false" type="id_String" value="" xmi:id="_7M3DYiDsEeq6TZrIw94mUA"/>
+  <contextParameter comment="" name="CustomerCosmoId" prompt="CustomerCosmoId?" promptNeeded="false" type="id_Integer" value="" xmi:id="_7M3DYyDsEeq6TZrIw94mUA"/>
+  <contextParameter comment="" name="ParallelismTenant" prompt="ParallelismTenant?" promptNeeded="false" type="id_Integer" value="" xmi:id="_7M3DZCDsEeq6TZrIw94mUA"/>
+  <contextParameter comment="" name="LogFileName" prompt="LogFileName?" promptNeeded="false" type="id_String" value="" xmi:id="_7M3DZSDsEeq6TZrIw94mUA"/>
+  <contextParameter comment="" name="LogFilepath" prompt="LogFilepath?" promptNeeded="false" type="id_String" value="" xmi:id="_7M3DZiDsEeq6TZrIw94mUA"/>
+  <contextParameter comment="" name="TimeZoneValue" prompt="TimeZoneValue?" promptNeeded="false" type="id_Integer" value="" xmi:id="_7M3DZyDsEeq6TZrIw94mUA"/>
+  <contextParameter comment="" name="ODSRetention" prompt="ODSRetention?" promptNeeded="false" type="id_Integer" value="" xmi:id="_7M3DaCDsEeq6TZrIw94mUA"/>
+  <contextParameter comment="" name="Occurence" prompt="Occurence?" promptNeeded="false" type="id_Integer" value="" xmi:id="_7M3DaSDsEeq6TZrIw94mUA"/>
+  <contextParameter comment="" name="ParameterValue" prompt="ParameterValue?" promptNeeded="false" type="id_Integer" value="" xmi:id="_7M3DaiDsEeq6TZrIw94mUA"/>
+  <contextParameter comment="" name="ParameterName" prompt="ParameterName?" promptNeeded="false" type="id_String" value="" xmi:id="_7M3DayDsEeq6TZrIw94mUA"/>
+  <contextParameter comment="" name="LastWorkflowName" prompt="LastWorkflowName?" promptNeeded="false" type="id_String" value="" xmi:id="_7M3DbCDsEeq6TZrIw94mUA"/>
+  <contextParameter comment="" name="ExecutionPlanName" prompt="ExecutionPlanName?" promptNeeded="false" type="id_String" value="" xmi:id="_7M3DbSDsEeq6TZrIw94mUA"/>
+  <contextParameter comment="" name="StepValue" prompt="StepValue?" promptNeeded="false" type="id_Integer" value="" xmi:id="_7M3DbiDsEeq6TZrIw94mUA"/>
+  <contextParameter comment="" name="Domaine" prompt="Domaine?" promptNeeded="false" type="id_String" value="" xmi:id="_7M3DbyDsEeq6TZrIw94mUA"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_265a5b21-6bdd-4f60-81f1-b635efaf4301"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1Uy10N2/y0VqU5g/nOmWXTJdQDMbCnpxOamFNaa4j71FLc7Vf0BCtDZUk/wgeEWqbZMqye0VJRwO&#13;
+jiKBvXH8vA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8ebec40d-1043-45d0-b2bb-a8cd3e4785c6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QL2INYwUFFCcNmcMxUcekvnehAp6RbVZJfRf0Hr7vVxwapKVO9KoQGeBVBps+Q7k/l+eb8aWusXk&#13;
+MwagtfbmnQ==</DigestValue></Reference></SignedInfo><SignatureValue>SzTjwXJJ8cJFzpFE8Mbodxd8i1IwpM8xJeDbLafmvFg5NWEJdU5T2feN9la1RefJKULQMhfV7GWv&#13;
+v22wHAhCVkB2KiZ3ya/h9UQeUL9IcIPsfnJIRNwdBoKYbmH+n5F6WdIJL6/QCtjH0evxACKYRWFY&#13;
+tojLnn8FwQ8yMU3DTf8qqoN0S+VDDI6R0fkTKl///onNeVg4+I5nt22P5wqWzLJ1j2xBNFr5wvFZ&#13;
+D4whDyH35YXd0PipFurDA4h0Vqt/6qw/gpAYwaajxF89SqDbBRT9VwCStuc/UJA9oSdXtWSsn5sq&#13;
+T4md9GBFOAWA410YmyQqvx5extp3I9k9OZ7XHQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8ebec40d-1043-45d0-b2bb-a8cd3e4785c6" Target="#_265a5b21-6bdd-4f60-81f1-b635efaf4301"><Timestamp>2023-07-10 15:32:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_DNOCwJodEeytMdZgQE9lwA">
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_schema" prompt="connection_PostgresOdsTalendAdmin_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_admin" xmi:id="_DNOCwZodEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_port" prompt="connection_PostgresOdsTalendAdmin_port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="5432" xmi:id="_DNOCwpodEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_database" prompt="connection_PostgresOdsTalendAdmin_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ods" xmi:id="_DNOCw5odEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_username" prompt="connection_PostgresOdsTalendAdmin_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="_talend" xmi:id="_DNOCxJodEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_params" prompt="connection_PostgresOdsTalendAdmin_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_DNOCxZodEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_host" prompt="connection_PostgresOdsTalendAdmin_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.200.1.191" xmi:id="_DNOCxpodEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_password" prompt="connection_PostgresOdsTalendAdmin_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:H2nKNDELdfbhd4TxQJye3EBjUS4FhglpMyTMPN3s5RpxmH3x9OKVOZHsW1oralzo74YBzDm9aleoFHlE" xmi:id="_DNOCx5odEeytMdZgQE9lwA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="REC" xmi:id="_DNOCyJodEeytMdZgQE9lwA">
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_schema" prompt="connection_PostgresOdsTalendAdmin_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_DNOCyZodEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_port" prompt="connection_PostgresOdsTalendAdmin_port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="" xmi:id="_DNOCypodEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_database" prompt="connection_PostgresOdsTalendAdmin_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_DNOCy5odEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_username" prompt="connection_PostgresOdsTalendAdmin_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_DNOCzJodEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_params" prompt="connection_PostgresOdsTalendAdmin_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_DNOCzZodEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_host" prompt="connection_PostgresOdsTalendAdmin_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_DNOCzpodEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_password" prompt="connection_PostgresOdsTalendAdmin_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_DNOCz5odEeytMdZgQE9lwA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PROD" xmi:id="_DNOC0JodEeytMdZgQE9lwA">
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_schema" prompt="connection_PostgresOdsTalendAdmin_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_DNOC0ZodEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_port" prompt="connection_PostgresOdsTalendAdmin_port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="" xmi:id="_DNOC0podEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_database" prompt="connection_PostgresOdsTalendAdmin_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_DNOC05odEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_username" prompt="connection_PostgresOdsTalendAdmin_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_DNOC1JodEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_params" prompt="connection_PostgresOdsTalendAdmin_params?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_DNOC1ZodEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_host" prompt="connection_PostgresOdsTalendAdmin_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_DNOC1podEeytMdZgQE9lwA"/>
+    <contextParameter comment="" name="connection_PostgresOdsTalendAdmin_password" prompt="connection_PostgresOdsTalendAdmin_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_DNOC15odEeytMdZgQE9lwA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1450a71f-0c76-4f60-8fa6-0aa659006c64"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VsMILOOwkU6/v67ReWICQY37KUjUN4pbQ8c++jHBi/TZ09UxniwdJE+VG4UFEA6QzPvcKHXr4GvE&#13;
+bCgafcNljQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_da4f498f-2235-4e4e-a8f8-36e38b9b2d84"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>W1j/xzci3v+w4rkXnCFcsSiE3nhlXd5YHmfZSJ5Usy7lgf5jzNXIIRbGW88e6yV9afPOwbI6IKMF&#13;
+1lEyODiYog==</DigestValue></Reference></SignedInfo><SignatureValue>cO/LtxR+Ct9ldxszns+vye8LPTuWm8WaJLZlukeRKnBzqfE7eGHFkD5+qZne5qXjVBZ7glLvsYge&#13;
+QWaGyu1LiYA9dhS8upwz5OgoEFHVhAQE8JETAVq0IqbuGN2ocn4k1gMPUnRog0AxNLlizx33/T2C&#13;
+dVqnAak/UbTylHCt6yu1mssEXjchDwTBvNldCP9aIg3VbMSKhDfslVjjq+nhXoQFCKQSN6SQi4qC&#13;
+5Pki5+13VehJJrVRkP59AL1ytpL6i3gWsia+pAHdDOhV1Tm0IVnC5/Y7iVcndVPStkPCuXyg2jc4&#13;
+pEOtznvcmKe1lPKmIi6ujDnTBZ+6o5VxVTbdzQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_da4f498f-2235-4e4e-a8f8-36e38b9b2d84" Target="#_1450a71f-0c76-4f60-8fa6-0aa659006c64"><Timestamp>2022-12-05 09:00:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
