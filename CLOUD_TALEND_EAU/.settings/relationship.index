@@ -1327,17 +1327,6 @@
   } ]
 }, {
   "baseItem" : {
-    "id" : "_rLCk8MK8EeuzNoeAPn7RGQ",
-    "version" : "0.1",
-    "type" : "job"
-  },
-  "relatedItems" : [ {
-    "id" : "test",
-    "version" : "Latest",
-    "type" : "routine"
-  } ]
-}, {
-  "baseItem" : {
     "id" : "_wcFdYHq_EeykpdIU5EeVpA",
     "version" : "0.1",
     "type" : "job"
